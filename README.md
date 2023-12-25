@@ -9,15 +9,8 @@ Each project is organized in its own directory, containing HTML, CSS, and JavaSc
 
 1. **[Challenge 1: Blog Preview card](FrontendMentor01—Blog-preview-card)**
     - [Live Demo](FrontendMentor01—Blog-preview-card/index.html)
-    - I built out this blog preview card and get it looking as close to the design as possible.
+    - [About](FrontendMentor01—Blog-preview-card/README.md)
 
-<!-- Add more challenges as you complete them -->
-
-## Technologies Used
-
-- HTML
-- CSS
-- JavaScript
 
 ## How to Use
 
@@ -49,7 +42,7 @@ If you have any questions or suggestions, feel free to reach out to me:
 
 - [Website](https://ranitmanik.github.io/Portfolio-1.0)
 - [LinkedIn](https://www.linkedin.com/in/ranit-manik/)
-- Email: ranitmanikofficial@outlook.com
+- [Email](ranitmanikofficial@outlook.com)
 
 ## License
 
