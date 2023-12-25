@@ -109,7 +109,7 @@ Download the starter code and go through the README.md file. This will provide f
 - [Understanding When to Use Padding vs. Margin in CSS](https://fedmentor.dev/posts/padding-margin/) - This is an
   amazing article by [Grace Snow 🌈](https://twitter.com/gracesnow) which helped me finally
   understand When to Use Padding vs. Margin in CSS.
-- [Understanding When to Use Padding vs. Margin in CSS](https://dequeuniversity.com/rules/axe/4.6/landmark-one-main?application=axeAPI) -
+- [Document should have one main landmark](https://dequeuniversity.com/rules/axe/4.6/landmark-one-main?application=axeAPI) -
   This is an
   amazing article by [deque university](https://dequeuniversity.com/) made me understand the importance of HTML5
   semantic
