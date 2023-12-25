@@ -9,33 +9,29 @@
     <link rel="stylesheet" href="FrontendMentor01—Blog-preview-card/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/138437760?v=4" type="image/x-icon">
     <style>
+        /* ---------------------------general css --------------------------- */
+
         /* ---------------------------general css --------------------------- */
 
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            font-style: normal;
-            font-size: 16px;
-            transition-duration: 0.25s;
         }
 
         body {
-            height: 110%;
-            padding: 10% 10%;
             font-family: 'Figtree', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            min-height: 100vh;
             background-color: hsl(47, 88%, 63%);
             display: grid;
+            place-items: center;
             color: hsl(0, 0%, 7%);
+            font-size: 16px;
+            font-style: normal;
             text-decoration: none;
-            transition-duration: 0.25s;
-        }
-
-        a {
-            color: hsl(0, 0%, 7%);
+            box-sizing: border-box;
         }
 
 
@@ -45,13 +41,20 @@
         /* div and img styles */
         .card {
             padding: 16px;
+            margin: 24px;
             background-color: white;
-            width: 350px;
+            max-width: 350px;
             border-radius: 16px;
             border: 2px solid hsl(0, 0%, 7%);
             box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
-            transition-duration: inherit;
-            margin-bottom: 100px;
+            transition-duration: 0.25s;
+            box-sizing: border-box;
+        }
+
+        a {
+            appearance: none;
+            text-decoration: none;
+            color: hsl(0, 0%, 7%);
         }
 
         .card:hover {
@@ -59,81 +62,86 @@
             cursor: pointer;
         }
 
-        .bg-img img {
-            height: 190px;
+        .card img {
+            width: 100%;
             object-fit: cover;
             border-radius: 12px;
+            max-height: 160px;
         }
 
-        .tag {
+        .card-tag {
             display: inline-block;
             margin-block: 8px;
-            padding: 0 10px;
+            margin-right: .5rem;
+            padding: 16px 10px;
             line-height: 0;
             font-weight: 800;
             background-color: hsl(47, 88%, 63%);
             border-radius: 5px;
         }
 
-        .author {
+        .card-author {
             display: inline-flex;
             align-items: center;
         }
 
-        .author img {
-            width: 30px;
+        .card-author img {
+            width: 32px;
             border-radius: 50%;
         }
 
-        /* text styles */
-        h1 {
-            font-size: 24px;
-            transition-duration: inherit;
+        /* text styles :: heading */
+        .card h2 {
+            font-size: 1.5rem;
+            transition-duration: 0.25s;
         }
 
-        h1:hover {
+        .card h2:hover {
             color: hsl(47, 88%, 63%);
         }
 
-        h2 {
-            font-size: 16px;
-            padding: 16px 0;
-            display: inline-block;
+        /* text styles :: paragraphs */
+
+        .card-tag-name {
+            font-size: 1rem;
         }
 
-        h3 {
-            padding-top: 8px;
-            padding-bottom: 16px;
-            font-size: 14px;
+        .publication-date {
+            margin-block: 8px 16px;
+            font-size: 1rem;
             font-weight: 600;
         }
 
-        h4 {
-            padding-left: 16px;
+        .card-author-name {
+            margin-left: 16px;
         }
 
-        p {
-            padding: 16px 0;
-            margin-bottom: 16px;
-            font-size: 16px;
-            line-height: 24px;
+        .card-description {
+            margin-block: 16px 24px;
+            font-size: 1em;
+            line-height: 1.5;
             color: hsl(0, 0%, 50%);
         }
 
-        @media screen and (min-width: 1500px) {
-            body {
+
+        main {
+            display: grid;
+        }
+
+        @media screen and (min-width: 1300px) {
+            main {
                 grid-template-columns: 1fr 1fr 1fr;
             }
         }
 
-        @media screen and (max-width: 1500px) and (min-width: 900px) {
-            body {
+        @media screen and (max-width: 1300px) and (min-width: 900px) {
+            main {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
         @media screen and (max-width: 900px) {
-            body {
+            main {
                 grid-template-columns: 1fr;
             }
         }
@@ -141,398 +149,205 @@
     </style>
 </head>
 <body>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/design/desktop-design.jpg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="FrontendMentor01—Blog-preview-card/index.html" target="_blank">
-    <div class="card">
-        <div class="bg-img">
-            <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
-        </div>
-        <div class="tag">
-            <h2>HTML</h2>
-        </div>
-        <div class="tag">
-            <h2>CSS</h2>
-        </div>
-        <div class="text">
-            <h3>
-                Published on 25st Dec 2023
-            </h3>
-            <h1>Blog preview card</h1>
-            <p>
-                Your challenge is to build out this blog preview card and get it looking as close to the design as
-                possible.
-            </p>
-            <div class="author">
-                <img src="https://yt3.ggpht.com/9T7bIevo8Kj4QQXOobviW-rkNzNR7iqW3tZQq6hO6zYCcFJpHhMlrjpDDbKFIg0e91IaNvvA=s88-c-k-c0x00ffffff-no-rj"
-                     alt="author">
-                <h4>Ranit Manik</h4>
-            </div>
-        </div>
-    </div>
-</a>
 
+<main>
+    <div class="card" role="article">
+        <img src="FrontendMentor01—Blog-preview-card/design/desktop-design.jpg" alt="">
+        <div class="card-tag">
+            <p class="card-tag-name">
+                HTML
+            </p>
+        </div>
+        <div class="card-tag">
+            <p class="card-tag-name">
+                CSS
+            </p>
+        </div>
+        <div class="card-text">
+            <p class="publication-date">
+                Published on
+                <time datetime="2023-12-21">25st Dec 2023</time>
+            </p>
+            <h2>Blog preview card</h2>
+            <p class="card-description">
+                Your challenge is to build out this blog preview card and get it looking as close to the design as
+                possible.
+            </p>
+            <div class="card-author">
+                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+                     alt="Profile picture of Ranit Manik, the author of the article">
+                <p class="card-author-name">Ranit Manik</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" role="article">
+        <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
+        <div class="card-tag">
+            <p class="card-tag-name">
+                HTML
+            </p>
+        </div>
+        <div class="card-tag">
+            <p class="card-tag-name">
+                CSS
+            </p>
+        </div>
+        <div class="card-text">
+            <p class="publication-date">
+                Published on
+                <time datetime="2023-12-21">21st Dec 2023</time>
+            </p>
+            <h2>HTML & CSS foundations</h2>
+            <p class="card-description">
+                These languages are the backbones of every website, defining structure, content, and presentation.
+            </p>
+            <div class="card-author">
+                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+                     alt="Profile picture of Ranit Manik, the author of the article">
+                <p class="card-author-name">Ranit Manik</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" role="article">
+        <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
+        <div class="card-tag">
+            <p class="card-tag-name">
+                HTML
+            </p>
+        </div>
+        <div class="card-tag">
+            <p class="card-tag-name">
+                CSS
+            </p>
+        </div>
+        <div class="card-text">
+            <p class="publication-date">
+                Published on
+                <time datetime="2023-12-21">21st Dec 2023</time>
+            </p>
+            <h2>HTML & CSS foundations</h2>
+            <p class="card-description">
+                These languages are the backbones of every website, defining structure, content, and presentation.
+            </p>
+            <div class="card-author">
+                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+                     alt="Profile picture of Ranit Manik, the author of the article">
+                <p class="card-author-name">Ranit Manik</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" role="article">
+        <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
+        <div class="card-tag">
+            <p class="card-tag-name">
+                HTML
+            </p>
+        </div>
+        <div class="card-tag">
+            <p class="card-tag-name">
+                CSS
+            </p>
+        </div>
+        <div class="card-text">
+            <p class="publication-date">
+                Published on
+                <time datetime="2023-12-21">21st Dec 2023</time>
+            </p>
+            <h2>HTML & CSS foundations</h2>
+            <p class="card-description">
+                These languages are the backbones of every website, defining structure, content, and presentation.
+            </p>
+            <div class="card-author">
+                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+                     alt="Profile picture of Ranit Manik, the author of the article">
+                <p class="card-author-name">Ranit Manik</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" role="article">
+        <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
+        <div class="card-tag">
+            <p class="card-tag-name">
+                HTML
+            </p>
+        </div>
+        <div class="card-tag">
+            <p class="card-tag-name">
+                CSS
+            </p>
+        </div>
+        <div class="card-text">
+            <p class="publication-date">
+                Published on
+                <time datetime="2023-12-21">21st Dec 2023</time>
+            </p>
+            <h2>HTML & CSS foundations</h2>
+            <p class="card-description">
+                These languages are the backbones of every website, defining structure, content, and presentation.
+            </p>
+            <div class="card-author">
+                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+                     alt="Profile picture of Ranit Manik, the author of the article">
+                <p class="card-author-name">Ranit Manik</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" role="article">
+        <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
+        <div class="card-tag">
+            <p class="card-tag-name">
+                HTML
+            </p>
+        </div>
+        <div class="card-tag">
+            <p class="card-tag-name">
+                CSS
+            </p>
+        </div>
+        <div class="card-text">
+            <p class="publication-date">
+                Published on
+                <time datetime="2023-12-21">21st Dec 2023</time>
+            </p>
+            <h2>HTML & CSS foundations</h2>
+            <p class="card-description">
+                These languages are the backbones of every website, defining structure, content, and presentation.
+            </p>
+            <div class="card-author">
+                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+                     alt="Profile picture of Ranit Manik, the author of the article">
+                <p class="card-author-name">Ranit Manik</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" role="article">
+        <img src="FrontendMentor01—Blog-preview-card/assets/images/illustration-article.svg" alt="">
+        <div class="card-tag">
+            <p class="card-tag-name">
+                HTML
+            </p>
+        </div>
+        <div class="card-tag">
+            <p class="card-tag-name">
+                CSS
+            </p>
+        </div>
+        <div class="card-text">
+            <p class="publication-date">
+                Published on
+                <time datetime="2023-12-21">21st Dec 2023</time>
+            </p>
+            <h2>HTML & CSS foundations</h2>
+            <p class="card-description">
+                These languages are the backbones of every website, defining structure, content, and presentation.
+            </p>
+            <div class="card-author">
+                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+                     alt="Profile picture of Ranit Manik, the author of the article">
+                <p class="card-author-name">Ranit Manik</p>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>

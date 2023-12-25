@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+          content="Explore the foundations of HTML and CSS with Gred Hooper's insightful guide. Learn about the backbones of every website, defining structure, content, and presentation.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog preview card</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,28 +13,30 @@
     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-<div class="card">
-    <div class="bg-img">
+<main>
+    <div class="card" role="article">
         <img src="assets/images/illustration-article.svg" alt="">
-    </div>
-    <div class="tag">
-        <h2>
-            Learning
-        </h2>
-    </div>
-    <div class="text">
-        <h3>
-            Published on 21st Dec 2023
-        </h3>
-        <h1>HTML & CSS foundations</h1>
-        <p>
-            These languages are the backbones of every website, defining structure, content, and presentation.
-        </p>
-        <div class="author">
-            <img src="assets/images/image-avatar.webp" alt="author">
-            <h4>Gred Hooper</h4>
+        <div class="card-tag">
+            <p class="card-tag-name">
+                Learning
+            </p>
+        </div>
+        <div class="card-text">
+            <p class="publication-date">
+                Published on
+                <time datetime="2023-12-21">21st Dec 2023</time>
+            </p>
+            <h2>HTML & CSS foundations</h2>
+            <p class="card-description">
+                These languages are the backbones of every website, defining structure, content, and presentation.
+            </p>
+            <div class="card-author">
+                <img src="assets/images/image-avatar.webp"
+                     alt="Profile picture of Gred Hooper, the author of the article">
+                <p class="card-author-name">Gred Hooper</p>
+            </div>
         </div>
     </div>
-</div>
+</main>
 </body>
 </html>

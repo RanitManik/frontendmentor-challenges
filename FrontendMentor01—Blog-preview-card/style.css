@@ -3,20 +3,19 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 16px;
 }
 
 body {
     font-family: 'Figtree', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    height: 100vh;
+    min-height: 100vh;
     background-color: hsl(47, 88%, 63%);
     display: grid;
     place-items: center;
     color: hsl(0, 0%, 7%);
-    transition-duration: 0.25s;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 
@@ -26,12 +25,14 @@ body {
 /* div and img styles */
 .card {
     padding: 16px;
+    margin: 24px;
     background-color: white;
-    width: 350px;
+    max-width: 22rem;
     border-radius: 16px;
     border: 2px solid hsl(0, 0%, 7%);
     box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
-    transition-duration: inherit;
+    transition-duration: 0.25s;
+    box-sizing: border-box;
 }
 
 .card:hover {
@@ -39,61 +40,61 @@ body {
     cursor: pointer;
 }
 
-.bg-img img {
+.card img {
     width: 100%;
     object-fit: contain;
     border-radius: 12px;
 }
 
-.tag {
+.card-tag {
     display: inline-block;
     margin-block: 8px;
-    padding: 0 10px;
+    padding: 16px 10px;
     line-height: 0;
     font-weight: 800;
     background-color: hsl(47, 88%, 63%);
     border-radius: 5px;
 }
 
-.author {
+.card-author {
     display: inline-flex;
     align-items: center;
 }
 
-.author img {
-    width: 30px;
+.card-author img {
+    width: 32px;
 }
 
-/* text styles */
-h1 {
-    font-size: 24px;
-    transition-duration: inherit;
+/* text styles :: heading */
+.card h2 {
+    font-size: 1.5rem;
+    transition-duration: 0.25s;
 }
 
-h1:hover {
+.card h2:hover {
     color: hsl(47, 88%, 63%);
 }
 
-h2 {
-    font-size: 16px;
-    padding: 16px 0;
+/* text styles :: paragraphs */
+
+.card-tag-name {
+    font-size: 1rem;
 }
 
-h3 {
-    padding-top: 8px;
-    padding-bottom: 16px;
-    font-size: 14px;
+.publication-date {
+    margin-block: 8px 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
-h4 {
-    padding-left: 16px;
+.card-author-name {
+    margin-left: 16px;
+    font-weight: 800;
 }
 
-p {
-    padding: 16px 0;
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 24px;
+.card-description {
+    margin-block: 16px 24px;
+    font-size: 1em;
+    line-height: 1.5;
     color: hsl(0, 0%, 50%);
 }
