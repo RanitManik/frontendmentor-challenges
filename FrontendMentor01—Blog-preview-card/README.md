@@ -21,8 +21,13 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### The challenge
 
-Users should be able to:
-build out [this blog preview ](design/active-states.jpg)card and get it looking as close to the design as possible.
+Your challenge is to build out [this blog preview ](design/active-states.jpg)card and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Your users should be able to:
+
+- See hover and focus states for all interactive elements on the page
+Download the starter code and go through the README.md file. This will provide further details about the project. The style-guide.md file is where you'll find colors, fonts, etc.
 
 ### Screenshot
 
@@ -33,6 +38,8 @@ build out [this blog preview ](design/active-states.jpg)card and get it looking 
 - Solution URL: [click here to see the solution](https://www.frontendmentor.io/solutions/html-css-IFKqcIOTCf)
 - Live Site
   URL: [click here to see the code](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor01%E2%80%94Blog-preview-card/index.html)
+
+## My process
 
 ### Built with
 
@@ -115,8 +122,6 @@ build out [this blog preview ](design/active-states.jpg)card and get it looking 
 - LinkedIn - [@ranit-manik](https://www.linkedin.com/in/ranit-manik/)
 
 ## Acknowledgments
-
-Acknowledgment:
 
 I would like to express my gratitude to the creators of the Frontend Mentor platform for providing an engaging and
 practical challenge in the form of the Blog Preview Card. The hands-on experience gained through tackling this project
