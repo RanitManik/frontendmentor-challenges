@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="result-summary-component grid-flow">
+        <div class="result-component grid-flow">
+            <h1 class="result-title component-title">Your Result</h1>
+            <div class="result-circle">
+                <p><span class="result-score">76</span>of 100</p>
+            </div>
+            <p class="result-text">
+                <span class="result-type" data-info="bold">Great</span>
+                You scored higher than 65% of the people who have taken these tests.
+            </p>
+        </div>
+        <div class="summary-component grid-flow">
+            <h2 class="summary-title component-title">Summary</h2>
+            <div class="summary-score grid-flow">
+                <div class="flex-group summary-items" data-item-type="accent-1">
+                    <div class="flex-group summary-items-left">
+                        <img src="assets/images/icon-reaction.svg" alt="Reaction-svg">
+                        <h3 heading-type="accent-1">Reaction</h3>
+                    </div>
+                    <p><span data-info="strong-opacity">80</span> / 100</p>
+                </div>
+                <div class="flex-group summary-items" data-item-type="accent-2">
+                    <div class="flex-group summary-items-left">
+                        <img src="assets/images/icon-memory.svg" alt="Memory-svg">
+                        <h3 heading-type="accent-2">Memory</h3>
+                    </div>
+                    <p><span data-info="strong-opacity">92</span> / 100</p>
+                </div>
+                <div class="flex-group summary-items" data-item-type="accent-3">
+                    <div class="flex-group summary-items-left">
+                        <img src="assets/images/icon-verbal.svg" alt="Verbal-svg">
+                        <h3 heading-type="accent-3">Verbal</h3>
+                    </div>
+                    <p><span data-info="strong-opacity">61</span> / 100</p>
+                </div>
+                <div class="flex-group summary-items" data-item-type=accent-4>
+                    <div class="flex-group summary-items-left">
+                        <img src="assets/images/icon-visual.svg" alt="Visual-svg">
+                        <h3 heading-type="accent-4">Visual</h3>
+                    </div>
+                    <p><span data-info="strong-opacity">72</span> / 100</p>
+                </div>
+            </div>
+            <button class="summary-btn">Continue</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -13,6 +13,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
+    - [Code Highlights](#code-highlights)
     - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -21,13 +22,16 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### The challenge
 
-Your challenge is to build out [this blog preview ](design/active-states.jpg)card and get it looking as close to the design as possible.
+Your challenge is to build out [this blog preview ](design/active-states.jpg)card and get it looking as close to the
+design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice,
+feel free to give it a go.
 Your users should be able to:
 
 - See hover and focus states for all interactive elements on the page
-Download the starter code and go through the README.md file. This will provide further details about the project. The style-guide.md file is where you'll find colors, fonts, etc.
+  Download the starter code and go through the README.md file. This will provide further details about the project. The
+  style-guide.md file is where you'll find colors, fonts, etc.
 
 ### Screenshot
 
@@ -38,6 +42,7 @@ Download the starter code and go through the README.md file. This will provide f
 - Solution URL: [click here to see the solution](https://www.frontendmentor.io/solutions/html-css-IFKqcIOTCf)
 - Live Site
   URL: [click here to see the code](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor01%E2%80%94Blog-preview-card/index.html)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/QWowgja)
 
 ## My process
 
@@ -66,40 +71,46 @@ Download the starter code and go through the README.md file. This will provide f
   padding is fine if you want but don't use it for much.
 - The body should never have it's height limited, just as no text containing elements should have their height limited.
   Instead of height `100vh` on the body, use min-height instead.
-  #### Wrong way ❌❌
-
-  ```css
-  body {
-      height: 100vh;
-  }
-  ```
-
-  #### Right way ✅✅
-
-  ```css
-  body {
-      min-height: 100vh;
-  }
-  ```
 - Don't set width on components.
   Instead, use `max-width` and use rem not px so the `max width`
   stays proportional to the user's font size and gives a properly responsive result.
 
-  #### Wrong way ❌❌
+### Code Highlights
+
+- Don't set width or height on components.
+
+  **Wrong way ❌❌**
 
     ```css
-    .card {
+    body {
+      height: 100vh;
+  
+  }
+    ```
+
+  **Right way ✅✅**
+
+    ```css
+    body {
+      min-height: 100vh;
+  }
+    ```
+  **Wrong way ❌❌**
+
+    ```css
+      .card {
       width: 350px;
   }
-    ```
+  ```
 
-  #### Right way ✅✅
+  **Right way ✅✅**
 
     ```css
-    .card {
+      .card {
       max-width: 22rem;
+  
   }
-    ```
+  ```
 
 ### Useful resources
 
