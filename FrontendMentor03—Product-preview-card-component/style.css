@@ -1,0 +1,183 @@
+/* --------------------------------------- IMPORT ---------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+/* --------------------------------------- ROOT CSS ---------------------------------------*/
+:root {
+    /* Primary colors */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --very-dark-cyan: hsl(158, 36%, 18%);
+
+    /* Neutral colors */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /* font-size */
+    --fs-1: 0.875rem;
+    --fs-2: 2.5rem;
+
+    /* font-family */
+    --ff-1: "Montserrat", Segoe UI, Arial, sans-serif;
+    --ff-2: "Fraunces", Segoe UI, Times New Roman, serif;
+
+    /* font-weight */
+    --fw-regular: 500;
+    --fw-bold: 700;
+
+    /* line-height */
+    --lh-1: 1;
+    --lh-2: 2;
+
+    /* border-radius */
+    --border-radius: .5rem;
+
+    /* padding */
+    --padding-primary: 2.5rem;
+    --padding-secondary: 1.5rem;
+}
+
+/* --------------------------------------- GENERAL CSS ---------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Cream);
+    font-family: var(--ff-1);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-1);
+    color: var(--Dark-grayish-blue);
+    display: grid;
+    place-items: center;
+}
+
+/* Desktop */
+@media (min-width: 600px) {
+    body {
+        min-height: 100vh;
+        padding-inline: 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        padding-inline: 1rem;
+        padding-block: 1.5rem;
+    }
+}
+
+[data-item-type = "uppercase"] {
+    text-transform: uppercase;
+}
+
+.grid-flow {
+    display: grid;
+}
+
+
+/* --------------------------------------- CUSTOM CSS --------------------------------------- */
+/* Desktop */
+@media (min-width: 600px) {
+    .product {
+        grid-template-columns: 1fr 1fr;
+        max-width: 45rem;
+        overflow: hidden;
+    }
+
+    .product-details {
+        padding: var(--padding-primary);
+        gap: 1rem;
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .product {
+        width: 100%;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+    }
+
+    .product-details {
+        padding: var(--padding-secondary);
+        gap: 1rem;
+        align-items: start;
+    }
+}
+
+.product {
+    background-color: var(--White);
+    border-radius: var(--border-radius);
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-tag {
+    letter-spacing: .5rem;
+}
+
+[data-item-type = "strong"] {
+    font-family: var(--ff-2);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-2);
+}
+
+h1 {
+    color: var(--Very-dark-blue);
+    line-height: var(--lh-1);
+}
+
+.card-description {
+    line-height: var(--lh-2);
+}
+
+.price-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Desktop */
+@media (min-width: 600px) {
+    .price-container {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.price {
+    color: var(--Dark-cyan);
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+.add-to-cart-btn {
+    display: flex;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-weight: var(--fw-bold);
+    border-radius: var(--border-radius);
+    padding-block: 1rem;
+    grid-auto-flow: column;
+    justify-content: center;
+    place-items: center;
+    gap: 1rem;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.10s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--very-dark-cyan);
+}
