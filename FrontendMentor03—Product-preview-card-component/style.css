@@ -79,6 +79,10 @@ body {
     display: grid;
 }
 
+.flex-group {
+    display: flex;
+}
+
 
 /* --------------------------------------- CUSTOM CSS --------------------------------------- */
 /* Desktop */
@@ -163,13 +167,11 @@ h1 {
 }
 
 .add-to-cart-btn {
-    display: flex;
     background-color: var(--Dark-cyan);
     color: var(--White);
     font-weight: var(--fw-bold);
     border-radius: var(--border-radius);
     padding-block: 1rem;
-    grid-auto-flow: column;
     justify-content: center;
     place-items: center;
     gap: 1rem;

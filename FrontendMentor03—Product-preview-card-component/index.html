@@ -10,11 +10,12 @@
 <body>
 <main>
     <div class="product grid-flow">
-        <img class="product-image"
-             src="images/image-product-desktop.jpg"
-             srcset="images/image-product-mobile.jpg 750w,
-             images/image-product-desktop.jpg 1200w"
-             alt="Gabrielle Essence Eau De Parfum image">
+        <picture>
+            <source media="(max-width: 599px)" srcset="images/image-product-mobile.jpg">
+            <source media="(min-width: 600px)" srcset="images/image-product-desktop.jpg">
+            <img class="product-image" src="images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum image">
+        </picture>
+
         <div class="product-details grid-flow">
             <p class="card-tag" data-item-type="uppercase" aria-label="card tag: Perfume">Perfume</p>
 
@@ -28,7 +29,7 @@
                 <p class="original-price" aria-label="Original Price: $169.00">$169.99</p>
             </div>
 
-            <button aria-label="Add to Cart" class="add-to-cart-btn">
+            <button aria-label="Add to Cart" class="add-to-cart-btn flex-group">
                 <img src="images/icon-cart.svg" alt="cart-icon">Add to Cart
             </button>
         </div>
