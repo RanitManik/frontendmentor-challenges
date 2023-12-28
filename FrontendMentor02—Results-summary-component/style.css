@@ -59,17 +59,11 @@ body {
     color: var(--color);
 }
 
-@media (min-width: 750px) {
+@media (min-width: 46.875rem) {
     body {
         min-height: 100vh;
         display: grid;
         place-items: center;
-    }
-}
-
-@media (max-width: 750px) {
-    body {
-        max-height: 100vh;
     }
 }
 
@@ -89,7 +83,7 @@ body {
 }
 
 
-@media (min-width: 750px) {
+@media (min-width: 46.875rem) {
     .result-summary-component {
         max-width: 45rem;
         grid-template-columns: 1fr 1fr;
@@ -116,7 +110,7 @@ body {
     border-radius: var(--border-radius);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 46.875rem) {
     .result-component {
         border-radius: 0 0 var(--border-radius) var(--border-radius);
         gap: 1rem;
@@ -163,7 +157,7 @@ body {
     gap: 2rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 46.875rem) {
     .summary-component {
         gap: 1rem;
     }

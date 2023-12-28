@@ -1,6 +1,8 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to
+the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -63,6 +65,12 @@ Your users should be able to:
 - **CSS Variables**: Utilized CSS variables for colors, font properties, and border-radius for improved accessibility
   and clarity.
 - **Aspect Ratio Property**: Implemented the CSS `aspect-ratio` property for responsive design.
+- **Media queries not in px**: Media queries must be defined in rem or em not px.
+- **Restrict use of data attributes**: use `strong` in html instead of a data attribute to make text bold for emphasis
+  it is recommended against so much reliance on data attributes as css selectors. It's higher specificity, very
+  unusual/uncommon, so use wisely.
+- **Button-type**: It is recommended to include a type attribute whenever you use a button element. (Not essential but
+  can help avoid common bugs)
 
 ### Code Highlights
 
@@ -103,6 +111,11 @@ Your users should be able to:
   }
 
    ```
+- Button type:
+  ```html
+  <p>This is a <strong>bold</strong> text example.</p>
+  
+  ```
 
 ## Useful resources
 
@@ -120,6 +133,8 @@ has significantly contributed to my growth as a web developer.
 
 I want to acknowledge the supportive community at Frontend Mentor. The platform's collaborative environment and
 constructive feedback from peers have been invaluable in refining my skills and pushing me to strive for excellence.
+
+I extend my gratitude to [Grace Snow](https://twitter.com/gracesnow) once again for reviewing my code and providing valuable suggestions for its enhancement.
 
 This project has been a rewarding learning experience, and I look forward to applying these insights in future
 endeavors. Thank you to everyone who has played a part in my journey of continuous improvement.
