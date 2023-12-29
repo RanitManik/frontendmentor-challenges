@@ -15,6 +15,9 @@ Each project is organized in its own directory, containing HTML, CSS, and JavaSc
     - [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor02%E2%80%94Results-summary-component/index.html)
     - [About](FrontendMentor02—Results-summary-component/README.md)
 
+3. **[Challenge 3: Product preview card component](FrontendMentor03—Product-preview-card-component)**
+    - [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor03%E2%80%94Product-preview-card-component/index.html)
+    - [About](FrontendMentor03—Product-preview-card-component/README.md)
 
 ## How to Use
 
