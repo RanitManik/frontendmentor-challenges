@@ -1,0 +1,173 @@
+/*------------------------------------ IMPORT ------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/*------------------------------------ ROOT CSS ------------------------------------*/
+:root {
+    /*Primary colors*/
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*Neutral colors*/
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    /*font-size*/
+    --fs-1-paragraph: 1.125rem;
+    --fs-2-heading-1: 1.5rem;
+
+    /*font-family*/
+    --ff-1: 'Outfit', sans-serif;
+
+    /*font-weight*/
+    --fw-1: 300;
+    --fw-2: 400;
+    --fw-3: 600;
+
+    /*border-radius*/
+    --border-radius-primary: 1rem;
+    --border-radius-secondary: 0.8rem;
+}
+
+/*------------------------------------ GENERAL CSS ------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    color: var(--Soft-blue);
+    font-family: var(--ff-1);
+    font-size: var(--fs-1-paragraph);
+    font-weight: var(--fw-1);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.grid-flow {
+    display: grid;
+}
+
+.flex-group {
+    display: flex;
+}
+
+/*------------------------------------ CUSTOM CSS ------------------------------------*/
+
+.card {
+    background-color: var(--Very-dark-blue-card-BG);
+    max-width: 20rem;
+    padding: 1.5rem;
+    border-radius: var(--border-radius-primary);
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.card-img-container {
+    place-items: center;
+    transition: opacity 0.25s;
+}
+
+.card-img-container img {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.icon-view-svg {
+    opacity: 0;
+}
+
+.card-img-container:hover .icon-view-svg {
+    opacity: 1;
+}
+
+.card-img-container {
+    border-radius: var(--border-radius-secondary);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-img-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.card-img-container:hover::before {
+    opacity: 1;
+}
+
+.card-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about img {
+    height: 100%;
+}
+
+
+h1 {
+    font-size: var(--fs-2-heading-1);
+    font-weight: var(--fw-3);
+    color: var(--White);
+}
+
+h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+hr {
+    color: var(--Very-dark-blue-line);
+}
+
+.credits {
+    align-items: center;
+    gap: 1rem;
+}
+
+.credits p span {
+    color: var(--White);
+    cursor: pointer;
+}
+
+.credits p span:hover {
+    color: var(--Cyan);
+}
+
+.credits img {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.about {
+    justify-content: space-between;
+}
+
+.left p {
+    color: var(--Cyan);
+    font-weight: var(--fw-3);
+}
+
+.left p,
+.right p {
+    margin-left: .5rem;
+    white-space: nowrap;
+}
+
+
+
