@@ -62,6 +62,10 @@ Users should be able to:
   appealing touch to the design.
 - I implemented a smooth transition effect on an element when interacting with its parent element. This enhances the
   overall user experience.
+- Consider using `<span>` instead of paragraphs for elements that are not actual paragraphs. For
+  example, `<span>0.041 ETH</span>` and `<span>3 days left</span>`
+- The illustration image is decorative, so its alt text must be empty: `alt=""`.
+- Profile image could benefit from a more descriptive alt text, like `alt="Headshot of Jules Wyvern"`.
 
 ## Code Highlights
 

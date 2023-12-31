@@ -133,6 +133,21 @@ hr {
     color: var(--Very-dark-blue-line);
 }
 
+.about {
+    justify-content: space-between;
+}
+
+.left span {
+    color: var(--Cyan);
+    font-weight: var(--fw-3);
+}
+
+.left span,
+.right span {
+    margin-left: .5rem;
+    white-space: nowrap;
+}
+
 .credits {
     align-items: center;
     gap: 1rem;
@@ -154,20 +169,6 @@ hr {
     border-radius: 50%;
 }
 
-.about {
-    justify-content: space-between;
-}
-
-.left p {
-    color: var(--Cyan);
-    font-weight: var(--fw-3);
-}
-
-.left p,
-.right p {
-    margin-left: .5rem;
-    white-space: nowrap;
-}
 
 
 
