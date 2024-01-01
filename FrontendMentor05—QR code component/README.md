@@ -32,10 +32,10 @@ You can use any tools you like to help you complete the challenge. So if you've 
 ### Links
 
 - Solution
-  URL: [Add solution URL here](https://www.frontendmentor.io/solutions/nft-preview-card-component-using-html-css-Z0bX2RTQ2t)
+  URL: [Add solution URL here](https://www.frontendmentor.io/solutions/qr-code-component-using-html-css-svjAZqvJiC)
 - Live Site
-  URL: [Add live site URL here](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor04%E2%80%94nft-preview-card-component/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/vYPNLWJ)
+  URL: [Add live site URL here](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor05%E2%80%94QR%20code%20component/index.html)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/ExMVXaL)
 
 ## My process
 
@@ -48,7 +48,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ### What I learned
 
-## Code Highlights
+### Code Highlights
 
 
 ### Useful resources

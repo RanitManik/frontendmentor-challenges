@@ -67,7 +67,7 @@ Users should be able to:
 - The illustration image is decorative, so its alt text must be empty: `alt=""`.
 - Profile image could benefit from a more descriptive alt text, like `alt="Headshot of Jules Wyvern"`.
 
-## Code Highlights
+### Code Highlights
 
 - use grid to stack up two items
   ```css

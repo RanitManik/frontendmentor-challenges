@@ -23,6 +23,10 @@ Each project is organized in its own directory, containing HTML, CSS, and JavaSc
     - [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor04%E2%80%94nft-preview-card-component/index.html)
     - [About](FrontendMentor04—nft-preview-card-component/README.md)
 
+5. **[Challenge 5: QR code component](FrontendMentor05—QR%20code%20component)**
+    - [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor05%E2%80%94QR%20code%20component/index.html)
+    - [About](FrontendMentor05—QR%20code%20component/README.md)
+
 ## How to Use
 
 1. Clone the repository to your local machine.
