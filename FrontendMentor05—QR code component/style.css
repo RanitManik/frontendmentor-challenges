@@ -1,0 +1,78 @@
+/*------------------------------------ IMPORT ------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+/*------------------------------------ ROOT CSS ------------------------------------*/
+:root {
+    /* colors */
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+
+    /*font-size*/
+    --fs-1-paragraph: 0.9375rem;
+    --fs-2-heading-1: 1.5rem;
+
+    /*font-family*/
+    --ff-1: 'Outfit', sans-serif;
+
+    /*font-weight*/
+    --fw-1-paragraph: 400;
+    --fw-2-heading: 600;
+
+}
+
+
+/*------------------------------------ GENERAL CSS ------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Light-gray);
+    min-height: 100vh;
+    color: var(--Grayish-blue);
+    font-family: var(--ff-1);
+    font-weight: var(--fw-1-paragraph);
+    place-items: center;
+}
+
+.grid-flow {
+    display: grid;
+}
+
+/*------------------------------------ CUSTOM CSS ------------------------------------*/
+main {
+    max-width: 20rem;
+    margin: 1rem;
+    background-color: var(--White);
+    padding-inline: 1rem;
+    padding-block: 1rem 3rem;
+    gap: 1rem;
+    text-align: center;
+    box-shadow: 0 0 100px var(--Grayish-blue);
+}
+
+.qr-img {
+    width: 100%;
+}
+
+main {
+    border-radius: 1.5rem;
+}
+
+.qr-img {
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: var(--fs-2-heading-1);
+    font-weight: var(--fw-2-heading);
+    color: var(--Dark-blue);
+}
+
+h1, p {
+    margin-inline: 1rem;
+}
+
