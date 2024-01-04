@@ -14,6 +14,7 @@ Each project is organized in its own directory, containing HTML, CSS, and JavaSc
 | 03 | [Product preview card component](FrontendMentor03—Product-preview-card-component) | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor03%E2%80%94Product-preview-card-component/index.html) |
 | 04 | [NFT preview card component](FrontendMentor04—nft-preview-card-component)         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor04%E2%80%94nft-preview-card-component/index.html)     |
 | 05 | [QR code component](FrontendMentor05—QR%20code%20component)                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor05%E2%80%94QR%20code%20component/index.html)          |
+| 06 | [Order summary component](FrontendMentor06—Order-summary-component)               | [Live Demo](https://github.com/RanitManik/frontendmentor-challenges/FrontendMentor06%E2%80%94Order%20summary%20component/index.html)   |
 
 ## How to Use
 

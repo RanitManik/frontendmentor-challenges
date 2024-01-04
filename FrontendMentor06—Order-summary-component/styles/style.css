@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+}
+
+@media (min-width: 30rem) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
+@media (max-width: 30rem) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+}
+@media (max-width: 30rem) {
+  main {
+    margin: 2rem;
+  }
+}
+main {
+  max-width: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: White;
+}
+main > img {
+  width: 100%;
+  object-fit: contain;
+}
+main > div {
+  max-width: 20rem;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+main > div > h1 {
+  font-size: 1.7rem;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+main > div > p {
+  padding-inline: 1rem;
+}
+@media (min-width: 30rem) {
+  main > div > div {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 30rem) {
+  main > div > div {
+    padding: 1rem;
+  }
+}
+main > div > div {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main > div > div > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main > div > div > div > img {
+  display: inline-block;
+}
+main > div > div > div > p {
+  display: inline-block;
+}
+main > div > div > div > p span {
+  display: block;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+main > div > div > a {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+  transition-duration: 0.25s;
+}
+main > div > div > a:hover {
+  color: rgba(56, 41, 224, 0.5);
+}
+main > div > button {
+  width: 100%;
+  margin-block: 1rem;
+  font-weight: 700;
+  color: White;
+  border-radius: 0.7rem;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem hsla(245, 75%, 52%, 0.3);
+  transition-duration: 0.25s;
+}
+main > div > button:hover {
+  background-color: rgba(56, 41, 224, 0.5);
+}
+main > div > a {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  transition-duration: 0.25s;
+}
+main > div > a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/*# sourceMappingURL=style.css.map */

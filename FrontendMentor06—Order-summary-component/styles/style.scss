@@ -1,0 +1,193 @@
+// imports ==>
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+// root variables ==>
+
+// Colors
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+$btn-shadow-color: hsla(245, 75%, 52%, 0.3);
+$btn-hover-bg-color: rgba(56, 41, 224, 0.5);
+
+
+// Font
+$font-family: 'Red Hat Display', sans-serif;
+$fw-regular: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+
+// Font Size
+$fs-paragraph: 1rem;
+
+// Screen Sizes
+$screen-size: 30rem;
+
+// Background Images
+$desktop-body-background: url('../images/pattern-background-desktop.svg');
+$mobile-body-background: url('../images/pattern-background-mobile.svg');
+
+// mixin
+@mixin reset-css {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+* {
+  @include reset-css;
+}
+
+
+// custom stylesheet ==>
+body {
+  font-family: $font-family;
+  font-weight: $fw-regular;
+  font-size: $fs-paragraph;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: $Pale-blue;
+  color: $Desaturated-blue;
+  text-align: center;
+}
+
+@media (min-width: $screen-size) {
+  body {
+    background-image: $desktop-body-background;
+  }
+}
+
+@media (max-width: $screen-size) {
+  body {
+    background-image: $mobile-body-background;
+  }
+}
+
+@media (max-width: $screen-size) {
+  main {
+    margin: 2rem;
+  }
+}
+
+main {
+  max-width: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: White;
+
+  > img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+
+  > div {
+    max-width: 20rem;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+
+    > h1 {
+      $fs-heading: 1.7rem;
+      font-size: $fs-heading;
+      color: $Dark-blue;
+      font-weight: $fw-black;
+    }
+
+    > p {
+      padding-inline: 1rem;
+    }
+
+    @media (min-width: $screen-size) {
+      > div {
+        padding: 1.5rem;
+      }
+    }
+    @media (max-width: $screen-size) {
+      > div {
+        padding: 1rem;
+      }
+    }
+
+    > div {
+      box-sizing: border-box;
+      width: 100%;
+      background-color: $Very-pale-blue;
+      border-radius: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        > img {
+          display: inline-block;
+        }
+
+        > p {
+          display: inline-block;
+
+          span {
+            display: block;
+            font-weight: $fw-black;
+            color: $Dark-blue;
+          }
+        }
+      }
+
+      > a {
+        font-weight: $fw-bold;
+        color: $Bright-blue;
+        transition-duration: 0.25s;
+
+        &:hover {
+          color: $btn-hover-bg-color;
+        }
+      }
+    }
+
+
+    > button {
+      width: 100%;
+      margin-block: 1rem;
+      font-weight: $fw-bold;
+      color: White;
+      border-radius: .7rem;
+      border: none;
+      background-color: $Bright-blue;
+      padding: 1rem;
+      cursor: pointer;
+      box-shadow: 0 1rem 2rem $btn-shadow-color;
+      transition-duration: 0.25s;
+
+      &:hover {
+        background-color: $btn-hover-bg-color;
+      }
+    }
+
+    > a {
+      margin-bottom: 1rem;
+      text-decoration: none;
+      font-weight: $fw-bold;
+      color: $Desaturated-blue;
+      transition-duration: 0.25s;
+
+      &:hover {
+        color: $Dark-blue;
+      }
+    }
+  }
+}
