@@ -38,10 +38,10 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [Add solution URL here](https://www.frontendmentor.io/solutions/qr-code-component-using-html-css-svjAZqvJiC)
+  URL: [Add solution URL here](https://www.frontendmentor.io/solutions/order-summary-component-using-scss-4tTK5rXyNU)
 - Live Site
-  URL: [Add live site URL here](https://github.com/RanitManik/frontendmentor-challenges/FrontendMentor06%E2%80%94Order%20summary%20component/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/ExMVXaL)
+  URL: [Add live site URL here](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor06%E2%80%94Order-summary-component/index.html)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/JjzGyzX)
 
 ## My process
 
@@ -58,7 +58,8 @@ Your users should be able to:
 - build this project using `SCSS` which i am still learning
 - learned about `nesting`, `variables`, `mixins` and some basic stuff about `SCSS`
 - discovered that `box-sizing` property can fix `padding` related `overflow` issues
-- applied the concept of variable for `screen-size`, in `@media` queries, reducing redundancy and enhancing code readability.
+- applied the concept of variable for `screen-size`, in `@media` queries, reducing redundancy and enhancing code
+  readability.
 
 ### Code Highlights
 
@@ -91,6 +92,8 @@ Your users should be able to:
   ```
 
 ### Useful resources
+
+- [SCSS documentation](https://sass-lang.com/documentation/)
 
 ## Author
 
