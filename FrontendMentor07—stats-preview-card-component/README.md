@@ -38,9 +38,9 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/product-preview-card-component-using-grid-6-ppfghQ4J)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/statspreviewcardcomponent-using-css-Yp0fsleRKH)
 - Live Site
-  URL: [click here to see the code](index.html)
+  URL: [click here to see the code](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor07%E2%80%94stats-preview-card-component/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/full/vYPOJad)
 
 ## My process

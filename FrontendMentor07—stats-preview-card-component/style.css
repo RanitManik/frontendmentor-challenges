@@ -36,7 +36,6 @@
 
 body {
     min-height: 100vh;
-    overflow: hidden;
     max-width: 70rem;
     margin: auto;
     place-content: center;
@@ -45,7 +44,7 @@ body {
     color: var(--main-paragraph-color);
     background-color: var(--main-background-color);
     list-style: none;
-    padding: 1.2rem;
+    padding: 1rem;
 }
 
 .grid-flow {
@@ -64,6 +63,10 @@ main {
 }
 
 @media (min-width: 700px) {
+
+    body {
+        overflow: hidden;
+    }
 
     picture {
         order: 2;
