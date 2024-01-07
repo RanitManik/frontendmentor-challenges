@@ -55,9 +55,39 @@ Your users should be able to:
 
 ### What I learned
 
+- **HTML Accessibility with Semantic Tags:**
+  When developing your HTML, prioritize accessibility by incorporating semantic tags. These tags,
+  explained [here](https://developer.mozilla.org/en-US/docs/Glossary/Semantics), not only enhance search engine
+  discoverability but also ensure that individuals with disabilities can navigate and utilize your site. In some
+  jurisdictions, the accessibility of websites carries legal implications. It's crucial to avoid overusing generic divs,
+  as they lack semantic value.
+
+- **Logical Control with `box-sizing: border-box;`:**
+  To maintain logical control over elements in your project, consider adding the CSS property `box-sizing: border-box;`.
+  This recommendation ensures that the specified width/height corresponds to the actual dimensions rendered on the
+  screen.
+  Embracing this approach contributes to a more predictable layout.
+
+- **Optimal Font Loading in HTML:**
+  For consistent font rendering, it's advisable to include font links directly within your HTML. By doing so, your site
+  maintains its original fonts even if the CSS hasn't fully loaded. This practice prevents the reliance on browser
+  defaults, resulting in a more cohesive and user-friendly experience.
+
 ### Code Highlights
 
+- using css reset correctly
+  ```css
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+  ```
+
 ### Useful resources
+
+- [Semantic Tags - mdn docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+- [Including Google Fonts link or import? - stack overflow](https://stackoverflow.com/questions/12316501/including-google-fonts-link-or-import)
 
 ## Author
 
