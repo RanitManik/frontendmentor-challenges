@@ -44,7 +44,6 @@ body {
     color: var(--main-paragraph-color);
     background-color: var(--main-background-color);
     list-style: none;
-    padding: 1rem;
 }
 
 .grid-flow {
@@ -57,17 +56,13 @@ body {
 
 /* Custom CSS */
 main {
+    margin: 1.2rem;
     background-color: var(--card-background-color);
     border-radius: .5rem;
     overflow: hidden;
 }
 
 @media (min-width: 700px) {
-
-    body {
-        overflow: hidden;
-    }
-
     picture {
         order: 2;
         max-width: 50%;
