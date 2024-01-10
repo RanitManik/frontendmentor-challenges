@@ -1,0 +1,212 @@
+/* wildcard selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* root.scss */
+
+:root {
+
+  /* Primary Colors */
+
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Neutral Colors */
+
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  /* font-size */
+  --fs-1: 0.8125rem;
+
+  /* font-weight */
+  --fw-1-medium: 500;
+  --fw-2-semi-bold: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--light-grayish-blue);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-1-medium);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main {
+  max-width: 80rem;
+  padding: 2rem;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.testimonials {
+  border-radius: .5rem;
+  background-color: var(--moderate-violet);
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+
+  .author-details {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 1rem;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  > p {
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+.testimonial-1 {
+  position: relative;
+
+  h1, p {
+    position: relative;
+    z-index: 10;
+  }
+
+  .quotation-svg {
+    z-index: 1;
+
+    > img {
+      position: absolute;
+      top: 0;
+      right: 10%;
+    }
+  }
+}
+
+.testimonial-1, .testimonial-2, .testimonial-4 {
+  h1, span {
+    color: var(--white);
+  }
+
+  p {
+    color: rgba(207, 207, 207, 0.7);
+  }
+}
+
+.testimonial-3, .testimonial-5 {
+  h1, span {
+    color: var(--very-dark-grayish-blue);
+  }
+
+  p {
+    color: hsl(0, 0%, 62%);
+  }
+}
+
+.testimonials:nth-child(1) {
+  background-color: var(--moderate-violet);
+
+  .author-details > img {
+    border: 2px solid #A775F1;
+  }
+}
+
+.testimonials:nth-child(2) {
+  background-color: var(--very-dark-grayish-blue);
+
+  .author-details > img {
+    border: 2px solid #A775F1;
+  }
+}
+
+.testimonials:nth-child(3) {
+  background-color: var(--white);
+
+  .author-details > img {
+    border: 2px solid #A775F1;
+  }
+}
+
+.testimonials:nth-child(4) {
+  background-color: var(--very-dark-blackish-blue);
+
+  .author-details > img {
+    border: 2px solid #A775F1;
+  }
+}
+
+.testimonials:nth-child(5) {
+  background-color: var(--white);
+
+  .author-details > img {
+    border: 2px solid #A775F1;
+  }
+}
+
+// THE magic of grid layout
+main {
+  grid-template-areas:
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+}
+
+@media (min-width: 30rem) {
+  main {
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      'one one'
+      'two five'
+      'three five'
+      'four four';
+  }
+}
+
+@media (min-width: 50rem) {
+  main {
+    grid-template-areas:
+      'one one two five'
+      'three four four five';
+  }
+}
+
+
+.testimonials:nth-child(1) {
+  grid-area: one;
+}
+
+.testimonials:nth-child(2) {
+  grid-area: two;
+}
+
+.testimonials:nth-child(3) {
+  grid-area: three;
+}
+
+.testimonials:nth-child(4) {
+  grid-area: four;
+}
+
+.testimonials:nth-child(5) {
+  grid-area: five;
+}
