@@ -67,10 +67,10 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/statspreviewcardcomponent-using-css-Yp0fsleRKH)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-using-scss-cdcEOqq_8W)
 - Live Site
-  URL: [click here to see the code](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor07%E2%80%94stats-preview-card-component/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/MWxyvVP)
+  URL: [click here to see the code](https://github.com/RanitManik/frontendmentor-challenges/tree/main/FrontendMentor08%E2%80%94testimonials-grid-section)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/NWJrQeg)
 
 ## My process
 
@@ -96,8 +96,16 @@ Your users should be able to:
 
 ### Code Highlights
 
-- using css grid-area for `super-responsive` grid layout
+- using css grid-area for responsive grid-layout  
+
+
   ```css
+  .testimonials:nth-child(1) { grid-area: one; }
+  .testimonials:nth-child(2) { grid-area: two; }
+  .testimonials:nth-child(3) { grid-area: three; }
+  .testimonials:nth-child(4) { grid-area: four; }
+  .testimonials:nth-child(5) { grid-area: five; }
+  
   main {
     grid-template-areas:
     'one'
@@ -124,14 +132,6 @@ Your users should be able to:
     'three four four five';
     }
   }
-    
-  /* Testimonial styling */
-  .testimonials:nth-child(1) { grid-area: one; }
-  .testimonials:nth-child(2) { grid-area: two; }
-  .testimonials:nth-child(3) { grid-area: three; }
-  .testimonials:nth-child(4) { grid-area: four; }
-  .testimonials:nth-child(5) { grid-area: five; }
-
   ```
 
 ### Useful resources
