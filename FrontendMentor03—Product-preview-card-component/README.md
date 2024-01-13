@@ -45,7 +45,7 @@ the **#help** channel.
 - Solution
   URL: [click here to see the solution](https://www.frontendmentor.io/solutions/product-preview-card-component-using-grid-6-ppfghQ4J)
 - Live Site
-  URL: [click here to see the code](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor03%E2%80%94Product-preview-card-component/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor03%E2%80%94Product-preview-card-component/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/full/vYPOJad)
 
 ## My process

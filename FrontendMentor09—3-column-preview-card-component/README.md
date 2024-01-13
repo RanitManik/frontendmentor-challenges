@@ -1,7 +1,7 @@
-# Frontend Mentor - Order summary card solution
+# Frontend Mentor - 3-column preview card component solution
 
 This is a solution to
-the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
+the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-).
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -18,30 +18,34 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 ## Overview
 
 ### The challenge
 
-Your challenge is to build out this order summary card component and get it looking as close to the design as possible.
+Your challenge is to build out this 3-column preview card component and get it looking as close to the design as
+possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice,
 feel free to give it a go.
 
 Your users should be able to:
 
+- View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
 ### Screenshot
 
-![Screen Shot.png](Screen%20Shot.png)
+![](./screenshot.jpg)
 
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/order-summary-component-using-scss-4tTK5rXyNU)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-using-scss-cdcEOqq_8W)
 - Live Site
-  URL: [click here to see the live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor06%E2%80%94Order-summary-component/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/JjzGyzX)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor09%E2%80%943-column-preview-card-component/index.html)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/NWJrQeg)
 
 ## My process
 
@@ -51,49 +55,13 @@ Your users should be able to:
 - SCSS
 - CSS custom properties
 - CSS Grid
-- CSS Flex
+- SCSS mixin
 
 ### What I learned
 
-- build this project using `SCSS` which i am still learning
-- learned about `nesting`, `variables`, `mixins` and some basic stuff about `SCSS`
-- discovered that `box-sizing` property can fix `padding` related `overflow` issues
-- applied the concept of variable for `screen-size`, in `@media` queries, reducing redundancy and enhancing code
-  readability.
-
 ### Code Highlights
 
-- `box-sizing` fixed padding-overflow
-  ```css
-  div {
-      box-sizing: border-box;
-      width: 100%;
-      border-radius: 0.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-  }
-  ```
-- use variables for writing `screen-size` in @media-queries
-  ```scss
-  $screen-size: 30rem;
-  
-  @media (min-width: $screen-size) {
-      > div {
-        padding: 1.5rem;
-      }
-    }
-    @media (max-width: $screen-size) {
-      > div {
-        padding: 1rem;
-      }
-    }
-  ```
-
 ### Useful resources
-
-- [SCSS documentation](https://sass-lang.com/documentation/)
 
 ## Author
 
@@ -115,4 +83,3 @@ endeavors. Thank you to everyone who has played a part in my journey of continuo
 
 Best regards,<br>
 Ranit Manik
-

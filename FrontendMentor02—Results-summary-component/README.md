@@ -45,7 +45,7 @@ Your users should be able to:
 - Solution
   URL: [click here to see the solution](https://www.frontendmentor.io/solutions/responsive-summary-component-using-html-css-z3Of8x7IhU)
 - Live Site
-  URL: [click here to see the code](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor02%E2%80%94Results-summary-component/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor02%E2%80%94Results-summary-component/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/OJqPwaz)
 
 ## My process

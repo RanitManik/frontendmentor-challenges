@@ -32,9 +32,9 @@ You can use any tools you like to help you complete the challenge. So if you've 
 ### Links
 
 - Solution
-  URL: [Add solution URL here](https://www.frontendmentor.io/solutions/qr-code-component-using-html-css-svjAZqvJiC)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/qr-code-component-using-html-css-svjAZqvJiC)
 - Live Site
-  URL: [Add live site URL here](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor05%E2%80%94QR%20code%20component/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor05%E2%80%94QR%20code%20component/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/ExMVXaL)
 
 ## My process

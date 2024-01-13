@@ -39,9 +39,9 @@ Users should be able to:
 ### Links
 
 - Solution
-  URL: [Add solution URL here](https://www.frontendmentor.io/solutions/nft-preview-card-component-using-html-css-Z0bX2RTQ2t)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/nft-preview-card-component-using-html-css-Z0bX2RTQ2t)
 - Live Site
-  URL: [Add live site URL here](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor04%E2%80%94nft-preview-card-component/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor04%E2%80%94nft-preview-card-component/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/vYPNLWJ)
 
 ## My process

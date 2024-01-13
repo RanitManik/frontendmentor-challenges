@@ -41,7 +41,7 @@ Your users should be able to:
 
 - Solution URL: [click here to see the solution](https://www.frontendmentor.io/solutions/html-css-IFKqcIOTCf)
 - Live Site
-  URL: [click here to see the code](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor01%E2%80%94Blog-preview-card/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor01%E2%80%94Blog-preview-card/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/QWowgja)
 
 ## My process
