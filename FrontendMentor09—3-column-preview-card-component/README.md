@@ -37,15 +37,15 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screen Shot.png](Screen%20Shot.png)
 
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-using-scss-cdcEOqq_8W)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/3columnpreviewcardcomponent-using-scss-Z0uuT6D8bS)
 - Live Site
   URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor09%E2%80%943-column-preview-card-component/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/NWJrQeg)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/rNRWYbM)
 
 ## My process
 
