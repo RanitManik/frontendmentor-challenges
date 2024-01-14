@@ -208,30 +208,6 @@ main {
   line-height: 1.7;
 }
 
-body:after {
-  content: "";
-  position: absolute;
-  left: -10rem;
-  right: 75%;
-  top: 0;
-  bottom: 5rem;
-  background: linear-gradient(to top, var(--gradient-light-violet), var(--gradient-light-magenta));
-  z-index: -1;
-  border-radius: 0 0 100vh 100vh;
-}
-
-body:before {
-  content: "";
-  position: absolute;
-  left: 75%;
-  right: -10rem;
-  top: 5rem;
-  bottom: 0;
-  background-color: hsla(289, 100%, 72%, 0.05);
-  z-index: -1;
-  border-radius: 100vh 100vh 0 0;
-}
-
 @media (max-width: 60rem) {
   main {
     gap: 2rem;
@@ -244,12 +220,11 @@ body:before {
     width: 25rem;
     top: 0;
     bottom: 25rem;
-  }
-  body:before {
-    width: 25rem;
-    right: -15rem;
-    top: 25rem;
-    bottom: 0;
+    content: "";
+    position: absolute;
+    background: linear-gradient(to top, var(--gradient-light-violet), var(--gradient-light-magenta));
+    z-index: -1;
+    border-radius: 0 0 100vh 100vh;
   }
   .promotion {
     padding: 2rem;
@@ -259,6 +234,28 @@ body:before {
   main {
     grid-template-columns: 1fr 1fr;
     margin: 1rem;
+  }
+  body:after {
+    content: "";
+    position: absolute;
+    left: -10rem;
+    right: 75%;
+    top: 0;
+    bottom: 5rem;
+    background: linear-gradient(to top, var(--gradient-light-violet), var(--gradient-light-magenta));
+    z-index: -1;
+    border-radius: 0 0 100vh 100vh;
+  }
+  body:before {
+    content: "";
+    position: absolute;
+    left: 75%;
+    right: -10rem;
+    top: 5rem;
+    bottom: 0;
+    background-color: hsla(289, 100%, 72%, 0.05);
+    z-index: -1;
+    border-radius: 100vh 100vh 0 0;
   }
 }
 

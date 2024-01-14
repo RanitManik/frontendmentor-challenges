@@ -248,31 +248,6 @@ main {
 }
 
 
-body:after {
-  content: "";
-  position: absolute;
-  left: -10rem;
-  right: 75%;
-  top: 0;
-  bottom: 5rem;
-  background: linear-gradient(to top, var(--gradient-light-violet),
-          var(--gradient-light-magenta));
-  z-index: -1;
-  border-radius: 0 0 100vh 100vh;
-}
-
-body:before {
-  content: "";
-  position: absolute;
-  left: 75%;
-  right: -10rem;
-  top: 5rem;
-  bottom: 0;
-  background-color: $color-very-light-magenta-transparent;
-  z-index: -1;
-  border-radius: 100vh 100vh 0 0;
-}
-
 // responsiveness
 @media (max-width: 60rem) {
   main {
@@ -281,19 +256,20 @@ body:before {
     margin: 1rem;
     justify-items: center;
   }
+
   body:after {
     left: -15rem;
     width: 25rem;
     top: 0;
     bottom: 25rem;
+    content: "";
+    position: absolute;
+    background: linear-gradient(to top, var(--gradient-light-violet),
+            var(--gradient-light-magenta));
+    z-index: -1;
+    border-radius: 0 0 100vh 100vh;
   }
 
-  body:before {
-    width: 25rem;
-    right: -15rem;
-    top: 25rem;
-    bottom: 0;
-  }
   .promotion {
     padding: 2rem;
   }
@@ -303,5 +279,30 @@ body:before {
   main {
     grid-template-columns: 1fr 1fr;
     margin: 1rem;
+  }
+
+  body:after {
+    content: "";
+    position: absolute;
+    left: -10rem;
+    right: 75%;
+    top: 0;
+    bottom: 5rem;
+    background: linear-gradient(to top, var(--gradient-light-violet),
+            var(--gradient-light-magenta));
+    z-index: -1;
+    border-radius: 0 0 100vh 100vh;
+  }
+
+  body:before {
+    content: "";
+    position: absolute;
+    left: 75%;
+    right: -10rem;
+    top: 5rem;
+    bottom: 0;
+    background-color: $color-very-light-magenta-transparent;
+    z-index: -1;
+    border-radius: 100vh 100vh 0 0;
   }
 }
