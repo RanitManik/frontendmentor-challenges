@@ -18,6 +18,7 @@ Each project is organized in its own directory, containing HTML, CSS, and JavaSc
 | 07 | [Stats preview card component](FrontendMentor07—stats-preview-card-component)       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor07%E2%80%94stats-preview-card-component/index.html)    |
 | 08 | [testimonials grid section](FrontendMentor08—testimonials-grid-section)             | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor08%E2%80%94testimonials-grid-section/index.html)       |
 | 09 | [3-column preview card component](FrontendMentor09—3-column-preview-card-component) | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor09%E2%80%943-column-preview-card-component/index.html) |
+| 10 | [Chat app CSS illustration](FrontendMentor10—chat-app-css-illustration)             | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor10%E2%80%943-chat-app-css-illustration/index.html)     |
 
 ## How to Use
 
