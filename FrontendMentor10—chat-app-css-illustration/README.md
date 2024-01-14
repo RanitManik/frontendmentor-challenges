@@ -40,7 +40,7 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY/hub)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/chat-app-css-illustration-using-scss-hnAyDz4Amg)
 - Live Site
   URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor10%E2%80%94chat-app-css-illustration/)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/mdoOgXg)
