@@ -34,6 +34,10 @@
             box-sizing: border-box;
         }
 
+        h1 {
+            text-align: center;
+        }
+
 
         /* --------------------------- main css --------------------------- */
 
@@ -129,18 +133,30 @@
         }
 
         @media screen and (min-width: 1300px) {
+            body {
+                padding-block: 5rem;
+            }
+
             main {
                 grid-template-columns: 1fr 1fr 1fr;
             }
         }
 
         @media screen and (max-width: 1300px) and (min-width: 900px) {
+            body {
+                padding-block: 3rem;
+            }
+
             main {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
         @media screen and (max-width: 900px) {
+            body {
+                padding-block: 2rem;
+            }
+
             main {
                 grid-template-columns: 1fr;
             }
@@ -150,6 +166,7 @@
 </head>
 <body>
 
+<h1>FrontendMentor Challenges</h1>
 <main>
     <div class="card" role="article">
         <img src="FrontendMentor01—Blog-preview-card/design/desktop-design.jpg" alt="">
@@ -433,7 +450,8 @@
             </p>
             <h2>Chat app CSS illustration</h2>
             <p class="card-description">
-                Your challenge is to build out this feature illustration using HTML & CSS and get it looking as close to the design as possible.
+                Your challenge is to build out this feature illustration using HTML & CSS and get it looking as close to
+                the design as possible.
             </p>
             <div class="card-author">
                 <img src="https://avatars.githubusercontent.com/u/138437760?v=4"

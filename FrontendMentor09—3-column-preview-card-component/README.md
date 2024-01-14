@@ -18,7 +18,6 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
 
 ### The challenge
@@ -58,9 +57,50 @@ Your users should be able to:
 
 ### What I learned
 
+Today, I explored the practical application of SCSS `mixins`, focusing on their versatility in managing parameters. A
+key
+observation is the capability to modify arguments when utilizing mixins, thereby improving their adaptability in diverse
+scenarios
+
 ### Code Highlights
 
+- utilizing parameter and argument in `mixin`
+
+```scss
+// mixin for card and btn
+@mixin card($card-primary-color) {
+  background-color: $card-primary-color;
+
+  .btn {
+    color: $card-primary-color;
+    background-color: white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: white;
+      background-color: transparent;
+      outline: 2px solid white;
+    }
+  }
+}
+
+.card:nth-child(1) {
+  @include card(var(--bright-orange));
+}
+
+.card:nth-child(2) {
+  @include card(var(--dark-cyan));
+}
+
+.card:nth-child(3) {
+  @include card(var(--very-dark-cyan));
+}
+```
+
 ### Useful resources
+
+- [SCSS mixin](https://sass-lang.com/documentation/at-rules/mixin/)
 
 ## Author
 
