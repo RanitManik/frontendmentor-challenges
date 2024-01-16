@@ -38,10 +38,10 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/chat-app-css-illustration-using-scss-hnAyDz4Amg)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/data-storage-component-using-scss-F_lYovLUNC)
 - Live Site
   URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor11%E2%80%94fylo-data-storage-component/)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/mdoOgXg)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/KKEaYod)
 
 ## My process
 
