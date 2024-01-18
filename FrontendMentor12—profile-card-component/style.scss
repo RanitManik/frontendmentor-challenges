@@ -1,0 +1,104 @@
+:root {
+  /* Primary Colors */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* Neutral Colors */
+  --dark-gray: hsl(0, 0%, 59%);
+
+  /* font-family */
+  --font-family: 'Kumbh Sans', sans-serif;
+
+  /* font size */
+  --fs-1-paragraph: 1.125rem;
+
+  /* font weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-cyan);
+  font-family: var(--font-family);
+  font-size: var(--fs-1-paragraph);
+  min-height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  color: var(--very-dark-desaturated-blue);
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-position: right 50vw bottom
+  50vh, left 50vw top 50vh;
+  background-repeat: no-repeat;
+}
+
+main {
+  max-width: 90%;
+}
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2rem 3rem hsla(0, 0, 0, .2);
+  text-align: center;
+
+  &__author {
+    margin-top: -3.5rem;
+
+    img {
+      border: 0.4rem solid white;
+      position: relative;
+      z-index: 10;
+      border-radius: 50%;
+      display: block;
+      margin: auto auto 1rem;
+    }
+
+    &__name {
+      font-weight: var(--fw-bold);
+    }
+
+    &__age {
+      color: var(--dark-grayish-blue);
+    }
+
+    &__address {
+      display: block;
+      font-size: 1rem;
+      color: var(--dark-grayish-blue);
+      margin-top: .5rem;
+    }
+
+
+    &__stats {
+      display: flex;
+      padding: 1.5rem 3rem;
+      justify-content: space-between;
+
+      p {
+        font-size: var(--fs-1-paragraph);
+        font-weight: var(--fw-bold);
+      }
+
+      span {
+        font-size: 0.7rem;
+        letter-spacing: 0.125rem;
+        color: var(--dark-gray);
+        display: block;
+        font-weight: var(--fw-regular);
+      }
+    }
+  }
+
+  hr {
+    color: rgba(106, 111, 129, 0.2);
+    margin-top: 1.5rem;
+  }
+}
