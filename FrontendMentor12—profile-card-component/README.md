@@ -32,10 +32,10 @@ You can use any tools you like to help you complete the challenge. So if you've 
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/data-storage-component-using-scss-F_lYovLUNC)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/profile-card-component-using-scss-uJJJIZWA-C)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor12%E2%80%94fylo-profile-card-component/)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/KKEaYod)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor12%E2%80%94profile-card-component/index.html)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/ExMWqPP)
 
 ## My process
 

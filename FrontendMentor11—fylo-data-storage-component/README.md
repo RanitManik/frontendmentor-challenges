@@ -40,7 +40,7 @@ Your users should be able to:
 - Solution
   URL: [click here to see the solution](https://www.frontendmentor.io/solutions/data-storage-component-using-scss-F_lYovLUNC)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor11%E2%80%94fylo-data-storage-component/)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor11%E2%80%94fylo-data-storage-component/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/KKEaYod)
 
 ## My process
