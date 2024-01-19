@@ -1,18 +1,20 @@
 # Frontend Mentor - Profile card component solution
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to
+the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ).
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Code Highlights](#code-highlights)
-  - [Useful resources](#Useful-resources)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Code Highlights](#code-highlights)
+    - [Useful resources](#Useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -22,8 +24,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 Your challenge is to build out this profile card component and get it looking as close to the design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice,
+feel free to give it a go.
 
 ### Screenshot
 
@@ -48,11 +50,25 @@ You can use any tools you like to help you complete the challenge. So if you've 
 - CSS Flex Box
 - SCSS mixin
 
-### What I learned
+### What I Learned
+
+I acquired the skill of placing multiple images as the background of a single element.
 
 ### Code Highlights
 
+- setting two images on the body
+
+```css
+body {
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-repeat: no-repeat;
+}
+```
+
 ### Useful resources
+
+- [Placement of 2 images as the background on one body](https://stackoverflow.com/questions/9375511/placement-of-2-images-as-the-background-on-one-body)
 
 ## Author
 

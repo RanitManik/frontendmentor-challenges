@@ -1,21 +1,22 @@
 # Frontend Mentor - Social links profile solution
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to
+the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
 
 ## Overview
 
@@ -25,7 +26,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 Your challenge is to build out this social links profile and get it looking as close to the design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice,
+feel free to give it a go.
 
 Your users should be able to:
 
@@ -38,10 +40,10 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/profile-card-component-using-scss-uJJJIZWA-C)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/social-links-profile-using-html-css-FTsSqzmAEq)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor12%E2%80%94profile-card-component/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/ExMWqPP)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor13%E2%80%94social-links-profile/index.html)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/mdomGdw)
 
 ## My process
 
