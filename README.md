@@ -21,6 +21,7 @@ Each project is organized in its own directory, containing HTML, CSS, and JavaSc
 | 10 | [Chat app CSS illustration](FrontendMentor10—chat-app-css-illustration)             | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor10%E2%80%94chat-app-css-illustration/index.html)       |
 | 11 | [fylo data storage component](FrontendMentor11—fylo-data-storage-component)         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor11%E2%80%94fylo-data-storage-component/index.html)     |
 | 12 | [Profile card component](FrontendMentor12—profile-card-component)                   | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor12%E2%80%94profile-card-component/index.html)          |
+| 12 | [Profile card component](FrontendMentor13—social-links-profile)                     | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor13%E2%80%94social-links-profile/index.html)            |
 
 ## How to Use
 
