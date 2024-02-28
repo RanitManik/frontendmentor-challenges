@@ -38,9 +38,9 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/socialproofsection-using-css-only-Cvt2XmDEIl)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor13%E2%80%94social-proof-section/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor14%E2%80%94social-proof-section/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/wvZvwpY)
 
 ## My process
