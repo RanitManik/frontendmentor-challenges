@@ -14,7 +14,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
     - [Code Highlights](#code-highlights)
-    - [Useful resources](#Useful-resources)
+    - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -52,9 +52,9 @@ Your users should be able to:
 - Flexbox
 - CSS Grid
 
-## What I learned
+### What I learned
 
-## Code Highlights
+### Code Highlights
 
 ### Useful resources
 
