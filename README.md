@@ -23,6 +23,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 11 | [fylo data storage component](FrontendMentor11—fylo-data-storage-component)         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor11%E2%80%94fylo-data-storage-component/index.html)     |
 | 12 | [Profile card component](FrontendMentor12—profile-card-component)                   | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor12%E2%80%94profile-card-component/index.html)          |
 | 13 | [Social links profile](FrontendMentor13—social-links-profile)                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor13%E2%80%94social-links-profile/index.html)            |
+| 14 | [Social proof section](FrontendMentor14—social-proof-section)                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor14%E2%80%94social-proof-section/index.html)            |
 
 ## How to Use
 

@@ -201,6 +201,7 @@ h2:before {
 
 .author-name {
     font-weight: var(--font-weight-3);
+    line-height: 1.3;
 }
 
 .author-name span {
