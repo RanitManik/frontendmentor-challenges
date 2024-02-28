@@ -1,0 +1,232 @@
+/* Resetting default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Define color variables in HSL format */
+:root {
+    /* Primary Colors */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* Neutral Colors */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --body-font-size: 1rem;
+    --heading-1-font-size: 3rem;
+    --heading-2-font-size: 1.15rem;
+
+    --body-font-family: 'League Spartan', sans-serif;
+
+    --font-weight-1: 400;
+    --font-weight-2: 500;
+    --font-weight-3: 700;
+}
+
+/* Highlight selected text */
+*::selection {
+    background-color: var(--soft-pink);
+    color: var(--white);
+}
+
+/* Body styling */
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--white);
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    font-weight: var(--font-weight-1);
+}
+
+@media (min-width: 500px) {
+    body {
+        background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+        background-position: left 0 top 0, right 0 bottom 0;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+        background-position: left 0 top 0, right 0 bottom 0;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Main section styling */
+@media screen and (min-width: 1000px) {
+    main {
+        max-width: 68.75rem;
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        padding: 2rem;
+    }
+}
+
+/* Top section styling */
+@media screen and (min-width: 1000px) {
+    .section-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left-section {
+        max-width: 35%;
+    }
+
+    .right-section {
+        max-width: 55%;
+    }
+}
+
+/* Heading 1 styling */
+h1 {
+    font-size: var(--heading-1-font-size);
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    color: var(--very-dark-magenta);
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+/* Heading 2 styling */
+h2 {
+    font-size: var(--heading-2-font-size);
+    font-weight: var(--font-weight-3);
+}
+
+/* top Section description styling */
+.section-description {
+    color: var(--dark-grayish-magenta);
+    font-weight: var(--font-weight-2);
+    font-size: 1.2rem;
+}
+
+/* Additional Heading 2 styling */
+h2 {
+    padding: 1rem 2rem;
+    background-color: var(--light-grayish-magenta);
+    color: var(--very-dark-magenta);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+h2:before {
+    content: url("images/icon-star.svg") url("images/icon-star.svg") url("images/icon-star.svg") url("images/icon-star.svg") url("images/icon-star.svg");
+    height: 1rem;
+    margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    h2 {
+        text-align: center;
+    }
+
+    h2:before {
+        display: block;
+        margin-bottom: .5rem;
+    }
+}
+
+/* Adjustments for specific Heading 2 elements */
+@media screen and (min-width: 1000px) {
+    h2:nth-child(1) {
+        margin-left: -6rem;
+        margin-right: 6rem;
+    }
+
+    h2:nth-child(2) {
+        margin-left: -3rem;
+        margin-right: 3rem;
+    }
+
+    h2:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
+/* Testimonials section styling */
+.section-down {
+    display: grid;
+    gap: 2rem;
+    color: var(--white);
+    margin-top: 3rem;
+    align-items: start;
+}
+
+@media screen and (min-width: 1000px) {
+    .section-down {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Individual testimonial styling */
+.testimonials {
+    padding: 2rem;
+    background-color: var(--very-dark-magenta);
+    border-radius: 0.5rem;
+}
+
+/* Author details styling */
+.author-details {
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    gap: 1rem;
+    font-weight: var(--font-weight-2);
+}
+
+.author-details img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.author-name {
+    font-weight: var(--font-weight-3);
+}
+
+.author-name span {
+    font-weight: var(--font-weight-2);
+    color: var(--soft-pink);
+    display: block;
+}
+
+/* Testimonial paragraph styling */
+.testimonial-paragraph {
+    margin-top: 1.5rem;
+    line-height: 1.3;
+    color: var(--light-grayish-magenta);
+}
+
+/* Adjustments for specific testimonials */
+@media screen and (min-width: 1000px) {
+    .testimonials:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .testimonials:nth-child(2) {
+        margin-top: 1rem;
+    }
+
+    .testimonials:nth-child(3) {
+        margin-top: 2rem;
+    }
+}
