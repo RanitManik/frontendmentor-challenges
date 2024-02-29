@@ -41,7 +41,7 @@ Users should be able to:
 - Solution
   URL: [click here to see the solution](https://www.frontendmentor.io/solutions/css-only-single-price-grid-component-QvxSo0Zv1g)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor15%E2%80%94social-proof-section/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor15%E2%80%94single-price-grid-component/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/jOROaRV)
 
 ## My process
