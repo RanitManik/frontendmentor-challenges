@@ -39,10 +39,10 @@ Users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/css-only-single-price-grid-component-QvxSo0Zv1g)
 - Live Site
   URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor15%E2%80%94social-proof-section/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/wvZvwpY)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/jOROaRV)
 
 ## My process
 
@@ -50,8 +50,8 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
+- CSS Responsiveness
 
 ## What I learned
 
