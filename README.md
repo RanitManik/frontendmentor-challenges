@@ -1,5 +1,6 @@
 <div align="center">
-<h1>Frontend Mentor Challenges Repository</h1>
+   <img height=50 src="https://github.com/RanitManik/frontendmentor-challenges/assets/138437760/4afed1f5-2321-4ff3-85e5-8e4dfff2fa84" alt="">
+   <h1>Frontend Mentor Challenges Repository</h1>
 </div>
 
 Welcome to my Frontend Mentor Challenges repository! This is where I showcase my solutions to a range of Frontend Mentor
