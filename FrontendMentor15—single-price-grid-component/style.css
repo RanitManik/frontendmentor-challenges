@@ -1,0 +1,152 @@
+/* Resetting default margin, padding, and using border-box for box sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Color variables */
+:root {
+    --primary-cyan: hsl(179, 62%, 43%);
+    --secondary-cyan: hsla(179, 62%, 43%, 0.8);
+    --primary-yellow: hsl(71, 73%, 54%);
+    --neutral-light-gray: hsl(204, 43%, 93%);
+    --neutral-light-gray-light: hsla(203, 44%, 93%, 0.75);
+    --neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+
+/* Typography variables */
+:root {
+    --body-font-size: 1rem;
+    --body-font-family: 'Karla', sans-serif;
+    --body-font-weight-normal: 400;
+    --body-font-weight-bold: 700;
+}
+
+/* Padding variable */
+:root {
+    --padding-primary: 2.5rem;
+}
+
+/* Body Copy Styles */
+body {
+    font-size: var(--body-font-size);
+    font-family: var(--body-font-family);
+    background-color: var(--neutral-light-gray);
+    color: var(--neutral-grayish-blue);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container Styles */
+main {
+    max-width: 40rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    margin: 4rem;
+    box-shadow: 0 1rem 1rem rgba(152, 166, 189, 0.3);
+}
+
+/* Responsive Styles for Main Container */
+@media (max-width: 600px) {
+    main {
+        margin: 4rem 2rem;
+    }
+}
+
+/* Top Section Styles */
+.top {
+    background-color: white;
+    padding: var(--padding-primary);
+}
+
+/* Bottom Section Styles */
+.bottom {
+    display: grid;
+}
+
+/* Responsive Styles for Bottom Section */
+@media (min-width: 600px) {
+    .bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Left Section Styles */
+.left {
+    background-color: var(--primary-cyan);
+    padding: var(--padding-primary);
+    display: grid;
+}
+
+.left > p > span {
+    color: var(--neutral-light-gray);
+    font-size: 2rem;
+    font-weight: var(--body-font-weight-bold);
+}
+
+.left button {
+    background-color: var(--primary-yellow);
+    color: white;
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    font-weight: var(--body-font-weight-bold);
+    font-size: 1.1rem;
+    border-radius: .3rem;
+    align-self: end;
+    cursor: pointer;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.10);
+}
+
+/* Responsive Styles for Button in Small Screens */
+@media (max-width: 600px) {
+    .left button {
+        margin-top: 3rem;
+    }
+}
+
+/* Right Section Styles */
+.right {
+    background-color: var(--secondary-cyan);
+    padding: var(--padding-primary);
+}
+
+.right ul {
+    list-style-type: none;
+}
+
+/* Heading Styles */
+h1 {
+    color: var(--primary-cyan);
+    padding-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--primary-yellow);
+    padding-bottom: 1rem;
+}
+
+/* Additional Styles for Top Paragraph */
+.top > p {
+    line-height: 1.7;
+}
+
+/* Sub-heading Styles */
+h3 {
+    font-size: 1.2rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+/* Additional Styles for Bottom Paragraphs and List Items */
+.bottom p, li {
+    color: var(--neutral-light-gray-light);
+}
+
+/* List Styles */
+ul {
+    line-height: 1.3;
+}
