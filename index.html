@@ -5,13 +5,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog preview card</title>
-    <link rel="stylesheet" href="FrontendMentor01—Blog-preview-card/style.css">
+    <meta
+            name="description"
+            content="Explore a collection of FrontendMentor challenges by Ranit Manik, a passionate developer. View HTML, CSS and JavaScript solutions for various projects, including blog preview cards, results summary components, product preview cards, and more. Enhance your skills and craftsmanship in web development with these meticulously crafted solutions."
+    />
+
+    <title>FrontendMentor Solutions</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://github.com/RanitManik/ranitmanik/raw/main/Assets/profile-img.png"
           type="image/x-icon">
+
+
     <style>
 
         * {
@@ -26,7 +33,7 @@
             display: grid;
             place-items: center;
             color: hsl(0, 0%, 7%);
-            font-size: 16px;
+            font-size: 1rem;
             font-style: normal;
             text-decoration: none;
             box-sizing: border-box;
@@ -34,6 +41,7 @@
 
         h1 {
             text-align: center;
+            margin-bottom: 1rem;
         }
 
 
@@ -42,14 +50,14 @@
 
         /* div and img styles */
         .card {
-            padding: 16px;
-            margin: 24px;
+            padding: 1rem;
+            margin: 1.5rem;
             background-color: white;
-            max-width: 350px;
-            border-radius: 16px;
-            border: 2px solid hsl(0, 0%, 7%);
-            box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
-            transition-duration: 0.25s;
+            max-width: 21.875rem;
+            border-radius: 1rem;
+            border: 0.125rem solid hsl(0, 0%, 7%);
+            box-shadow: .5rem .5rem 0 hsl(0, 0%, 7%);
+            transition: all 0.25s ease;
             box-sizing: border-box;
         }
 
@@ -60,26 +68,27 @@
         }
 
         .card:hover {
-            box-shadow: 16px 16px 0 hsl(0, 0%, 7%);
+            transform: translate(-0.5rem, -0.5rem);
             cursor: pointer;
+            box-shadow: 1rem 1rem 0 hsl(0, 0%, 7%);
         }
 
-        .card img {
+        .card > img {
             width: 100%;
             object-fit: cover;
-            border-radius: 12px;
-            max-height: 160px;
+            border-radius: 0.75rem;
+            max-height: 10rem;
         }
 
         .card-tag {
             display: inline-block;
-            margin-block: 8px;
-            margin-right: .5rem;
-            padding: 16px 10px;
+            margin-block: 0.5rem;
+            margin-inline-end: 0.3125rem;
+            padding: 1rem 0.625rem;
             line-height: 0;
             font-weight: 800;
             background-color: hsl(47, 88%, 63%);
-            border-radius: 5px;
+            border-radius: 0.3125rem;
         }
 
         .card-author {
@@ -88,7 +97,8 @@
         }
 
         .card-author img {
-            width: 32px;
+            width: 2rem;
+            height: 2rem;
             border-radius: 50%;
         }
 
@@ -109,18 +119,18 @@
         }
 
         .publication-date {
-            margin-block: 8px 16px;
+            margin-block: .5rem 1rem;
             font-size: 1rem;
             font-weight: 600;
         }
 
         .card-author-name {
-            margin-left: 16px;
+            margin-left: 1rem;
         }
 
         .card-description {
-            margin-block: 16px 24px;
-            font-size: 1em;
+            margin-block: 1rem 1.5rem;
+            font-size: 1rem;
             line-height: 1.5;
             color: hsl(0, 0%, 50%);
         }
@@ -130,7 +140,7 @@
             display: grid;
         }
 
-        @media screen and (min-width: 1300px) {
+        @media screen and (min-width: 81.25rem) {
             body {
                 padding-block: 5rem;
             }
@@ -140,7 +150,7 @@
             }
         }
 
-        @media screen and (max-width: 1300px) and (min-width: 900px) {
+        @media screen and (max-width: 81.25rem) and (min-width: 56.25rem) {
             body {
                 padding-block: 3rem;
             }
@@ -150,7 +160,7 @@
             }
         }
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 56.25rem) {
             body {
                 padding-block: 2rem;
             }
