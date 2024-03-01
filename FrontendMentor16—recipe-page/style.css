@@ -23,13 +23,11 @@
     --font-weight-heading-bold: 700;
 }
 
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
 
 body {
     min-height: 100vh;
@@ -52,7 +50,7 @@ main {
 
 @media (min-width: 32rem) {
     main {
-        margin: 2rem;
+        margin: 10rem 2rem;
     }
 }
 

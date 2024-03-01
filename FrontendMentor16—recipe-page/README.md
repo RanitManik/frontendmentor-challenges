@@ -39,10 +39,10 @@ Users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/css-only-single-price-grid-component-QvxSo0Zv1g)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/-DCXg2IGc8F)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor15%E2%80%94social-proof-section/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/jOROaRV)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor16%E2%80%94recipe-page/index.html)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/jOROQZb)
 
 ## My process
 
