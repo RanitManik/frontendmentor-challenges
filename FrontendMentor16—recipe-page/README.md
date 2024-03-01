@@ -52,12 +52,63 @@ Users should be able to:
 - CSS custom properties
 - CSS Grid
 - CSS Responsiveness
+- CSS Lists
+- CSS Tables
 
 ### What I learned
 
+- how to change the color of a `hr` element and related properties
+- i explored a lot of properties about css lists ,list markers especially
+- i also learned a lot about css tables
+
 ### Code Highlights
 
+- **Changing the Color of a `hr` Element**
+  ```css
+  hr {
+      background-color: var(--color-light-grey);
+      height: 1px;
+      border: none;
+      margin-top: 1.5rem;
+  }
+  ```
+
+- **Styling List Items in CSS**
+  ```css
+  ul, ol {
+    list-style-position: outside;
+    margin-left: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  ol li::marker, ul li::marker {
+    color: var(--color-nutmeg);
+  }
+  
+  ol > li::marker {
+    font-weight: var(--font-weight-heading-bold);
+  }
+  ```
+  
+- **styling css even table data elements**
+  ```css
+    td:nth-child(even) {
+    color: var(--color-nutmeg);
+    font-weight: var(--font-weight-heading-bold);
+    }
+  ```
+
 ### Useful resources
+
+- [CSS Lists](https://www.w3schools.com/css/css_list.asp)
+
+- [Next-Level List Bullets With CSS `::marker`](https://youtu.be/uzYZUPoEli8?si=G5o-QVgBB9mUb5lB)
+
+- [everything you need to know about the gap after the list marker](https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/#:~:text=The%20length%20of%20the%20gap,size%20than%20built%2Din%20markers.)
+
+- [Changing the color of an `hr` element](https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element)
+
+- [`text-indent` property in css](https://www.w3schools.com/cssref/pr_text_text-indent.php)
 
 ## Author
 

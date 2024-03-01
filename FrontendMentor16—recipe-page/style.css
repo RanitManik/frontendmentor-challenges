@@ -96,8 +96,8 @@ ol li::marker, ul li::marker {
     color: var(--color-nutmeg);
 }
 
-ol::marker {
-    font-weight: 700;
+ol > li::marker {
+    font-weight: var(--font-weight-heading-bold);
 }
 
 li {
