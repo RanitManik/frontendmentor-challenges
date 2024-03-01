@@ -25,6 +25,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 13 | [Social links profile](FrontendMentor13—social-links-profile)                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor13%E2%80%94social-links-profile/index.html)            |
 | 14 | [Social proof section](FrontendMentor14—social-proof-section)                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor14%E2%80%94social-proof-section/index.html)            |
 | 15 | [Single price grid component](FrontendMentor15—single-price-grid-component)         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor15%E2%80%94single-price-grid-component/index.html)     |
+| 16 | [recipe page](FrontendMentor16—recipe-page)                                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor16%E2%80%94recipe-page/index.html)                     |
 
 ## How to Use
 

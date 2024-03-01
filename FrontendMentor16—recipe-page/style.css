@@ -1,0 +1,148 @@
+:root {
+    /* Primary Colors */
+    --color-nutmeg: hsl(14, 45%, 36%);
+    --color-dark-raspberry: hsl(332, 51%, 32%);
+
+    /* Neutral Colors */
+    --color-white: hsl(0, 0%, 100%);
+    --color-rose-white: hsl(330, 100%, 98%);
+    --color-eggshell: hsl(30, 54%, 90%);
+    --color-light-grey: hsl(30, 18%, 87%);
+    --color-wenge-brown: hsl(30, 10%, 34%);
+    --color-dark-charcoal: hsl(24, 5%, 18%);
+
+    /* Typography */
+    --font-body-size: 16px;
+
+    /* Fonts */
+    --font-family-young-serif: 'Young Serif', serif;
+    --font-family-outfit: 'Outfit', sans-serif;
+    --font-weight-body: 400;
+    --font-weight-heading-regular: 400;
+    --font-weight-heading-medium: 600;
+    --font-weight-heading-bold: 700;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-family-outfit);
+    font-weight: var(--font-weight-body);
+    font-size: 1rem;
+    background-color: var(--color-eggshell);
+    color: var(--color-wenge-brown);
+}
+
+main {
+    padding: 2.5rem;
+    max-width: 50rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+@media (min-width: 32rem) {
+    main {
+        margin: 2rem;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-family-young-serif);
+}
+
+h1 {
+    color: var(--color-dark-charcoal);
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-heading-medium);
+    padding-block: 2rem;
+}
+
+h2 {
+    padding-block: 2rem 1.5rem;
+    font-size: 1.7rem;
+    font-weight: var(--font-weight-heading-medium);
+    color: var(--color-nutmeg);
+}
+
+hr {
+    background-color: var(--color-light-grey);
+    height: 1px;
+    border: none;
+    margin-top: 1.5rem;
+}
+
+ul, ol {
+    list-style-position: outside;
+    margin-left: 1.5rem;
+    line-height: 2rem;
+}
+
+ol li::marker, ul li::marker {
+    color: var(--color-nutmeg);
+}
+
+ol::marker {
+    font-weight: 700;
+}
+
+li {
+    padding-left: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.preparation-time {
+    background-color: hsla(332, 51%, 32%, 0.1);
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+}
+
+.preparation-time h2 {
+    padding: .5rem 0 1rem .5rem;
+    font-size: 1.25rem;
+    font-family: var(--font-family-outfit);
+    font-weight: var(--font-weight-heading-bold);
+    color: var(--color-dark-raspberry);
+}
+
+table {
+    padding: 1rem;
+    width: 100%;
+}
+
+tr {
+    width: 100%;
+}
+
+td {
+    appearance: none;
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+td:nth-child(even) {
+    color: var(--color-nutmeg);
+    font-weight: var(--font-weight-heading-bold);
+}
+
+

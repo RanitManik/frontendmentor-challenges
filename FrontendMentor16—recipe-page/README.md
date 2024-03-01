@@ -1,7 +1,7 @@
-# Frontend Mentor - Single price grid component
+# Frontend Mentor - Recipe page
 
 This is a solution to
-the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc).
+the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -22,7 +22,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### The challenge
 
-Your challenge is to build out this single price grid component and get it looking as close to the design as possible.
+Your challenge is to build out this recipe page and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice,
 feel free to give it a go.
@@ -41,7 +41,7 @@ Users should be able to:
 - Solution
   URL: [click here to see the solution](https://www.frontendmentor.io/solutions/css-only-single-price-grid-component-QvxSo0Zv1g)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor15%E2%80%94single-price-grid-component/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor15%E2%80%94social-proof-section/index.html)
 - codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/jOROaRV)
 
 ## My process
