@@ -12,7 +12,7 @@
     --color-dark-charcoal: hsl(24, 5%, 18%);
 
     /* Typography */
-    --font-body-size: 16px;
+    --font-body-size: 1rem;
 
     /* Fonts */
     --font-family-young-serif: 'Young Serif', serif;
