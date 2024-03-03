@@ -44,7 +44,7 @@ body {
         background: url("images/bg-desktop.svg") no-repeat top;
         background-size: cover;
         gap: 2rem;
-        padding-inline: 10%;
+        padding-inline: 5%;
     }
 }
 
@@ -111,6 +111,7 @@ section {
     section {
         grid-template-columns: 1.2fr 1fr;
         max-width: 90rem;
+        gap: 1.5rem;
     }
 }
 
@@ -118,6 +119,7 @@ section {
     section {
         text-align: center;
         padding: 2rem;
+        gap: 1.5rem;
     }
 }
 
@@ -125,9 +127,9 @@ section {
     max-width: 100%;
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 84.375rem) {
     .right {
-        padding: 5rem 3rem 0 3rem;
+        padding-top: 2rem;
     }
 }
 
@@ -138,11 +140,6 @@ section {
     }
 }
 
-@media (min-width: 75rem) and (max-width: 84.375rem) {
-    .right {
-        padding: 0 3rem;
-    }
-}
 
 .right p {
     padding-block: 1.5rem;
@@ -152,22 +149,22 @@ section {
 }
 
 .right button {
-    background-color: var(--soft-magenta);
+    background-color: white;
+    color: var(--soft-magenta);
     border: none;
     padding: 1rem 5rem;
     border-radius: var(--round-radius);
     font-family: var(--ff-open-sans);
     font-weight: var(--fw-600);
     font-size: 1rem;
-    color: white;
     cursor: pointer;
+    box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.4);
     transition: all .10s;
 }
 
 .right button:hover {
-    background-color: white;
-    color: var(--soft-magenta);
-    box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.4);
+    background-color: var(--soft-magenta);
+    color: white;
 }
 
 nav {

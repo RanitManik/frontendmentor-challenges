@@ -42,10 +42,10 @@ the **#help** channel.
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/css-only-single-price-grid-component-QvxSo0Zv1g)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/-sWnJorYdnU)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor15%E2%80%94single-price-grid-component/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/jOROaRV)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor17%E2%80%94huddle-landing-page-with-single-introductory-section/index.html)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/bGJNKGR)
 
 ## My process
 
