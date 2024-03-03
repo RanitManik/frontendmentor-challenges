@@ -30,6 +30,7 @@ body {
     align-items: start;
     color: white;
     font-family: var(--ff-poppins);
+    position: relative;
 }
 
 @media (max-width: 75rem) {
@@ -170,6 +171,14 @@ section {
 nav {
     display: grid;
     place-content: end;
+}
+
+@media (min-width: 75rem) {
+    nav {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+    }
 }
 
 @media (max-width: 75rem) {
