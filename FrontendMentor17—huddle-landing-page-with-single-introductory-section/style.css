@@ -27,7 +27,7 @@ body {
     min-height: 100vh;
     margin: auto;
     padding-block: 2rem;
-    align-items: start;
+    align-content: start;
     color: white;
     font-family: var(--ff-poppins);
     position: relative;
@@ -46,6 +46,7 @@ body {
         background-size: cover;
         gap: 2rem;
         padding-inline: 5%;
+        grid-template-rows: auto 1fr;
     }
 }
 
@@ -177,7 +178,7 @@ nav {
     nav {
         position: absolute;
         bottom: 2rem;
-        right: 2rem;
+        right: 4rem;
     }
 }
 
