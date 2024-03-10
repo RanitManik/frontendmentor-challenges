@@ -55,10 +55,10 @@
             background-color: white;
             max-width: 21.875rem;
             border-radius: 1rem;
-            border: 0.125rem solid hsl(0, 0%, 7%);
-            box-shadow: .5rem .5rem 0 hsl(0, 0%, 7%);
+            box-shadow: .5rem .5rem 0 hsla(0, 0%, 0%, 0.3);
             transition: all 0.25s ease;
             box-sizing: border-box;
+            border: 0.125rem solid hsla(0, 0%, 7%, 0%);
         }
 
         a {
@@ -68,9 +68,10 @@
         }
 
         .card:hover {
-            transform: translate(-0.5rem, -0.5rem);
+            /*transform: translate(-0.3rem, -0.3rem);*/
             cursor: pointer;
-            box-shadow: 1rem 1rem 0 hsl(0, 0%, 7%);
+            /*box-shadow: .8rem .8rem 0 hsla(0, 0%, 0%, 0.3);*/
+            border: 0.125rem solid hsl(0, 0%, 7%);
         }
 
         .card > img {
@@ -105,11 +106,8 @@
         /* text styles :: heading */
         .card h2 {
             font-size: 1.5rem;
+            color: hsl(47, 100%, 50%);
             transition-duration: 0.25s;
-        }
-
-        .card h2:hover {
-            color: hsl(47, 88%, 63%);
         }
 
         /* text styles :: paragraphs */
@@ -698,7 +696,7 @@
                 Published on
                 <time datetime="2024-02-28">3 MAR 2023</time>
             </p>
-            <h2>huddle landing page</h2>
+            <h2>Huddle landing page</h2>
             <p class="card-description">
                 Your challenge is to build out this huddle landing page and get it
                 looking as close to the design as possible.
