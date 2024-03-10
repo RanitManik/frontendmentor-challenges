@@ -14,7 +14,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
     - [Code Highlights](#code-highlights)
-    - [Useful resources](#Useful-resources)
+    - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -57,7 +57,7 @@ Your users should be able to:
 ### What I learned
 
 - **CSS Grid Areas:** Explored and implemented the use of CSS grid areas for creating responsive grid layouts.
--
+
 - **Grid Template Areas:** Defined and adjusted grid template areas to organize and position elements within the grid
   structure.
 
