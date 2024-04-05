@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.p-body {
+    /* Default padding for laptop and tablet screens */
+    padding: 3rem;
+}
+
+@media (max-width: 500px) {
+    /* Padding for mobile screens */
+    .p-body {
+        padding: 2rem;
+    }
+}

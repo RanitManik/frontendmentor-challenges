@@ -34,14 +34,15 @@ Your users should be able to:
 
 ### Screenshot
 
+![Screen Shot.png](Screen%20Shot.png)
 
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/-sWnJorYdnU)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/four-card-feature-section-solution-using-html-and-scss-0Nr5b6AVNy)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor17%E2%80%94huddle-landing-page-with-single-introductory-section/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/bGJNKGR)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor18%E2%80%94four-card-feature-section/index.html)
+- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/QWPQaOm)
 
 ## My process
 

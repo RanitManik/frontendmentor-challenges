@@ -1,64 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="tablet:b g-[url('../images/bg-hero-desktop.svg')] m-auto min-h-screen max-w-[1920px] bg-[#edfbfe] bg-cover bg-top font-open-sans font-400 mobile:bg-[url('../images/bg-hero-mobile.svg')] laptop:bg-[url('../images/bg-hero-desktop.svg')]"
+  >
+    <main>
+      <section class="p-body mobile:text-center">
+        <header class="mb-16 flex items-center justify-between">
+          <img class="mobile:w-2/5" src="./images/logo.svg" alt="" />
+          <button
+            class="rounded-full bg-white py-2 font-600 shadow-lg hover:text-black/40 mobile:px-6 tablet:px-10 laptop:px-12 laptop:py-3"
+          >
+            Try It Free
+          </button>
+        </header>
 
-Try It Free
-
-Build The Community Your Fans Will Love
-
-Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-Create connections with your users as you engage in genuine discussion.
-
-Get Started For Free
-
-Grow Together
-
-Generate meaningful discussions with your audience and build a strong, loyal community.
-Think of the insightful conversations you miss out on with a feedback form.
-
-Flowing Conversations
-
-You wouldn't paginate a conversation in real life, so why do it online? Our threads
-have just-in-time loading for a more natural flow.
-
-Your Users
-
-It takes no time at all to integrate Huddle with your app's authentication solution.
-This means, once signed in to your app, your users can start chatting immediately.
-
-Ready To Build Your Community?
-
-Get Started For Free
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua
-
-+1-543-123-4567
-example@huddle.com
-
-About Us
-What We Do
-FAQ
-
-Career
-Blog
-Contact Us
-
-&copy; Copyright 2018 Huddle. All rights reserved.
-
-<footer>
-    <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </p>
-</footer>
-<script src="https://cdn.tailwindcss.com"></script>
-</body>
+        <div class="grid items-center md:grid-cols-2">
+          <div class="md:mr-10 laptop:mr-12">
+            <h1
+              class="mb-10 font-bold mobile:text-3xl tablet:text-4xl laptop:text-5xl"
+            >
+              Build The Community Your Fans Will Love
+            </h1>
+            <p class="mb-10 text-xl">
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <button
+              class="rounded-full bg-pink py-3 font-600 text-white shadow-md shadow-pink/40 hover:bg-pink/50 hover:shadow-lg hover:shadow-pink/40 mobile:mb-6 mobile:px-10 tablet:px-14 laptop:px-16 laptop:py-4"
+            >
+              Get Started For Free
+            </button>
+          </div>
+          <img src="images/illustration-mockups.svg" alt="" />
+        </div>
+      </section>
+      <section class="p-body bg-white">
+        Grow Together Generate meaningful discussions with your audience and
+        build a strong, loyal community. Think of the insightful conversations
+        you miss out on with a feedback form. Flowing Conversations You wouldn't
+        paginate a conversation in real life, so why do it online? Our threads
+        have just-in-time loading for a more natural flow. Your Users It takes
+        no time at all to integrate Huddle with your app's authentication
+        solution. This means, once signed in to your app, your users can start
+        chatting immediately. Ready To Build Your Community? Get Started For
+        Free Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </section>
+    </main>
+    <footer class="p-body bg-white">
+      +1-543-123-4567 example@huddle.com About Us What We Do FAQ Career Blog
+      Contact Us &copy; Copyright 2018 Huddle. All rights reserved.
+    </footer>
+  </body>
 </html>
