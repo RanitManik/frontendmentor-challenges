@@ -5,7 +5,7 @@ body {
     place-items: center;
     min-height: 100vh;
     font-weight: var(--font-weight-regular);
-    margin: 4rem 2rem;
+    padding: 4rem 2rem;
     align-content: start;
 }
 
