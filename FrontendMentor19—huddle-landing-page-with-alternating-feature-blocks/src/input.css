@@ -13,3 +13,17 @@
         padding: 2rem;
     }
 }
+
+.box-shadow-lg {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .grid-cols-custom {
+        grid-template-columns: 2fr 1.5fr;
+    }
+
+    .grid-cols-custom-v2 {
+        grid-template-columns: 1.5fr 2fr;
+    }
+}

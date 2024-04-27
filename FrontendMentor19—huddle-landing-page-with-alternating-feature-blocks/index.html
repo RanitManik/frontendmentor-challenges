@@ -21,7 +21,7 @@
     />
   </head>
   <body
-    class="tablet:b g-[url('../images/bg-hero-desktop.svg')] m-auto min-h-screen max-w-[1920px] bg-[#edfbfe] bg-cover bg-top font-open-sans font-400 mobile:bg-[url('../images/bg-hero-mobile.svg')] laptop:bg-[url('../images/bg-hero-desktop.svg')]"
+    class="m-auto min-h-screen max-w-[1920px] bg-[#edfbfe] bg-contain font-open-sans font-400 md:bg-[url('../images/bg-hero-desktop.svg')] mobile:bg-[url('../images/bg-hero-mobile.svg')]"
   >
     <main>
       <section class="p-body mobile:text-center">
@@ -55,22 +55,119 @@
           <img src="images/illustration-mockups.svg" alt="" />
         </div>
       </section>
-      <section class="p-body bg-white">
-        Grow Together Generate meaningful discussions with your audience and
-        build a strong, loyal community. Think of the insightful conversations
-        you miss out on with a feedback form. Flowing Conversations You wouldn't
-        paginate a conversation in real life, so why do it online? Our threads
-        have just-in-time loading for a more natural flow. Your Users It takes
-        no time at all to integrate Huddle with your app's authentication
-        solution. This means, once signed in to your app, your users can start
-        chatting immediately. Ready To Build Your Community? Get Started For
-        Free Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua
+      <section class="p-body bg-white mobile:text-center">
+        <div class="grid gap-10 md:gap-16">
+          <div
+            class="box-shadow-lg grid-cols-custom grid items-center gap-10 rounded-2xl p-8 md:p-10"
+          >
+            <div class="md:p-[15%] mobile:order-2">
+              <h2
+                class="mb-4 font-bold md:mb-6 mobile:text-2xl tablet:text-3xl laptop:text-4xl"
+              >
+                Grow Together
+              </h2>
+              <p class="text-[1rem] text-grayish-blue md:text-xl">
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form.
+              </p>
+            </div>
+            <img src="images/illustration-grow-together.svg" alt="" />
+          </div>
+
+          <div
+            class="box-shadow-lg grid-cols-custom-v2 grid items-center gap-10 rounded-2xl p-8 md:p-10"
+          >
+            <div class="order-2 md:p-[15%]">
+              <h2
+                class="mb-4 font-bold md:mb-6 mobile:text-2xl tablet:text-3xl laptop:text-4xl"
+              >
+                Flowing Conversations
+              </h2>
+              <p class="text-[1rem] text-grayish-blue md:text-xl">
+                You wouldn't paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
+            </div>
+            <img src="images/illustration-flowing-conversation.svg" alt="" />
+          </div>
+
+          <div
+            class="box-shadow-lg grid-cols-custom mb-52 grid items-center gap-10 rounded-2xl p-8 md:p-10"
+          >
+            <div class="md:p-[15%] mobile:order-2">
+              <h2
+                class="mid:mb-6 mb-4 font-bold mobile:text-2xl tablet:text-3xl laptop:text-4xl"
+              >
+                Your Users
+              </h2>
+              <p class="text-[1rem] text-grayish-blue md:text-xl">
+                It takes no time at all to integrate Huddle with your app's
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
+            </div>
+            <img src="images/illustration-your-users.svg" alt="" />
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="p-body bg-white">
-      +1-543-123-4567 example@huddle.com About Us What We Do FAQ Career Blog
-      Contact Us &copy; Copyright 2018 Huddle. All rights reserved.
+    <footer class="p-body bg-very-dark-cyan">
+      <div class="m-auto -mt-36 text-center md:-mt-44">
+        <div
+          class="box-shadow-lg rounded-2xl bg-white md:inline-block md:px-20 md:py-16 mobile:p-6"
+        >
+          <h3
+            class="mid:mb-6 mb-4 font-bold md:mb-10 mobile:text-xl tablet:text-2xl laptop:text-3xl"
+          >
+            Ready To Build Your Community?
+          </h3>
+          <button
+            class="rounded-full bg-pink py-3 font-600 text-white shadow-md shadow-pink/40 hover:bg-pink/50 hover:shadow-lg hover:shadow-pink/40 mobile:mb-6 mobile:px-10 tablet:px-14 laptop:px-16 laptop:py-4"
+          >
+            Get Started For Free
+          </button>
+        </div>
+      </div>
+      <div class="mt-20 text-white">
+        <img class="mb-10" src="images/logo-white.svg" alt="" />
+        <div>
+          <ul class="grid gap-4 md:grid-flow-col md:grid-rows-3">
+            <li>
+              <a class="flex items-center gap-4" href="#">
+                <img width="16" src="images/icon-location.svg" alt="" />West
+                Bengal, India
+              </a>
+            </li>
+            <li>
+              <a class="flex items-center gap-4" href="#">
+                <img
+                  width="16"
+                  src="images/icon-phone.svg"
+                  alt=""
+                />+1-543-123-4567
+              </a>
+            </li>
+            <li>
+              <a class="flex items-center gap-4" href="#">
+                <img width="16" src="images/icon-email.svg" alt="" />
+                example@huddle.com
+              </a>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+
+          <p class="mt-14 text-right">
+            &copy; Copyright 2018 Huddle. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

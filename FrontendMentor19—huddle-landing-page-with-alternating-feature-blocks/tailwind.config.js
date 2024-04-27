@@ -22,8 +22,8 @@ module.exports = {
         700: 700,
       },
       screens: {
-        mobile: { max: "500px" },
-        tablet: { min: "501px", max: "1024px" },
+        mobile: { max: "768px" },
+        tablet: { min: "768px", max: "1024px" },
         laptop: { min: "1025px" },
       },
     },
