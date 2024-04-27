@@ -28,6 +28,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 16 | [recipe page](FrontendMentor16—recipe-page)                                                                                   | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor16%E2%80%94recipe-page/index.html)                                          |
 | 17 | [huddle landing page with single introductory section](FrontendMentor17—huddle-landing-page-with-single-introductory-section) | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor17%E2%80%94huddle-landing-page-with-single-introductory-section/index.html) |
 | 18 | [four card feature section](FrontendMentor18—four-card-feature-section)                                                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor18%E2%80%94four-card-feature-section/index.html)                            |
+| 19 | [four card feature section](FrontendMentor19—huddle-landing-page-with-alternating-feature-blocks)                             | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor19%E2%80%94huddle-landing-page-with-alternating-feature-blocks/index.html)  |
 
 ## How to Use
 

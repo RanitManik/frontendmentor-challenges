@@ -4,18 +4,17 @@ This is a solution to
 the [Huddle landing page with alternating feature blocks challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100).
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Table of contents
 
 - [Overview](#overview)
-   - [The challenge](#the-challenge)
-   - [Screenshot](#screenshot)
-   - [Links](#links)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
 - [My process](#my-process)
-   - [Built with](#built-with)
-   - [What I learned](#what-i-learned)
-   - [Code Highlights](#code-highlights)
-   - [Useful resources](#Useful-resources)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Code Highlights](#code-highlights)
+    - [Useful resources](#Useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -40,10 +39,9 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/four-card-feature-section-solution-using-html-and-scss-0Nr5b6AVNy)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/huddle-landing-page-using-tailwind-css-eIcnXM2uix)
 - Live Site
   URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor19%E2%80%94huddle-landing-page-with-alternating-feature-blocks/index.html)
-- codepen: [click here to see the codepen](https://codepen.io/RANIT-MANIK/pen/QWPQaOm)
 
 ## My process
 
