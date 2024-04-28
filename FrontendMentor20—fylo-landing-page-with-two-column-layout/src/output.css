@@ -553,3 +553,67 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.\*\:p-8 > * {
+  padding: 2rem;
+}
+
+.\*\:px-8 > * {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.first\:mt-20:first-child {
+  margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
+  .\*\:md\:p-12 > * {
+    padding: 3rem;
+  }
+
+  .\*\:md\:px-12 > * {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
