@@ -15,16 +15,10 @@ module.exports = {
         "light-gray": "hsl(0, 0%, 75%)",
       },
       typography: {
-        // Body Copy
-        DEFAULT: {
-          css: {
-            fontSize: "16px",
-          },
-        },
         // Fonts
         fontFamily: {
-          raleway: ["Raleway", "sans-serif"],
-          openSans: ["Open Sans", "sans-serif"],
+          "raleway": ["Raleway", "sans-serif"],
+          "openSans": ['"Open Sans"', "sans-serif"],
         },
         fontWeight: {
           raleway: {
@@ -35,6 +29,11 @@ module.exports = {
             400: "400",
           },
         },
+      },
+      screens: {
+        mobile: { max: "768px" },
+        tablet: { min: "768px", max: "1024px" },
+        laptop: { min: "1025px" },
       },
     },
   },

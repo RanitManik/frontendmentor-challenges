@@ -16,11 +16,17 @@
       rel="stylesheet"
     />
   </head>
-  <body class="min-h-screen *:px-8 *:md:px-12">
-    <header class="mt-8 flex items-center justify-between md:mt-12">
-      <img src="images/logo.svg" alt="" />
+  <body
+    class="m-auto min-h-screen max-w-[1920px] overflow-x-hidden font-['Open_Sans']"
+  >
+    <header
+      class="lg:mb-18 lg:12 mb-12 mt-8 flex h-6 items-center justify-between px-4 sm:mb-14 sm:px-8 md:mb-16 md:mt-12 md:h-10 md:px-10 lg:h-12"
+    >
+      <img class="h-full" src="images/logo.svg" alt="" />
       <nav>
-        <ul class="flex gap-4">
+        <ul
+          class="flex gap-4 font-['Raleway'] font-[700] *:text-desaturated-blue hover:*:text-desaturated-blue/60 sm:gap-6 md:gap-8 lg:gap-10"
+        >
           <li><a href="#">Features</a></li>
           <li><a href="#">Team</a></li>
           <li><a href="#">Sign In</a></li>
@@ -28,37 +34,135 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div>
-          <h1>All your files in one secure location, accessible anywhere.</h1>
-          <p>
+      <section
+        class="grid items-center gap-8 px-6 sm:gap-10 sm:px-8 md:grid-cols-2 md:gap-12 md:px-10 lg:gap-14 lg:px-12 mobile:text-center"
+      >
+        <div class="order-2 md:-order-1">
+          <h1
+            class="mid:text-3xl mb-10 font-['Raleway'] text-2xl font-bold text-very-dark-blue lg:text-4xl lg:leading-snug"
+          >
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="mb-4 text-very-dark-blue/80 md:mb-6 lg:mb-8">
             Fylo stores your most important files in one secure location. Access
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
           <form>
-            <label for="email"></label>
+            <label class="sr-only" for="email">Enter your email</label>
             <input
+              class="peer mb-4 w-full rounded border border-desaturated-blue px-6 py-2 invalid:border-red-800 focus:border focus:outline-desaturated-blue focus:ring-4 invalid:focus:outline-red-900 sm:mb-2 sm:mr-4 lg:w-2/4"
               id="email"
               name="email"
               type="email"
               placeholder="Enter your email..."
             />
-            <button type="submit">Get Started</button>
+            <button
+              class="w-full rounded bg-bright-blue px-12 py-2 font-['Raleway'] font-[700] text-white hover:bg-bright-blue/70 hover:shadow-md active:bg-bright-blue/90 lg:w-auto mobile:mb-4"
+              type="submit"
+            >
+              Get Started
+            </button>
+            <p class="invisible text-sm text-red-700 peer-invalid:visible">
+              Please check your email
+            </p>
           </form>
         </div>
         <img src="images/illustration-1.svg" alt="" />
       </section>
-      Get Started Stay productive, wherever you are Never let location be an
-      issue when accessing your files. Fylo has you covered for all of your file
-      storage needs. Securely share files and folders with friends, family and
-      colleagues for live collaboration. No email attachments required! See how
-      Fylo works Fylo has improved our team productivity by an order of
-      magnitude. Since making the switch our team has become a well-oiled
-      collaboration machine. Kyle Burton Founder & CEO, Huddle Get early access
-      today It only takes a minute to sign up and our free starter tier is
-      extremely generous. If you have any questions, our support team would be
-      happy to help you. Get Started For Free
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/bg-curve-mobile.svg"
+        />
+        <img
+          class="mt-14 w-full sm:mt-20 md:mt-24 lg:mt-28"
+          src="./images/bg-curve-desktop.svg"
+          alt=""
+        />
+      </picture>
+      <section
+        class="sm:pb-18 grid items-center gap-6 bg-light-grayish-blue px-8 pb-14 pt-6 sm:gap-8 sm:pt-8 md:grid-cols-2 md:gap-10 md:px-12 md:pb-20 md:pt-10 lg:gap-12 lg:pb-24 lg:pt-12"
+      >
+        <div>
+          <h1
+            class="mid:text-3xl mb-10 font-['Raleway'] text-2xl font-bold text-very-dark-blue lg:text-4xl lg:leading-snug mobile:text-center"
+          >
+            Stay productive, wherever you are
+          </h1>
+          <p class="mb-8 text-very-dark-blue/80 sm:mb-4 lg:max-w-[80%]">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+            <br />
+            <br />
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+          <button
+            class="mb-10 flex items-center gap-1 text-moderate-cyan underline-offset-4 hover:underline mobile:mx-auto"
+          >
+            See how Fylo works
+            <img src="./images/icon-arrow.svg" alt="" />
+          </button>
+          <article
+            class="max-w-96 rounded-md bg-white p-8 text-sm leading-normal text-very-dark-blue shadow-md mobile:m-auto"
+          >
+            <img src="./images/icon-quotes.svg" alt="" />
+            <p class="my-4">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="flex items-center gap-4">
+              <img
+                class="max-h-8 rounded-full object-contain"
+                src="./images/avatar-testimonial.jpg"
+                alt=""
+              />
+              <div>
+                <p class="font-['Raleway'] text-xs font-[700]">Kyle Burton</p>
+                <span class="text-xs">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <img class="mobile:-order-1" src="./images/illustration-2.svg" alt="" />
+      </section>
+      <section
+        class="grid bg-desaturated-blue px-6 py-10 text-white sm:px-8 sm:py-12 md:grid-cols-2 md:gap-[20%] md:px-10 md:py-14 lg:px-12 lg:py-16 mobile:text-center"
+      >
+        <div>
+          <h2
+            class="mid:text-2xl mb-4 font-['Raleway'] text-xl font-bold lg:text-3xl lg:leading-snug"
+          >
+            Get early access today
+          </h2>
+          <p class="tablet:mb-12 mobile:mb-10">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form class="mobile:w-[80%] mobile:m-auto">
+          <label class="sr-only" for="email-2">Enter your email</label>
+          <input
+            class="peer box-border w-full  rounded border border-desaturated-blue px-6 py-2 text-black invalid:border-red-800 focus:border focus:border-very-dark-blue focus:outline-none invalid:focus:border-red-900 sm:mr-4 mobile:w-full lg:max-w-[90%]"
+            id="email-2"
+            name="email"
+            type="email"
+            placeholder="Enter your email..."
+          />
+          <p class="invisible mb-2 text-sm text-white peer-invalid:visible">
+            Please check your email
+          </p>
+          <button
+            class="rounded bg-bright-blue px-12 py-2 font-['Raleway'] font-[700] text-white hover:bg-bright-blue/70 hover:shadow-md active:bg-bright-blue/90 lg:w-auto mobile:mb-4 mobile:w-full"
+            type="submit"
+          >
+            Get Started
+          </button>
+        </form>
+      </section>
     </main>
     <footer>
       Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact
