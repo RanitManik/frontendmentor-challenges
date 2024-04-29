@@ -39,9 +39,9 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/huddle-landing-page-using-tailwind-css-eIcnXM2uix)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/-in-gSA_zv8W3R)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor19%E2%80%94huddle-landing-page-with-alternating-feature-blocks/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor20%E2%80%94fylo-landing-page-with-two-column-layout/index.html)
 
 ## My process
 
