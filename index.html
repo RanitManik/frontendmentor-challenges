@@ -1,778 +1,809 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0,">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta
-            name="description"
-            content="Explore a collection of FrontendMentor challenges by Ranit Manik, a passionate developer. View HTML, CSS and JavaScript solutions for various projects, including blog preview cards, results summary components, product preview cards, and more. Enhance your skills and craftsmanship in web development with these meticulously crafted solutions."
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta
+    name="description"
+    content="Explore a collection of FrontendMentor challenges by Ranit Manik, a passionate developer. View HTML, CSS and JavaScript solutions for various projects, including blog preview cards, results summary components, product preview cards, and more. Enhance your skills and craftsmanship in web development with these meticulously crafted solutions."
+  />
 
-    <title>FrontendMentor Solutions</title>
+  <title>FrontendMentor Solutions</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://github.com/RanitManik/ranitmanik/raw/main/Assets/profile-img.png"
-          type="image/x-icon">
-
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Figtree', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            min-height: 100vh;
-            background-color: hsl(47, 88%, 63%);
-            display: grid;
-            place-items: center;
-            color: hsl(0, 0%, 7%);
-            font-size: 1rem;
-            font-style: normal;
-            text-decoration: none;
-            box-sizing: border-box;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://github.com/RanitManik/ranitmanik/raw/main/Assets/profile-img.png"
+        type="image/x-icon">
 
 
-        /* --------------------------- main css --------------------------- */
+  <style>
+
+      * {
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: 'Figtree', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          min-height: 100vh;
+          background-color: hsl(47, 88%, 63%);
+          display: grid;
+          place-items: center;
+          color: hsl(0, 0%, 7%);
+          font-size: 1rem;
+          font-style: normal;
+          text-decoration: none;
+          box-sizing: border-box;
+      }
+
+      h1 {
+          text-align: center;
+          margin-bottom: 1rem;
+      }
 
 
-        /* div and img styles */
-        .card {
-            padding: 1rem;
-            margin: 1.5rem;
-            background-color: white;
-            max-width: 21.875rem;
-            border-radius: 1rem;
-            box-shadow: .5rem .5rem 0 hsla(0, 0%, 0%, 0.3);
-            transition: all 0.25s ease;
-            box-sizing: border-box;
-            border: 0.125rem solid hsla(0, 0%, 7%, 0%);
-        }
-
-        a {
-            appearance: none;
-            text-decoration: none;
-            color: hsl(0, 0%, 7%);
-        }
-
-        .card:hover {
-            /*transform: translate(-0.3rem, -0.3rem);*/
-            cursor: pointer;
-            /*box-shadow: .8rem .8rem 0 hsla(0, 0%, 0%, 0.3);*/
-            border: 0.125rem solid hsl(0, 0%, 7%);
-        }
-
-        .card > img {
-            width: 100%;
-            object-fit: cover;
-            border-radius: 0.75rem;
-            height: 10rem;
-            object-position: top;
-        }
-
-        .card > img:nth-child(1), .card > img:nth-child(2) {
-            object-position: center;
-        }
-
-        .card-tag {
-            display: inline-block;
-            margin-block: 0.5rem;
-            margin-inline-end: 0.3125rem;
-            padding: 1rem 0.625rem;
-            line-height: 0;
-            font-weight: 800;
-            background-color: hsl(47, 88%, 63%);
-            border-radius: 0.3125rem;
-        }
-
-        .card-author {
-            display: inline-flex;
-            align-items: center;
-        }
-
-        .card-author img {
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-        }
-
-        /* text styles :: heading */
-        .card h2 {
-            font-size: 1.5rem;
-        }
-
-        /* text styles :: paragraphs */
-
-        .card-tag-name {
-            font-size: 1rem;
-        }
-
-        .publication-date {
-            margin-block: .5rem 1rem;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .card-author-name {
-            margin-left: 1rem;
-        }
-
-        .card-description {
-            margin-block: 1rem 1.5rem;
-            font-size: 1rem;
-            line-height: 1.5;
-            color: rgb(117, 117, 117);
-        }
+      /* --------------------------- main css --------------------------- */
 
 
-        main {
-            display: grid;
-        }
+      /* div and img styles */
+      .card {
+          padding: 1rem;
+          margin: 1.5rem;
+          background-color: white;
+          max-width: 21.875rem;
+          border-radius: 1rem;
+          box-shadow: .5rem .5rem 0 hsla(0, 0%, 0%, 0.3);
+          transition: all 0.25s ease;
+          box-sizing: border-box;
+          border: 0.125rem solid hsla(0, 0%, 7%, 0%);
+      }
 
-        @media screen and (min-width: 81.25rem) {
-            body {
-                padding-block: 5rem;
-            }
+      a {
+          appearance: none;
+          text-decoration: none;
+          color: hsl(0, 0%, 7%);
+      }
 
-            main {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
+      .card:hover {
+          /*transform: translate(-0.3rem, -0.3rem);*/
+          cursor: pointer;
+          /*box-shadow: .8rem .8rem 0 hsla(0, 0%, 0%, 0.3);*/
+          border: 0.125rem solid hsl(0, 0%, 7%);
+      }
 
-        @media screen and (max-width: 81.25rem) and (min-width: 56.25rem) {
-            body {
-                padding-block: 3rem;
-            }
+      .card > img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 0.75rem;
+          height: 10rem;
+          object-position: top;
+      }
 
-            main {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
+      .card > img:nth-child(1), .card > img:nth-child(2) {
+          object-position: center;
+      }
 
-        @media screen and (max-width: 56.25rem) {
-            body {
-                padding-block: 2rem;
-            }
+      .card-tag {
+          display: inline-block;
+          margin-block: 0.5rem;
+          margin-inline-end: 0.3125rem;
+          padding: 1rem 0.625rem;
+          line-height: 0;
+          font-weight: 800;
+          background-color: hsl(47, 88%, 63%);
+          border-radius: 0.3125rem;
+      }
 
-            main {
-                grid-template-columns: 1fr;
-            }
-        }
+      .card-author {
+          display: inline-flex;
+          align-items: center;
+      }
 
-    </style>
+      .card-author img {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+      }
+
+      /* text styles :: heading */
+      .card h2 {
+          font-size: 1.5rem;
+      }
+
+      /* text styles :: paragraphs */
+
+      .card-tag-name {
+          font-size: 1rem;
+      }
+
+      .publication-date {
+          margin-block: .5rem 1rem;
+          font-size: 1rem;
+          font-weight: 600;
+      }
+
+      .card-author-name {
+          margin-left: 1rem;
+      }
+
+      .card-description {
+          margin-block: 1rem 1.5rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          color: rgb(117, 117, 117);
+      }
+
+
+      main {
+          display: grid;
+      }
+
+      @media screen and (min-width: 81.25rem) {
+          body {
+              padding-block: 5rem;
+          }
+
+          main {
+              grid-template-columns: 1fr 1fr 1fr;
+          }
+      }
+
+      @media screen and (max-width: 81.25rem) and (min-width: 56.25rem) {
+          body {
+              padding-block: 3rem;
+          }
+
+          main {
+              grid-template-columns: 1fr 1fr;
+          }
+      }
+
+      @media screen and (max-width: 56.25rem) {
+          body {
+              padding-block: 2rem;
+          }
+
+          main {
+              grid-template-columns: 1fr;
+          }
+      }
+
+  </style>
 </head>
 <body>
 
 <h1>FrontendMentor Challenges</h1>
 <main>
-    <a href="./FrontendMentor01%E2%80%94Blog-preview-card/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor01—Blog-preview-card/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    CSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">25st Dec 2023</time>
-                </p>
-                <h2>Blog preview card</h2>
-                <p class="card-description">
-                    Your challenge is to build out this blog preview card and get it looking as close to the design as
-                    possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor02%E2%80%94Results-summary-component/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor02—Results-summary-component/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    CSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">27st Dec 2023</time>
-                </p>
-                <h2>Results Summary comp</h2>
-                <p class="card-description">
-                    Your challenge is to build out this results summary component and get it looking as close to the
-                    design
-                    as possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor03%E2%80%94Product-preview-card-component/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor03—Product-preview-card-component/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    CSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">29st Dec 2023</time>
-                </p>
-                <h2>Product preview card comp</h2>
-                <p class="card-description">
-                    Your challenge is to build out this product preview card component and get it looking as close to
-                    the
-                    design as
-                    possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor04%E2%80%94nft-preview-card-component/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor04—nft-preview-card-component/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    CSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-25">31st Dec 2023</time>
-                </p>
-                <h2>nft preview card comp</h2>
-                <p class="card-description">
-                    Your challenge is to build out this preview card component and get it looking as close to the design
-                    as
-                    possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor05%E2%80%94QR%20code%20component/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor05—QR%20code%20component/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    CSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">1st Jan 2024</time>
-                </p>
-                <h2>QR code comp</h2>
-                <p class="card-description">
-                    Your challenge is to build out this QR code component and get it looking as close to the design as
-                    possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor06%E2%80%94Order-summary-component/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor06—Order-summary-component/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    SCSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">04th Jan 2024</time>
-                </p>
-                <h2>Order summary comp</h2>
-                <p class="card-description">
-                    Your challenge is to build out this order summary card component and get it looking as close to the
-                    design as possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor07%E2%80%94stats-preview-card-component/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor07—stats-preview-card-component/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    CSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">07 JAN 2024</time>
-                </p>
-                <h2>Stats preview card</h2>
-                <p class="card-description">
-                    Your challenge is to build out this card component and get it looking as close to the design as
-                    possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor08%E2%80%94testimonials-grid-section/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor08—testimonials-grid-section/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    SCSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">10 JAN 2024</time>
-                </p>
-                <h2>testimonials grid section</h2>
-                <p class="card-description">
-                    Your challenge is to build out this testimonials grid section and get it looking as close to the
-                    design
-                    as possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor09%E2%80%943-column-preview-card-component/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor09—3-column-preview-card-component/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    SCSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">13 JAN 2024</time>
-                </p>
-                <h2>3-column preview card</h2>
-                <p class="card-description">
-                    Your challenge is to build out this 3-column preview card component and get it looking as close to
-                    the
-                    design as
-                    possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor10%E2%80%94chat-app-css-illustration/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor10—chat-app-css-illustration/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    SCSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">14 JAN 2024</time>
-                </p>
-                <h2>Chat app CSS illustration</h2>
-                <p class="card-description">
-                    Your challenge is to build out this feature illustration using HTML & CSS and get it looking as
-                    close to
-                    the design as possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor11%E2%80%94fylo-data-storage-component/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor11—fylo-data-storage-component/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    SCSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">16 JAN 2024</time>
-                </p>
-                <h2>Fylo data storage comp</h2>
-                <p class="card-description">
-                    Your challenge is to build out this data storage component and get it looking as close to the design
-                    as
-                    possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a>
-    <a href="./FrontendMentor12%E2%80%94profile-card-component/index.html">
-        <div class="card" role="article">
-            <img src="FrontendMentor12—profile-card-component/design/desktop-design.jpg" alt="">
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    HTML
-                </p>
-            </div>
-            <div class="card-tag">
-                <p class="card-tag-name">
-                    SCSS
-                </p>
-            </div>
-            <div class="card-text">
-                <p class="publication-date">
-                    Published on
-                    <time datetime="2023-12-21">18 JAN 2024</time>
-                </p>
-                <h2>Profile card comp</h2>
-                <p class="card-description">
-                    Your challenge is to build out this profile card component and get it looking as close to the design
-                    as
-                    possible.
-                </p>
-                <div class="card-author">
-                    <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                         alt="Profile picture of Ranit Manik, the author of the article">
-                    <p class="card-author-name">Ranit Manik</p>
-                </div>
-            </div>
-        </div>
-    </a><a
-        href="./FrontendMentor13%E2%80%94social-links-profile/index.html">
+  <a href="./FrontendMentor01%E2%80%94Blog-preview-card/index.html">
     <div class="card" role="article">
-        <img src="FrontendMentor13—social-links-profile/design/desktop-design.jpg" alt="">
-        <div class="card-tag">
-            <p class="card-tag-name">
-                HTML
-            </p>
+      <img src="FrontendMentor01—Blog-preview-card/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          CSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">25st Dec 2023</time>
+        </p>
+        <h2>Blog preview card</h2>
+        <p class="card-description">
+          Your challenge is to build out this blog preview card and get it looking as close to the design as
+          possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
         </div>
-        <div class="card-tag">
-            <p class="card-tag-name">
-                CSS
-            </p>
-        </div>
-        <div class="card-text">
-            <p class="publication-date">
-                Published on
-                <time datetime="2023-12-21">19 JAN 2024</time>
-            </p>
-            <h2>Social links profile</h2>
-            <p class="card-description">
-                Your challenge is to build out this social links profile and get it looking as close to the design
-                as
-                possible.
-            </p>
-            <div class="card-author">
-                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                     alt="Profile picture of Ranit Manik, the author of the article">
-                <p class="card-author-name">Ranit Manik</p>
-            </div>
-        </div>
+      </div>
     </div>
+  </a>
+  <a href="./FrontendMentor02%E2%80%94Results-summary-component/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor02—Results-summary-component/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          CSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">27st Dec 2023</time>
+        </p>
+        <h2>Results Summary comp</h2>
+        <p class="card-description">
+          Your challenge is to build out this results summary component and get it looking as close to the
+          design
+          as possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor03%E2%80%94Product-preview-card-component/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor03—Product-preview-card-component/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          CSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">29st Dec 2023</time>
+        </p>
+        <h2>Product preview card comp</h2>
+        <p class="card-description">
+          Your challenge is to build out this product preview card component and get it looking as close to
+          the
+          design as
+          possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor04%E2%80%94nft-preview-card-component/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor04—nft-preview-card-component/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          CSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-25">31st Dec 2023</time>
+        </p>
+        <h2>nft preview card comp</h2>
+        <p class="card-description">
+          Your challenge is to build out this preview card component and get it looking as close to the design
+          as
+          possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor05%E2%80%94QR%20code%20component/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor05—QR%20code%20component/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          CSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">1st Jan 2024</time>
+        </p>
+        <h2>QR code comp</h2>
+        <p class="card-description">
+          Your challenge is to build out this QR code component and get it looking as close to the design as
+          possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor06%E2%80%94Order-summary-component/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor06—Order-summary-component/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          SCSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">04th Jan 2024</time>
+        </p>
+        <h2>Order summary comp</h2>
+        <p class="card-description">
+          Your challenge is to build out this order summary card component and get it looking as close to the
+          design as possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor07%E2%80%94stats-preview-card-component/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor07—stats-preview-card-component/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          CSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">07 JAN 2024</time>
+        </p>
+        <h2>Stats preview card</h2>
+        <p class="card-description">
+          Your challenge is to build out this card component and get it looking as close to the design as
+          possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor08%E2%80%94testimonials-grid-section/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor08—testimonials-grid-section/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          SCSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">10 JAN 2024</time>
+        </p>
+        <h2>testimonials grid section</h2>
+        <p class="card-description">
+          Your challenge is to build out this testimonials grid section and get it looking as close to the
+          design
+          as possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor09%E2%80%943-column-preview-card-component/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor09—3-column-preview-card-component/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          SCSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">13 JAN 2024</time>
+        </p>
+        <h2>3-column preview card</h2>
+        <p class="card-description">
+          Your challenge is to build out this 3-column preview card component and get it looking as close to
+          the
+          design as
+          possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor10%E2%80%94chat-app-css-illustration/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor10—chat-app-css-illustration/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          SCSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">14 JAN 2024</time>
+        </p>
+        <h2>Chat app CSS illustration</h2>
+        <p class="card-description">
+          Your challenge is to build out this feature illustration using HTML & CSS and get it looking as
+          close to
+          the design as possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor11%E2%80%94fylo-data-storage-component/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor11—fylo-data-storage-component/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          SCSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">16 JAN 2024</time>
+        </p>
+        <h2>Fylo data storage comp</h2>
+        <p class="card-description">
+          Your challenge is to build out this data storage component and get it looking as close to the design
+          as
+          possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="./FrontendMentor12%E2%80%94profile-card-component/index.html">
+    <div class="card" role="article">
+      <img src="FrontendMentor12—profile-card-component/design/desktop-design.jpg" alt="">
+      <div class="card-tag">
+        <p class="card-tag-name">
+          HTML
+        </p>
+      </div>
+      <div class="card-tag">
+        <p class="card-tag-name">
+          SCSS
+        </p>
+      </div>
+      <div class="card-text">
+        <p class="publication-date">
+          Published on
+          <time datetime="2023-12-21">18 JAN 2024</time>
+        </p>
+        <h2>Profile card comp</h2>
+        <p class="card-description">
+          Your challenge is to build out this profile card component and get it looking as close to the design
+          as
+          possible.
+        </p>
+        <div class="card-author">
+          <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+               alt="Profile picture of Ranit Manik, the author of the article">
+          <p class="card-author-name">Ranit Manik</p>
+        </div>
+      </div>
+    </div>
+  </a><a
+  href="./FrontendMentor13%E2%80%94social-links-profile/index.html">
+  <div class="card" role="article">
+    <img src="FrontendMentor13—social-links-profile/design/desktop-design.jpg" alt="">
+    <div class="card-tag">
+      <p class="card-tag-name">
+        HTML
+      </p>
+    </div>
+    <div class="card-tag">
+      <p class="card-tag-name">
+        CSS
+      </p>
+    </div>
+    <div class="card-text">
+      <p class="publication-date">
+        Published on
+        <time datetime="2023-12-21">19 JAN 2024</time>
+      </p>
+      <h2>Social links profile</h2>
+      <p class="card-description">
+        Your challenge is to build out this social links profile and get it looking as close to the design
+        as
+        possible.
+      </p>
+      <div class="card-author">
+        <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+             alt="Profile picture of Ranit Manik, the author of the article">
+        <p class="card-author-name">Ranit Manik</p>
+      </div>
+    </div>
+  </div>
 </a><a href="./FrontendMentor14%E2%80%94social-proof-section/index.html">
-    <div class="card" role="article">
-        <img src="FrontendMentor14—social-proof-section/design/desktop-design.jpg" alt="">
-        <div class="card-tag">
-            <p class="card-tag-name">
-                HTML
-            </p>
-        </div>
-        <div class="card-tag">
-            <p class="card-tag-name">
-                CSS
-            </p>
-        </div>
-        <div class="card-text">
-            <p class="publication-date">
-                Published on
-                <time>28 FEB 2024</time>
-            </p>
-            <h2>Social proof section</h2>
-            <p class="card-description">
-                Your challenge is to build out this social proof section and get it looking as close to the design
-                as possible.
-            </p>
-            <div class="card-author">
-                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                     alt="Profile picture of Ranit Manik, the author of the article">
-                <p class="card-author-name">Ranit Manik</p>
-            </div>
-        </div>
+  <div class="card" role="article">
+    <img src="FrontendMentor14—social-proof-section/design/desktop-design.jpg" alt="">
+    <div class="card-tag">
+      <p class="card-tag-name">
+        HTML
+      </p>
     </div>
+    <div class="card-tag">
+      <p class="card-tag-name">
+        CSS
+      </p>
+    </div>
+    <div class="card-text">
+      <p class="publication-date">
+        Published on
+        <time>28 FEB 2024</time>
+      </p>
+      <h2>Social proof section</h2>
+      <p class="card-description">
+        Your challenge is to build out this social proof section and get it looking as close to the design
+        as possible.
+      </p>
+      <div class="card-author">
+        <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+             alt="Profile picture of Ranit Manik, the author of the article">
+        <p class="card-author-name">Ranit Manik</p>
+      </div>
+    </div>
+  </div>
 </a><a href="./FrontendMentor15%E2%80%94single-price-grid-component/index.html">
-    <div class="card" role="article">
-        <img src="FrontendMentor15—single-price-grid-component/design/desktop-design.jpg" alt="">
-        <div class="card-tag">
-            <p class="card-tag-name">
-                HTML
-            </p>
-        </div>
-        <div class="card-tag">
-            <p class="card-tag-name">
-                CSS
-            </p>
-        </div>
-        <div class="card-text">
-            <p class="publication-date">
-                Published on
-                <time>29 FEB 2024</time>
-            </p>
-            <h2>Single price grid comp</h2>
-            <p class="card-description">
-                Your challenge is to build out this social Single price grid component and get it looking as close to
-                the design
-                as possible.
-            </p>
-            <div class="card-author">
-                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                     alt="Profile picture of Ranit Manik, the author of the article">
-                <p class="card-author-name">Ranit Manik</p>
-            </div>
-        </div>
+  <div class="card" role="article">
+    <img src="FrontendMentor15—single-price-grid-component/design/desktop-design.jpg" alt="">
+    <div class="card-tag">
+      <p class="card-tag-name">
+        HTML
+      </p>
     </div>
+    <div class="card-tag">
+      <p class="card-tag-name">
+        CSS
+      </p>
+    </div>
+    <div class="card-text">
+      <p class="publication-date">
+        Published on
+        <time>29 FEB 2024</time>
+      </p>
+      <h2>Single price grid comp</h2>
+      <p class="card-description">
+        Your challenge is to build out this social Single price grid component and get it looking as close to
+        the design
+        as possible.
+      </p>
+      <div class="card-author">
+        <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+             alt="Profile picture of Ranit Manik, the author of the article">
+        <p class="card-author-name">Ranit Manik</p>
+      </div>
+    </div>
+  </div>
 </a><a href="./FrontendMentor16%E2%80%94recipe-page/index.html">
-    <div class="card" role="article">
-        <img src="FrontendMentor16—recipe-page/design/desktop-design.jpg" alt="">
-        <div class="card-tag">
-            <p class="card-tag-name">
-                HTML
-            </p>
-        </div>
-        <div class="card-tag">
-            <p class="card-tag-name">
-                CSS
-            </p>
-        </div>
-        <div class="card-text">
-            <p class="publication-date">
-                Published on
-                <time>1 MAR 2024</time>
-            </p>
-            <h2>Recipe page</h2>
-            <p class="card-description">
-                Your challenge is to build out this recipe page and get it looking as close to the design as possible.
-            </p>
-            <div class="card-author">
-                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                     alt="Profile picture of Ranit Manik, the author of the article">
-                <p class="card-author-name">Ranit Manik</p>
-            </div>
-        </div>
+  <div class="card" role="article">
+    <img src="FrontendMentor16—recipe-page/design/desktop-design.jpg" alt="">
+    <div class="card-tag">
+      <p class="card-tag-name">
+        HTML
+      </p>
     </div>
+    <div class="card-tag">
+      <p class="card-tag-name">
+        CSS
+      </p>
+    </div>
+    <div class="card-text">
+      <p class="publication-date">
+        Published on
+        <time>1 MAR 2024</time>
+      </p>
+      <h2>Recipe page</h2>
+      <p class="card-description">
+        Your challenge is to build out this recipe page and get it looking as close to the design as possible.
+      </p>
+      <div class="card-author">
+        <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+             alt="Profile picture of Ranit Manik, the author of the article">
+        <p class="card-author-name">Ranit Manik</p>
+      </div>
+    </div>
+  </div>
 </a><a href="./FrontendMentor17%E2%80%94huddle-landing-page-with-single-introductory-section/index.html">
-    <div class="card" role="article">
-        <img src="FrontendMentor17—huddle-landing-page-with-single-introductory-section/design/desktop-design.jpg"
-             alt="">
-        <div class="card-tag">
-            <p class="card-tag-name">
-                HTML
-            </p>
-        </div>
-        <div class="card-tag">
-            <p class="card-tag-name">
-                CSS
-            </p>
-        </div>
-        <div class="card-text">
-            <p class="publication-date">
-                Published on
-                <time>3 MAR 2024</time>
-            </p>
-            <h2>Huddle landing page</h2>
-            <p class="card-description">
-                Your challenge is to build out this huddle landing page and get it
-                looking as close to the design as possible.
-            </p>
-            <div class="card-author">
-                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                     alt="Profile picture of Ranit Manik, the author of the article">
-                <p class="card-author-name">Ranit Manik</p>
-            </div>
-        </div>
+  <div class="card" role="article">
+    <img src="FrontendMentor17—huddle-landing-page-with-single-introductory-section/design/desktop-design.jpg"
+         alt="">
+    <div class="card-tag">
+      <p class="card-tag-name">
+        HTML
+      </p>
     </div>
+    <div class="card-tag">
+      <p class="card-tag-name">
+        CSS
+      </p>
+    </div>
+    <div class="card-text">
+      <p class="publication-date">
+        Published on
+        <time>3 MAR 2024</time>
+      </p>
+      <h2>Huddle landing page</h2>
+      <p class="card-description">
+        Your challenge is to build out this huddle landing page and get it
+        looking as close to the design as possible.
+      </p>
+      <div class="card-author">
+        <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+             alt="Profile picture of Ranit Manik, the author of the article">
+        <p class="card-author-name">Ranit Manik</p>
+      </div>
+    </div>
+  </div>
 </a><a href="./FrontendMentor18%E2%80%94four-card-feature-section/index.html">
-    <div class="card" role="article">
-        <img src="FrontendMentor18—four-card-feature-section/design/desktop-design.jpg"
-             alt="">
-        <div class="card-tag">
-            <p class="card-tag-name">
-                HTML
-            </p>
-        </div>
-        <div class="card-tag">
-            <p class="card-tag-name">
-                SCSS
-            </p>
-        </div>
-        <div class="card-text">
-            <p class="publication-date">
-                Published on
-                <time>14 MAR 2024</time>
-            </p>
-            <h2>Four card feature sections</h2>
-            <p class="card-description">
-                Your challenge is to build out this four-card section and get it
-                looking as close to the design as possible.
-            </p>
-            <div class="card-author">
-                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                     alt="Profile picture of Ranit Manik, the author of the article">
-                <p class="card-author-name">Ranit Manik</p>
-            </div>
-        </div>
+  <div class="card" role="article">
+    <img src="FrontendMentor18—four-card-feature-section/design/desktop-design.jpg"
+         alt="">
+    <div class="card-tag">
+      <p class="card-tag-name">
+        HTML
+      </p>
     </div>
+    <div class="card-tag">
+      <p class="card-tag-name">
+        SCSS
+      </p>
+    </div>
+    <div class="card-text">
+      <p class="publication-date">
+        Published on
+        <time>14 MAR 2024</time>
+      </p>
+      <h2>Four card feature sections</h2>
+      <p class="card-description">
+        Your challenge is to build out this four-card section and get it
+        looking as close to the design as possible.
+      </p>
+      <div class="card-author">
+        <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+             alt="Profile picture of Ranit Manik, the author of the article">
+        <p class="card-author-name">Ranit Manik</p>
+      </div>
+    </div>
+  </div>
 </a><a href="./FrontendMentor19%E2%80%94huddle-landing-page-with-alternating-feature-blocks/index.html">
-    <div class="card" role="article">
-        <img src="FrontendMentor19—huddle-landing-page-with-alternating-feature-blocks/design/desktop-design.jpg"
-             alt="">
-        <div class="card-tag">
-            <p class="card-tag-name">
-                HTML
-            </p>
-        </div>
-        <div class="card-tag">
-            <p class="card-tag-name">
-                Tailwind
-            </p>
-        </div>
-        <div class="card-text">
-            <p class="publication-date">
-                Published on
-                <time>14 MAR 2024</time>
-            </p>
-            <h2>Huddle landing page</h2>
-            <p class="card-description">
-                Your challenge is to build out this huddle landing page and get it
-                looking as close to the design as possible.
-            </p>
-            <div class="card-author">
-                <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
-                     alt="Profile picture of Ranit Manik, the author of the article">
-                <p class="card-author-name">Ranit Manik</p>
-            </div>
-        </div>
+  <div class="card" role="article">
+    <img src="FrontendMentor19—huddle-landing-page-with-alternating-feature-blocks/design/desktop-design.jpg"
+         alt="">
+    <div class="card-tag">
+      <p class="card-tag-name">
+        HTML
+      </p>
     </div>
+    <div class="card-tag">
+      <p class="card-tag-name">
+        Tailwind
+      </p>
+    </div>
+    <div class="card-text">
+      <p class="publication-date">
+        Published on
+        <time>27 Apr 2024</time>
+      </p>
+      <h2>Huddle landing page</h2>
+      <p class="card-description">
+        Your challenge is to build out this huddle landing page and get it
+        looking as close to the design as possible.
+      </p>
+      <div class="card-author">
+        <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+             alt="Profile picture of Ranit Manik, the author of the article">
+        <p class="card-author-name">Ranit Manik</p>
+      </div>
+    </div>
+  </div>
+</a><a href="./FrontendMentor20—fylo-landing-page-with-two-column-layout/index.html">
+  <div class="card" role="article">
+    <img src="FrontendMentor20—fylo-landing-page-with-two-column-layout/design/desktop-design.jpg"
+         alt="">
+    <div class="card-tag">
+      <p class="card-tag-name">
+        HTML
+      </p>
+    </div>
+    <div class="card-tag">
+      <p class="card-tag-name">
+        Tailwind
+      </p>
+    </div>
+    <div class="card-text">
+      <p class="publication-date">
+        Published on
+        <time>29 Apr 2024</time>
+      </p>
+      <h2>Fylo landing page</h2>
+      <p class="card-description">
+        Your challenge is to build out this fylo landing page and get it
+        looking as close to the design as possible.
+      </p>
+      <div class="card-author">
+        <img src="https://avatars.githubusercontent.com/u/138437760?v=4"
+             alt="Profile picture of Ranit Manik, the author of the article">
+        <p class="card-author-name">Ranit Manik</p>
+      </div>
+    </div>
+  </div>
 </a>
 </main>
 </body>

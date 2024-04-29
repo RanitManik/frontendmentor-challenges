@@ -29,6 +29,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 17 | [huddle landing page with single introductory section](FrontendMentor17—huddle-landing-page-with-single-introductory-section) | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor17%E2%80%94huddle-landing-page-with-single-introductory-section/index.html) |
 | 18 | [four card feature section](FrontendMentor18—four-card-feature-section)                                                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor18%E2%80%94four-card-feature-section/index.html)                            |
 | 19 | [huddle landing page with alternating feature blocks](FrontendMentor19—huddle-landing-page-with-alternating-feature-blocks)   | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor19%E2%80%94huddle-landing-page-with-alternating-feature-blocks/index.html)  |
+| 20 | [fylo landing page with two column layout](FrontendMentor20—fylo-landing-page-with-two-column-layout)                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor20%E2%80%94huddle-fylo-landing-page-with-two-column-layout/index.html)      |
 
 ## How to Use
 
