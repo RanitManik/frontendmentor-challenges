@@ -32,7 +32,7 @@ module.exports = {
       },
       screens: {
         mobile: { max: "768px" },
-        tablet: { min: "768px", max: "1024px" },
+        tablet: { max: "1024px" },
         laptop: { min: "1025px" },
       },
     },

@@ -137,16 +137,16 @@
           >
             Get early access today
           </h2>
-          <p class="tablet:mb-12 mobile:mb-10">
+          <p class="mobile:mb-10 tablet:mb-12">
             It only takes a minute to sign up and our free starter tier is
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
         </div>
-        <form class="mobile:w-[80%] mobile:m-auto">
+        <form class="mobile:m-auto mobile:w-[80%]">
           <label class="sr-only" for="email-2">Enter your email</label>
           <input
-            class="peer box-border w-full  rounded border border-desaturated-blue px-6 py-2 text-black invalid:border-red-800 focus:border focus:border-very-dark-blue focus:outline-none invalid:focus:border-red-900 sm:mr-4 mobile:w-full lg:max-w-[90%]"
+            class="peer box-border w-full rounded border border-desaturated-blue px-6 py-2 text-black invalid:border-red-800 focus:border focus:border-very-dark-blue focus:outline-none invalid:focus:border-red-900 sm:mr-4 lg:max-w-[90%] mobile:w-full"
             id="email-2"
             name="email"
             type="email"
@@ -164,9 +164,69 @@
         </form>
       </section>
     </main>
-    <footer>
-      Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact
-      Us Terms Privacy
+    <footer
+      class="p-body bg-very-dark-blue px-6 py-12 sm:px-8 sm:py-16 md:px-10 md:py-20 lg:px-12 lg:py-24"
+    >
+      <div class="text-white">
+        <img class="mb-10" src="images/logo-white.svg" alt="" />
+        <div>
+          <ul
+            class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-flow-col lg:grid-cols-4"
+          >
+            <li class="grid content-start gap-4">
+              <a class="flex items-center gap-4" href="#">
+                <img src="images/icon-phone.svg" alt="phone" />+1-543-123-4567
+              </a>
+              <a class="flex items-center gap-4" href="#">
+                <img src="images/icon-email.svg" alt="email" />
+                example@huddle.com
+              </a>
+            </li>
+            <li class="grid content-start gap-4 md:justify-center">
+              <a class="hover:text-desaturated-blue hover:underline" href="#"
+                >About Us</a
+              >
+              <a class="hover:text-desaturated-blue hover:underline" href="#"
+                >Jobs</a
+              >
+              <a class="hover:text-desaturated-blue hover:underline" href="#"
+                >Press</a
+              >
+              <a class="hover:text-desaturated-blue hover:underline" href="#"
+                >Blog</a
+              >
+            </li>
+            <li class="grid content-start gap-4 md:justify-center">
+              <a class="hover:text-desaturated-blue hover:underline" href="#"
+                >Contact Us</a
+              >
+              <a class="hover:text-desaturated-blue hover:underline" href="#"
+                >Terms</a
+              >
+              <a class="hover:text-desaturated-blue hover:underline" href="#"
+                >Privacy</a
+              >
+            </li>
+            <li class="flex items-start justify-center gap-4 sm:justify-start">
+              <a class="rounded-full border p-2" href="#"
+                ><img
+                  class="w-5"
+                  src="./images/facebook.svg"
+                  alt="facebook link"
+              /></a>
+              <a class="rounded-full border p-2" href="#"
+                ><img class="w-5" src="./images/twitter.svg" alt="twitter link"
+              /></a>
+              <a class="rounded-full border p-2" href="#"
+                ><img
+                  class="w-5"
+                  src="./images/instagram.svg"
+                  alt="instagram link"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
