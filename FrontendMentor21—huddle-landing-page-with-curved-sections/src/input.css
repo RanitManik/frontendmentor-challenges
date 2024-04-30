@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.p-body {
+    /* Default padding for laptop and tablet screens */
+    padding-inline: 3rem;
+}
+
+@media (max-width: 500px) {
+    /* Padding for mobile screens */
+    .p-body {
+        padding-inline: 2rem;
+    }
+}
+
+
+.m-body {
+    /* Default padding for laptop and tablet screens */
+    margin-inline: 3rem;
+}
+
+@media (max-width: 500px) {
+    /* Padding for mobile screens */
+    .m-body {
+        margin-inline: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-cols-custom {
+        grid-template-columns: 2fr 1.5fr;
+    }
+
+    .grid-cols-custom-v2 {
+        grid-template-columns: 1.5fr 2fr;
+    }
+}
