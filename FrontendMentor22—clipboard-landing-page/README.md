@@ -38,9 +38,9 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/-in-gSA_zv8W3R)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/clipboardlandingpage-using-html-and-tailwindcss-eWEA7w4r1P)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor22%E2%80%94clipboard-landing-page/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor22—clipboard-landing-page/index.html)
 
 ## My process
 
