@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Frontend Mentor | Advice generator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="mx-4 box-border grid min-h-screen place-items-center bg-dark-blue"
+  >
+    <!--MAIN-->
+    <main>
+      <section
+        class="relative max-w-xl rounded-2xl bg-dark-grayish-blue px-8 py-10 sm:px-10 md:px-12"
+      >
+        <h1
+          class="mb-6 text-center text-sm uppercase tracking-[0.20em] text-neon-green"
+          id="slipID"
+        >
+          Advice #117
+        </h1>
+        <p
+          class="px-2 text-center font-manrope text-2xl text-light-cyan"
+          id="slipAdvice"
+        >
+          "It is easy to sit up and take notice, what's difficult is getting up
+          and taking action."
+        </p>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/pattern-divider-desktop.svg"
+          />
+          <img
+            class="w-full py-8"
+            src="./images/pattern-divider-mobile.svg"
+            alt=""
+          />
+        </picture>
+        <button
+          class="absolute -bottom-7 right-1/2 translate-x-1/2 rounded-full bg-neon-green p-4 hover:shadow-neon"
+          id="shuffleBtn"
+          aria-label="Shuffle Quote"
+        >
+          <img src="./images/icon-dice.svg" alt="" />
+        </button>
+      </section>
+
+      <!--SCRIPTS-->
+      <script src="./scripts/script.js"></script>
+    </main>
+  </body>
+</html>
