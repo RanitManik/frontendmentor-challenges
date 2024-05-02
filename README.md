@@ -32,7 +32,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 20 | [fylo landing page with two column layout](FrontendMentor20—fylo-landing-page-with-two-column-layout)                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor20—fylo-landing-page-with-two-column-layout/index.html)                     |
 | 21 | [huddle landing page with curved sections](FrontendMentor21—huddle-landing-page-with-curved-sections)                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor21—huddle-landing-page-with-curved-sections/index.html)                     |
 | 22 | [clipboard landing page](FrontendMentor22—clipboard-landing-page)                                                             | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor22—clipboard-landing-page/index.html)                                       |
-| 23 | [advice generator app](FrontendMentor23—advice-generator-app-main)                                                            | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor23—advice-generator-app-main/index.html)                                    |
+| 23 | [advice generator app](FrontendMentor23—advice-generator-app)                                                                 | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor23—advice-generator-app/index.html)                                         |
 
 ## How to Use
 
