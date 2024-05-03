@@ -33,6 +33,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 21 | [huddle landing page with curved sections](FrontendMentor21—huddle-landing-page-with-curved-sections)                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor21—huddle-landing-page-with-curved-sections/index.html)                     |
 | 22 | [clipboard landing page](FrontendMentor22—clipboard-landing-page)                                                             | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor22—clipboard-landing-page/index.html)                                       |
 | 23 | [advice generator app](FrontendMentor23—advice-generator-app)                                                                 | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor23—advice-generator-app/index.html)                                         |
+| 24 | [faq accordion](FrontendMentor24—faq-accordion)                                                                               | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor24—faq-accordion/index.html)                                                |
 
 ## How to Use
 
