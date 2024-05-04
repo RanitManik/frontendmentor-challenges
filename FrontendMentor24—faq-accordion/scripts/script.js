@@ -1,5 +1,6 @@
 const dataAnswers = document.querySelectorAll("[data-answer]");
 const images = document.querySelectorAll(".faq__container img");
+const btnClicked = document.querySelector("#clicked");
 
 function hideImages() {
   images.forEach((image) => {
@@ -35,3 +36,5 @@ buttons.forEach((button) => {
     }
   });
 });
+
+btnClicked.click();
