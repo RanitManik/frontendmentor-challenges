@@ -1,7 +1,11 @@
-const main = document.getElementById("main");
 const btnDiv = document.querySelector("#btnDiv");
 const buttons = btnDiv.querySelectorAll("button");
 const submitBtn = document.querySelector("#btnSubmit");
+const rating = document.querySelector("#rating");
+const ratingPage = document.getElementById("rate-page");
+const thankYouPage = document.getElementById("thank-you-page");
+
+thankYouPage.style.display = "none";
 
 let userRate = -1;
 buttons.forEach((btn) =>
@@ -20,17 +24,8 @@ submitBtn.addEventListener("click", (e) => {
     alert("Please select a number");
     return;
   }
+  ratingPage.style.display = "none";
+  rating.innerText = userRate;
+  thankYouPage.style.display = "block";
   console.log(`You choose ${userRate}`);
-  main.classList.add("justify-items-center", "text-center");
-  main.innerHTML = `
-      <img src="./images/illustration-thank-you.svg" alt="" />
-      <span class="bg-dark-blue py-2 px-4 rounded-full text-primary">You selected ${userRate} out of 5</span>
-      <div>
-        <h1 class="mb-2 text-3xl font-bold text-white">Thank you!</h1>
-        <p class="text-light-gray">
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
-        </p>
-      </div>
-  `;
 });
