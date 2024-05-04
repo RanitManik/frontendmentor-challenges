@@ -36,9 +36,9 @@ Your users should be able to:
 ### Links
 
 - Solution
-  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/faq-accordion-solution-49a9G8k5ql)
+  URL: [click here to see the solution](https://www.frontendmentor.io/solutions/interactive-rating-component-u4u3a4OoT8)
 - Live Site
-  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor24%E2%80%94faq-accordion/index.html)
+  URL: [click here to see the Live Site](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor25%E2%80%94interactive-rating-component/index.html)
 
 ## My process
 

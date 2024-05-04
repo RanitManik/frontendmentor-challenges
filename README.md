@@ -34,7 +34,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 22 | [clipboard landing page](FrontendMentor22—clipboard-landing-page)                                                             | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor22—clipboard-landing-page/index.html)                                       |
 | 23 | [advice generator app](FrontendMentor23—advice-generator-app)                                                                 | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor23—advice-generator-app/index.html)                                         |
 | 24 | [faq accordion](FrontendMentor24—faq-accordion)                                                                               | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor24—faq-accordion/index.html)                                                |
-| 25 | [faq accordion](FrontendMentor25—interactive-rating-component)                                                                | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor25—interactive-rating-component/index.html)                                 |
+| 25 | [interactive rating component](FrontendMentor25—interactive-rating-component)                                                 | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor25—interactive-rating-component/index.html)                                 |
 
 ## How to Use
 
