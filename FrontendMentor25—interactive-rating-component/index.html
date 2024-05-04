@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-very-dark-blue grid min-h-screen place-items-center">
+    <main id="main"
+      class="bg-main-bg grid min-h-96 max-w-sm content-between rounded-3xl p-6 font-sans text-body md:p-8"
+    >
+      <img
+        class="bg-dark-blue rounded-full p-4"
+        src="./images/icon-star.svg"
+        alt=""
+      />
+      <div>
+        <h1 class="mb-2 text-3xl font-bold text-white">How did we do?</h1>
+        <p class="text-light-gray">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div id="btnDiv" class="flex justify-between">
+        <button
+          class="bg-dark-blue text-medium-gray hover:bg-light-gray h-12 w-12 rounded-full hover:text-white focus:text-white active:bg-primary"
+        >
+          1
+        </button>
+        <button
+          class="bg-dark-blue text-medium-gray hover:bg-light-gray h-12 w-12 rounded-full hover:text-white focus:text-white active:bg-primary"
+        >
+          2
+        </button>
+        <button
+          class="bg-dark-blue text-medium-gray hover:bg-light-gray h-12 w-12 rounded-full hover:text-white focus:text-white active:bg-primary"
+        >
+          3
+        </button>
+        <button
+          class="bg-dark-blue text-medium-gray hover:bg-light-gray h-12 w-12 rounded-full hover:text-white focus:text-white active:bg-primary"
+        >
+          4
+        </button>
+        <button
+          class="bg-dark-blue text-medium-gray hover:bg-light-gray h-12 w-12 rounded-full hover:text-white focus:text-white active:bg-primary"
+        >
+          5
+        </button>
+      </div>
+      <button
+        class="rounded-full bg-primary py-3 mt-2 font-semibold uppercase tracking-wider text-white hover:bg-white hover:text-primary" type="submit" id="btnSubmit"
+      >
+        Submit
+      </button>
+    </main>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
