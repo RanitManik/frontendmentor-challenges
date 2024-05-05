@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="m-auto box-border grid min-h-screen max-w-[1920px] place-items-center content-center gap-10 px-6 py-8 text-center font-sans"
+  >
+    <main class="grid max-w-md gap-6">
+      <img class="m-auto h-4 sm:h-full" src="./images/logo.svg" alt="" />
+      <div class="grid gap-6">
+        <h1 class="text-2xl text-gray sm:text-4xl">
+          We are launching <span class="font-bold text-black">soon!</span>
+        </h1>
+        <h2 class="text-sm text-very-dark-blue sm:text-base">
+          Subscribe and get notified
+        </h2>
+        <form
+          class="grid grid-flow-row gap-4 sm:grid-cols-[1fr_auto]"
+          action=""
+        >
+          <label class="sr-only" for="email">enter your email</label>
+          <input
+            class="peer rounded-full border border-pale-blue px-6 py-3 text-xs focus:border-blue focus:outline-blue"
+            type="email"
+            name="email"
+            placeholder="Your email address..."
+            id="email"
+          />
+          <button
+            class="rounded-full bg-blue px-10 py-3 text-xs font-semibold text-white shadow-lg shadow-blue/30 hover:shadow-blue/50"
+            id="notifyBtn"
+            type="submit"
+          >
+            Notify Me
+          </button>
+          <p
+            class="invisible text-center text-sm italic text-light-red peer-invalid:visible"
+          >
+            please provide a valid email address
+          </p>
+        </form>
+      </div>
+      <img src="./images/illustration-dashboard.png" alt="" />
+    </main>
+    <footer class="grid gap-4">
+      <ul class="flex justify-center gap-4">
+        <li>
+          <a
+            class="grid h-8 w-8 place-items-center rounded-full border border-pale-blue text-blue transition-all hover:bg-blue hover:text-white"
+            href=""
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li aria-label="twitter link">
+          <a
+            class="grid h-8 w-8 place-items-center rounded-full border border-pale-blue text-blue transition-all hover:bg-blue hover:text-white"
+            href=""
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li class="instagram link">
+          <a
+            class="grid h-8 w-8 place-items-center rounded-full border border-pale-blue text-blue transition-all hover:bg-blue hover:text-white"
+            href=""
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="text-xs text-gray">© Copyright Ping. All rights reserved.</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/69d7b3330f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
