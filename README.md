@@ -36,6 +36,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 24 | [faq accordion](FrontendMentor24—faq-accordion)                                                                               | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor24—faq-accordion/index.html)                                                |
 | 25 | [interactive rating component](FrontendMentor25—interactive-rating-component)                                                 | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor25—interactive-rating-component/index.html)                                 |
 | 26 | [ping coming soon page](FrontendMentor26—ping-coming-soon-page)                                                               | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor26—ping-coming-soon-page/index.html)                                        |
+| 27 | [article preview component](FrontendMentor27—article-preview-component)                                                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor27—article-preview-component/index.html)                                    |
 
 ## How to Use
 

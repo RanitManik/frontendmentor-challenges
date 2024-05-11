@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="grid min-h-screen place-items-center bg-light-grayish-blue p-4 font-body text-body font-normal text-desaturated-dark-blue"
+  >
+    <div
+      class="m-auto grid max-w-3xl overflow-hidden rounded-xl bg-white shadow-2xl shadow-desaturated-dark-blue/20 sm:grid-cols-[1fr_1.25fr] sm:overflow-visible"
+    >
+      <img class="h-full object-cover" src="./images/drawers.jpg" alt="" />
+      <main class="grid gap-4 p-8">
+        <h1 class="text-xl font-bold text-very-dark-grayish-blue">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+
+        <div class="relative flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="./images/avatar-michelle.jpg"
+              alt=""
+            />
+            <div>
+              <p class="font-bold text-very-dark-grayish-blue">
+                Michelle Appleton
+              </p>
+              <time datetime="2020-06-28">28 Jun 2020</time>
+            </div>
+          </div>
+          <button
+            id="share-btn"
+            class="group peer rounded-full bg-light-grayish-blue p-2 hover:bg-desaturated-dark-blue hover:fill-white active:bg-very-dark-grayish-blue"
+            aria-label="Share"
+          >
+            <svg
+              class="fill-desaturated-dark-blue group-hover:fill-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="13"
+            >
+              <path
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+              />
+            </svg>
+          </button>
+          <div
+            id="desktop-tooltip"
+            class="invisible absolute flex transform items-center gap-4 rounded-md bg-very-dark-grayish-blue p-4 tracking-[0.25rem] md:translate-x-[40%] lg:-top-16 lg:left-1/2 lg:peer-hover:visible"
+          >
+            <span class="uppercase">Share</span>
+            <a href="#" aria-label="facebook page"
+              ><img src="./images/icon-facebook.svg" alt=""
+            /></a>
+            <a href="#" aria-label="twitter page"
+              ><img src="./images/icon-twitter.svg" alt=""
+            /></a>
+            <a href="#" aria-label="pinterest page"
+              ><img src="./images/icon-pinterest.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/69d7b3330f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
