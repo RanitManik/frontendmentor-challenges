@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="m-auto max-w-[1920px] bg-[url('../images/bg-pattern-desktop.svg')] bg-cover text-center font-sans text-body lg:text-left"
+  >
+    <main class="grid gap-8 pt-10 lg:grid-cols-[1.4fr_1fr] lg:pt-0">
+      <section
+        class="grid min-w-full max-w-3xl justify-between gap-8 lg:gap-12 lg:px-[20%] lg:py-[5%]"
+      >
+        <img class="pl-8 lg:pl-0" src="./images/logo.svg" alt="" />
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="./images/hero-mobile.jpg"
+          />
+          <img
+            class="max-h-[30vh] w-full object-cover object-top md:max-h-[60vh] lg:hidden"
+            src="./images/hero-desktop.jpg"
+            alt=""
+          />
+        </picture>
+        <!--<img
+class="w-full object-cover lg:hidden"
+src="./images/hero-mobile.jpg"
+alt=""
+/>-->
+        <div class="grid content-start gap-10 px-8 lg:px-0">
+          <h1
+            class="text-5xl uppercase tracking-[1rem] text-neutral-dark lg:text-7xl"
+          >
+            <span class="font-light text-primary-desaturated">We're</span>
+            coming soon
+          </h1>
+          <p class="text-primary-desaturated">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form class="relative" action="">
+            <label class="sr-only" for="email">Enter your email</label>
+            <input
+              class="peer w-full rounded-full border-2 border-primary-desaturated/50 bg-transparent py-4 pl-8 pr-[40%] placeholder-primary-desaturated caret-primary-soft focus:border-primary-desaturated focus:outline-primary-desaturated invalid:focus:border-primary-soft invalid:focus:outline-primary-soft"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <div class="absolute right-0 top-0 flex items-center gap-4">
+              <img
+                id="errorIcon"
+                class="invisible"
+                src="./images/icon-error.svg"
+                alt=""
+              />
+              <button
+                id="submitBtn"
+                class="rounded-full bg-grad-2 px-12 py-5 hover:bg-grad-1-hover hover:shadow-lg hover:shadow-primary-soft/30"
+                type="submit"
+                aria-label="Submit Button"
+              >
+                <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+            <p
+              class="invisible ml-8 mt-2 text-sm text-primary-soft peer-invalid:visible"
+            >
+              Please enter a valid email
+            </p>
+          </form>
+        </div>
+      </section>
+      <section
+        class="w-full bg-cover lg:min-h-[min(100vh,_1100px)] lg:bg-[url('../images/hero-desktop.jpg')]"
+      ></section>
+    </main>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
