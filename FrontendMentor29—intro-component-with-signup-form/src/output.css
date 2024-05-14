@@ -768,11 +768,6 @@ input {
   font-weight: 600;
 }
 
-input:invalid {
-  --tw-border-opacity: 1;
-  border-color: hsl(0 100% 74% / var(--tw-border-opacity));
-}
-
 input:focus {
   --tw-border-opacity: 1;
   border-color: hsl(248 32% 49% / var(--tw-border-opacity));
@@ -791,15 +786,19 @@ input:focus {
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.invalid-input {
+.invalid-paragraph {
   margin-top: 0.5rem;
-  display: none;
   text-align: right;
   font-size: 0.75rem;
   font-weight: 500;
   font-style: italic;
   --tw-text-opacity: 1;
   color: hsl(0 100% 74% / var(--tw-text-opacity));
+}
+
+.input-error {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 100% 74% / var(--tw-border-opacity));
 }
 
 .hover\:bg-primary-green\/70:hover {
@@ -818,30 +817,9 @@ input:focus {
   background-color: hsl(154 59% 51% / 0.9);
 }
 
-.peer\/email:invalid ~ .peer-invalid\/email\:block {
-  display: block;
-}
-
-.peer\/fName:invalid ~ .peer-invalid\/fName\:block {
-  display: block;
-}
-
-.peer\/lName:invalid ~ .peer-invalid\/lName\:block {
-  display: block;
-}
-
-.peer\/password:invalid ~ .peer-invalid\/password\:block {
-  display: block;
-}
-
 @media (min-width: 640px) {
   .sm\:gap-6 {
     gap: 1.5rem;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .sm\:text-\[2\.25rem\] {
@@ -877,11 +855,6 @@ input:focus {
 
   .md\:text-left {
     text-align: left;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:text-\[3rem\] {

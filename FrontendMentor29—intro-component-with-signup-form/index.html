@@ -44,33 +44,31 @@
             thereafter
           </h2>
         </div>
-        <form id="signupForm"
+        <form
+          id="signupForm"
           class="shadow-rounded grid rounded-xl bg-white p-6 text-neutral-dark-blue caret-accent-blue md:p-8"
           action=""
         >
           <div class="relative mt-5">
             <label class="sr-only" for="fName">Enter your First Name</label>
             <input
-              class="peer/fName"
               required
               type="text"
               name="fName"
               id="fName"
+              value=""
               placeholder="First Name"
             />
             <img
-              class="absolute right-8 top-4 hidden peer-invalid/fName:block"
+              class="absolute right-8 top-4 hidden"
               src="./images/icon-error.svg"
               alt=""
             />
-            <p class="invalid-input peer-invalid/fName:block">
-              First Name cannot be empty
-            </p>
+            <p class="invalid-paragraph hidden">First Name cannot be empty</p>
           </div>
           <div class="relative mt-5">
             <label class="sr-only" for="lName">Enter your Last Name</label>
             <input
-              class="peer/lName"
               required
               type="text"
               name="lName"
@@ -78,18 +76,15 @@
               placeholder="Last Name"
             />
             <img
-              class="absolute right-8 top-4 hidden peer-invalid/lName:block"
+              class="absolute right-8 top-4 hidden"
               src="./images/icon-error.svg"
               alt=""
             />
-            <p class="invalid-input peer-invalid/lName:block">
-              Last Name cannot be empty
-            </p>
+            <p class="invalid-paragraph hidden">Last Name cannot be empty</p>
           </div>
           <div class="relative mt-5">
             <label class="sr-only" for="email">Enter your Email Address</label>
             <input
-              class="peer/email"
               required
               type="email"
               name="email"
@@ -97,18 +92,17 @@
               placeholder="Email Address"
             />
             <img
-              class="absolute right-8 top-4 hidden peer-invalid/email:block"
+              class="absolute right-8 top-4 hidden"
               src="./images/icon-error.svg"
               alt=""
             />
-            <p class="invalid-input peer-invalid/email:block">
+            <p class="invalid-paragraph hidden">
               Looks like this is not an email
             </p>
           </div>
           <div class="relative mt-5">
             <label class="sr-only" for="password">Enter your password</label>
             <input
-              class="peer/password"
               required
               type="password"
               name="password"
@@ -116,13 +110,11 @@
               placeholder="Password"
             />
             <img
-              class="absolute right-8 top-4 hidden peer-invalid/password:block"
+              class="absolute right-8 top-4 hidden"
               src="./images/icon-error.svg"
               alt=""
             />
-            <p class="invalid-input peer-invalid/password:block">
-              Password cannot be empty
-            </p>
+            <p class="invalid-paragraph hidden">Password cannot be empty</p>
           </div>
           <button
             id="submitBtn"
@@ -144,6 +136,6 @@
         </form>
       </div>
     </main>
-    <!--    <script src="./src/script.js"></script>-->
+    <script src="./src/script.js"></script>
   </body>
 </html>
