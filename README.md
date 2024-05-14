@@ -38,6 +38,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 26 | [ping coming soon page](FrontendMentor26—ping-coming-soon-page)                                                               | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor26—ping-coming-soon-page/index.html)                                        |
 | 27 | [article preview component](FrontendMentor27—article-preview-component)                                                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor27—article-preview-component/index.html)                                    |
 | 28 | [base apparel coming soon](FrontendMentor28—base-apparel-coming-soon)                                                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor28—base-apparel-coming-soon/index.html)                                     |
+| 29 | [intro component with signup form](FrontendMentor29—intro-component-with-signup-form)                                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor29—intro-component-with-signup-form/index.html)                             |
 
 ## How to Use
 

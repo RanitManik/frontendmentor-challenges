@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body
+    class="min-h-screen bg-primary-red bg-[url('../images/bg-intro-mobile.png')] p-8 font-poppins md:bg-[url('../images/bg-intro-desktop.png')] md:p-[10%]"
+  >
+    <main class="md:grid md:grid-cols-2 md:gap-10">
+      <div>
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div>
+        <div role="banner">
+          <h2><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
+        </div>
+        <form class="bg-white p-4" action="">
+          <label class="sr-only" for="fName"></label>
+          <input
+            class="px-8 py-4"
+            type="text"
+            name="fName"
+            id="fName"
+            placeholder="First Name"
+          />
+          <label class="sr-only" for="lName"></label>
+          <input
+            class="px-8 py-4"
+            type="text"
+            name="lName"
+            id="lName"
+            placeholder="Last Name"
+          />
+          <label class="sr-only" for="email"></label>
+          <input
+            class="px-8 py-4"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+          <label class="sr-only" for="password"></label>
+          <input
+            class="px-8 py-4"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <button type="submit">Claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </div>
+    </main>
+    <!--    <script src="./src/script.js"></script>-->
+  </body>
+</html>
