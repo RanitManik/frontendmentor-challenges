@@ -19,58 +19,127 @@
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body
-    class="min-h-screen bg-primary-red bg-[url('../images/bg-intro-mobile.png')] p-8 font-poppins md:bg-[url('../images/bg-intro-desktop.png')] md:p-[10%]"
+    class="m-auto grid min-h-screen max-w-[1920px] place-items-center bg-primary-red bg-[url('../images/bg-intro-mobile.png')] p-8 text-center font-poppins text-body text-white md:bg-[url('../images/bg-intro-desktop.png')] md:px-[10%] md:text-left"
   >
-    <main class="md:grid md:grid-cols-2 md:gap-10">
-      <div>
-        <h1>Learn to code by watching others</h1>
+    <main class="grid place-items-center gap-10 md:grid-cols-2">
+      <div class="grid gap-4 sm:gap-6 md:mr-8 md:gap-8">
+        <h1
+          class="text-3xl font-bold leading-[1.15] sm:text-[2.25rem] md:text-[3rem]"
+        >
+          Learn to code by watching others
+        </h1>
         <p>
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
       </div>
-      <div>
-        <div role="banner">
-          <h2><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
+      <div class="grid w-full gap-6">
+        <div
+          role="banner"
+          class="shadow-rounded rounded-lg bg-accent-blue px-10 py-4 text-center"
+        >
+          <h2>
+            <span class="font-bold">Try it free 7 days</span> then $20/mo.
+            thereafter
+          </h2>
         </div>
-        <form class="bg-white p-4" action="">
-          <label class="sr-only" for="fName"></label>
-          <input
-            class="px-8 py-4"
-            type="text"
-            name="fName"
-            id="fName"
-            placeholder="First Name"
-          />
-          <label class="sr-only" for="lName"></label>
-          <input
-            class="px-8 py-4"
-            type="text"
-            name="lName"
-            id="lName"
-            placeholder="Last Name"
-          />
-          <label class="sr-only" for="email"></label>
-          <input
-            class="px-8 py-4"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
-          <label class="sr-only" for="password"></label>
-          <input
-            class="px-8 py-4"
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-          />
-          <button type="submit">Claim your free trial</button>
-          <p>
+        <form id="signupForm"
+          class="shadow-rounded grid rounded-xl bg-white p-6 text-neutral-dark-blue caret-accent-blue md:p-8"
+          action=""
+        >
+          <div class="relative mt-5">
+            <label class="sr-only" for="fName">Enter your First Name</label>
+            <input
+              class="peer/fName"
+              required
+              type="text"
+              name="fName"
+              id="fName"
+              placeholder="First Name"
+            />
+            <img
+              class="absolute right-8 top-4 hidden peer-invalid/fName:block"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <p class="invalid-input peer-invalid/fName:block">
+              First Name cannot be empty
+            </p>
+          </div>
+          <div class="relative mt-5">
+            <label class="sr-only" for="lName">Enter your Last Name</label>
+            <input
+              class="peer/lName"
+              required
+              type="text"
+              name="lName"
+              id="lName"
+              placeholder="Last Name"
+            />
+            <img
+              class="absolute right-8 top-4 hidden peer-invalid/lName:block"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <p class="invalid-input peer-invalid/lName:block">
+              Last Name cannot be empty
+            </p>
+          </div>
+          <div class="relative mt-5">
+            <label class="sr-only" for="email">Enter your Email Address</label>
+            <input
+              class="peer/email"
+              required
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <img
+              class="absolute right-8 top-4 hidden peer-invalid/email:block"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <p class="invalid-input peer-invalid/email:block">
+              Looks like this is not an email
+            </p>
+          </div>
+          <div class="relative mt-5">
+            <label class="sr-only" for="password">Enter your password</label>
+            <input
+              class="peer/password"
+              required
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <img
+              class="absolute right-8 top-4 hidden peer-invalid/password:block"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <p class="invalid-input peer-invalid/password:block">
+              Password cannot be empty
+            </p>
+          </div>
+          <button
+            id="submitBtn"
+            class="mt-6 rounded-md border-b-4 border-b-neutral-dark-blue/20 bg-primary-green p-4 font-semibold uppercase text-white hover:bg-primary-green/70 active:bg-primary-green/90"
+            type="submit"
+          >
+            Claim your free trial
+          </button>
+          <p
+            class="mt-6 text-center text-xs font-semibold text-neutral-dark-blue/40"
+          >
             By clicking the button, you are agreeing to our
-            <a href="#">Terms and Services</a>
+            <a
+              class="text-primary-red hover:text-primary-red/60 hover:underline"
+              href="#"
+              >Terms and Services</a
+            >
           </p>
         </form>
       </div>

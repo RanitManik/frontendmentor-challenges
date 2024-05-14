@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input {
+  @apply w-full rounded-md border-2 px-6 py-4 font-semibold focus:border-accent-blue focus:outline-none md:px-8 invalid:border-primary-red;
+}
+
+.shadow-rounded {
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.invalid-input {
+  @apply mt-2 hidden text-right text-[0.75rem] font-[500] italic text-primary-red;
+}
