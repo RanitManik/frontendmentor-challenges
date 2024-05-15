@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#bill {
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  background-size: 10px;
+}
+
+#people {
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  background-size: 10px;
+}
+
+#tipInput::placeholder {
+  text-align: center;
+  color: hsl(186, 14%, 43%);
+}
+
+.legacyLabel {
+  @apply mb-2 block;
+}
+
+.legacyInput {
+  @apply block w-full rounded bg-neutral-veryLightGrayishCyan py-2 pl-10 pr-4 text-right  tracking-widest text-neutral-veryDarkCyan caret-primary-cyan outline outline-transparent invalid:outline-red-400 focus:border-none focus:outline-primary-cyan invalid:focus:outline-red-600;
+}
+
+.tip-percent-btn {
+  @apply rounded bg-neutral-veryDarkCyan px-4 py-2 text-neutral-veryLightGrayishCyan hover:bg-primary-cyan/50 hover:text-neutral-veryDarkCyan focus-visible:bg-primary-cyan focus-visible:text-neutral-veryDarkCyan focus-visible:outline-neutral-veryDarkCyan;
+}
+
+.tip-percent-btn-active {
+  @apply bg-primary-cyan text-neutral-veryDarkCyan;
+}
+
+.tipInput {
+  @apply w-full rounded bg-neutral-veryLightGrayishCyan px-4 py-2 text-right tracking-widest  text-neutral-veryDarkCyan caret-primary-cyan outline outline-transparent invalid:outline-red-600 focus:border-none focus:outline-primary-cyan invalid:focus:outline-red-600;
+}

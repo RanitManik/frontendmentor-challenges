@@ -39,6 +39,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 27 | [article preview component](FrontendMentor27—article-preview-component)                                                       | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor27—article-preview-component/index.html)                                    |
 | 28 | [base apparel coming soon](FrontendMentor28—base-apparel-coming-soon)                                                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor28—base-apparel-coming-soon/index.html)                                     |
 | 29 | [intro component with signup form](FrontendMentor29—intro-component-with-signup-form)                                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor29—intro-component-with-signup-form/index.html)                             |
+| 30 | [tip calculator app](FrontendMentor30—tip-calculator-app)                                                                     | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor30—tip-calculator-app/index.html)                                           |
 
 ## How to Use
 

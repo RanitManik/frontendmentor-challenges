@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="grid min-h-screen place-items-center content-center gap-10 bg-neutral-lightGrayishCyan p-4 font-mono text-neutral-darkGrayishCyan"
+  >
+    <header>
+      <h1 class="font-mono text-form-input tracking-[0.5rem]">
+        SPLI<br />TTER
+      </h1>
+    </header>
+    <main class="grid gap-10 rounded-3xl bg-neutral-white p-10 md:grid-cols-2">
+      <div class="grid gap-8">
+        <div>
+          <label class="legacyLabel" for="bill">Bill</label>
+          <input
+            class="legacyInput"
+            min="1"
+            max="100000"
+            type="number"
+            id="bill"
+            name="bill"
+            placeholder="0"
+          />
+        </div>
+
+        <div>
+          <p class="mb-2">Select Tip %</p>
+          <div class="grid grid-cols-3 gap-2 lg:gap-3">
+            <button value="5" class="tip-percent-btn">5%</button>
+            <button value="10" class="tip-percent-btn">10%</button>
+            <button value="15" class="tip-percent-btn">15%</button>
+            <button value="25" class="tip-percent-btn">25%</button>
+            <button value="50" class="tip-percent-btn">50%</button>
+            <label>
+              <input
+                id="tipInput"
+                class="tipInput"
+                min="1"
+                max="100"
+                placeholder="Custom"
+                type="number"
+              />
+            </label>
+          </div>
+        </div>
+        <div>
+          <label class="legacyLabel" for="people">Number of People</label>
+          <input
+            class="legacyInput"
+            min="1"
+            max="100000"
+            type="number"
+            id="people"
+            name="people"
+            placeholder="0"
+          />
+        </div>
+      </div>
+      <div
+        class="flex flex-col content-start gap-6 rounded-xl bg-neutral-veryDarkCyan p-8"
+      >
+        <div class="flex items-center justify-between gap-12 sm:gap-20 ">
+          <p class="text-sm text-neutral-white">
+            Tip Amount
+            <span class="block text-xs text-neutral-grayishCyan">/ person</span>
+          </p>
+          <p class="text-[1.5rem] sm:text-[2.25rem] text-primary-cyan">$<span>0.00</span></p>
+        </div>
+        <div class="flex items-center justify-between gap-12 sm:gap-20 ">
+          <p class="text-sm text-neutral-white">
+            Total
+            <span class="block text-xs text-neutral-grayishCyan">/ person</span>
+          </p>
+          <p class="text-[1.5rem] sm:text-[2.25rem] text-primary-cyan">$<span>0.00</span></p>
+        </div>
+        <button
+          class="mt-auto rounded bg-primary-cyan/20 p-2 text-neutral-veryDarkCyan"
+        >
+          Reset
+        </button>
+      </div>
+    </main>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
