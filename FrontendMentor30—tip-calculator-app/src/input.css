@@ -52,3 +52,11 @@ input[type="number"] {
 .tipInput {
   @apply w-full rounded bg-neutral-veryLightGrayishCyan px-4 py-2 text-right tracking-widest  text-neutral-veryDarkCyan caret-primary-cyan outline outline-transparent invalid:outline-red-600 focus:border-none focus:outline-primary-cyan invalid:focus:outline-red-600;
 }
+
+.inactiveResetBtn {
+  @apply bg-primary-cyan/20 text-neutral-veryDarkCyan;
+}
+
+.activeResetBtn {
+  @apply bg-primary-cyan text-neutral-veryDarkCyan hover:bg-primary-cyan/80;
+}

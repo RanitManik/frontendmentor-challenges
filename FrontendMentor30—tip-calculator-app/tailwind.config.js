@@ -22,6 +22,9 @@ module.exports = {
       fontSize: {
         "form-input": "24px",
       },
+      screens: {
+        mobile: { max: "650px" },
+      },
     },
   },
   variants: {},
