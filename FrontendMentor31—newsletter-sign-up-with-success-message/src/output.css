@@ -607,6 +607,10 @@ video {
   place-items: center;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -805,7 +809,7 @@ button:hover {
 @media (max-width: 640px) {
   #initialPage,
 #successPage {
-    min-height: 100vh;
+    min-height: 100svh;
     min-width: 100%;
   }
 }
@@ -844,6 +848,10 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .md\:p-4 {
     padding: 1rem;
   }

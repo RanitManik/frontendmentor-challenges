@@ -11,12 +11,12 @@ h1 {
 }
 
 button {
-  @apply hover:bg-gradient w-full rounded-md bg-dark-slate px-4 py-3 font-bold text-white;
+  @apply w-full rounded-md bg-dark-slate px-4 py-3 font-bold text-white hover:bg-gradient;
 }
 
 #initialPage,
 #successPage {
-  @apply mobile:min-w-full bg-white font-sans text-body text-dark-slate sm:rounded-3xl sm:p-4 lg:p-6 mobile:min-h-screen;
+  @apply bg-white font-sans text-body text-dark-slate sm:rounded-3xl sm:p-4 lg:p-6 mobile:min-h-[100svh] mobile:min-w-full;
 }
 
 #successPage {
