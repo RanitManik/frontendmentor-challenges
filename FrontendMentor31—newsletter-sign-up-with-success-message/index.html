@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="mx-auto grid min-h-screen max-w-[1920px] place-items-center bg-charcoal md:p-4"
+  >
+    <main class="grid min-h-full min-w-full place-items-center">
+      <!-- Sign-up form start -->
+      <div
+        id="initialPage"
+        class="mobile:grid-rows-[0.5fr_1fr] mx-auto grid max-w-[950px] gap-8 sm:grid-cols-2"
+      >
+        <div
+          class="mobile:order-2 grid gap-6 px-4 py-6 sm:px-8 sm:py-12 lg:px-10 lg:py-16"
+        >
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="grid gap-2">
+            <li class="flex gap-4">
+              <img src="./images/icon-list.svg" alt="" />
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li class="flex gap-4">
+              <img src="./images/icon-list.svg" alt="" />
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li class="flex gap-4">
+              <img src="./images/icon-list.svg" alt="" />
+              <p>And much more!</p>
+            </li>
+          </ul>
+
+          <form class="grid gap-6" action="">
+            <div class="grid gap-2">
+              <div class="flex justify-between text-sm font-bold">
+                <label for="email">Email address</label>
+                <span id="emailError" class="invisible text-tomato"
+                  >Valid email required</span
+                >
+              </div>
+              <input
+                class="block w-full rounded-md border border-grey px-4 py-3 caret-dark-slate focus:outline-none"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@company.com"
+              />
+            </div>
+            <button id="submitBtn" type="submit">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+
+        <div
+          class="mobile:order-1 overflow-hidden rounded-b-2xl bg-tomato bg-[url('../images/illustration-sign-up-mobile.svg')] bg-cover bg-center sm:rounded-2xl sm:bg-[url('../images/illustration-sign-up-desktop.svg')]"
+        ></div>
+      </div>
+
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+
+      <div id="successPage" class="hidden text-dark-slate">
+        <div
+          class="mobile:min-h-screen grid items-center gap-6 px-4 py-6 sm:px-8 sm:py-12 lg:px-10 lg:py-16"
+        >
+          <div class="grid gap-6">
+            <img class="mobile:mb-6" src="./images/icon-success.svg" alt="" />
+            <h1>Thanks for subscribing!</h1>
+            <p>
+              A confirmation email has been sent to
+              <strong id="confirmedEmail">ash@loremcompany.com</strong>. Please
+              open it and click the button inside to confirm your subscription.
+            </p>
+          </div>
+          <button class="self-end" id="dismissBtn">Dismiss message</button>
+        </div>
+      </div>
+
+      <!-- Success message end -->
+    </main>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
