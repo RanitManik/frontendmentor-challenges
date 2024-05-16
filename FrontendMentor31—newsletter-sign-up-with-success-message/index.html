@@ -21,16 +21,16 @@
     />
   </head>
   <body
-    class="mx-auto grid min-h-screen max-w-[1920px] place-items-center bg-charcoal md:p-4"
+    class="mx-auto grid min-h-screen max-w-[1920px] place-items-center bg-charcoal md:p-4 mobile:min-h-[100svh]"
   >
     <main class="grid min-h-full min-w-full place-items-center">
       <!-- Sign-up form start -->
       <div
         id="initialPage"
-        class="mobile:grid-rows-[0.5fr_1fr] mx-auto grid max-w-[950px] gap-8 sm:grid-cols-2"
+        class="mx-auto grid max-w-[950px] gap-8 sm:grid-cols-2 mobile:grid-rows-[0.5fr_1fr]"
       >
         <div
-          class="mobile:order-2 grid gap-6 px-4 py-6 sm:px-8 sm:py-12 lg:px-10 lg:py-16"
+          class="grid gap-6 px-4 py-6 sm:px-8 sm:py-12 lg:px-10 lg:py-16 mobile:order-2"
         >
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -72,7 +72,7 @@
         </div>
 
         <div
-          class="mobile:order-1 overflow-hidden rounded-b-2xl bg-tomato bg-[url('../images/illustration-sign-up-mobile.svg')] bg-cover bg-center sm:rounded-2xl sm:bg-[url('../images/illustration-sign-up-desktop.svg')]"
+          class="overflow-hidden rounded-b-2xl bg-tomato bg-[url('../images/illustration-sign-up-mobile.svg')] bg-cover bg-center sm:rounded-2xl sm:bg-[url('../images/illustration-sign-up-desktop.svg')] mobile:order-1"
         ></div>
       </div>
 
@@ -82,7 +82,7 @@
 
       <div id="successPage" class="hidden text-dark-slate">
         <div
-          class="mobile:min-h-screen grid items-center gap-6 px-4 py-6 sm:px-8 sm:py-12 lg:px-10 lg:py-16"
+          class="grid items-center gap-6 px-4 py-6 sm:px-8 sm:py-12 lg:px-10 lg:py-16 mobile:min-h-[100svh]"
         >
           <div class="grid gap-6">
             <img class="mobile:mb-6" src="./images/icon-success.svg" alt="" />
