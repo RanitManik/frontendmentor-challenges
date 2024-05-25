@@ -41,6 +41,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 29 | [intro component with signup form](FrontendMentor29—intro-component-with-signup-form)                                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor29—intro-component-with-signup-form/index.html)                             |
 | 30 | [tip calculator app](FrontendMentor30—tip-calculator-app)                                                                     | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor30—tip-calculator-app/index.html)                                           |
 | 31 | [newsletter sign up with success message](FrontendMentor31—newsletter-sign-up-with-success-message)                           | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor31—newsletter-sign-up-with-success-message/index.html)                      |
+| 32 | [project tracking intro component](FrontendMentor32—project-tracking-intro-component)                                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor32—project-tracking-intro-component/index.html)                             |
 
 ## How to Use
 

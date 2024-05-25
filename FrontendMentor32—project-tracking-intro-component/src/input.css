@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+li {
+  @apply font-bold;
+}
+
+a {
+  @apply hover:underline;
+}

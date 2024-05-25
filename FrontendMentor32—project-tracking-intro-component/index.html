@@ -18,10 +18,81 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-body">
-    Product Features Pricing Login New Monograph Dashboard Powerful insights
-    into your team Project planning and time tracking for agile teams Schedule a
-    demo to see a live preview
+  <body class="m-auto grid min-h-[100svh] max-w-[1920px] items-start font-body">
+    <header
+      class="relative z-50 flex items-center justify-between gap-4 px-8 py-8 md:px-[10vw] md:py-14"
+    >
+      <img src="./images/logo.svg" alt="" />
+      <div id="mobile-menu" class="hidden md:block">
+        <ul
+          class="absolute left-8 right-8 top-[15vh] z-50 flex flex-col gap-4 bg-white text-center font-heading text-xl uppercase shadow-lg shadow-very-dark-blue/40 md:static md:flex-row md:gap-14 md:bg-transparent md:text-[1rem] lg:shadow-none"
+        >
+          <li class="mt-4 md:p-0"><a href="#">Product</a></li>
+          <li class="mt-4 md:p-0"><a href="#">Features</a></li>
+          <li class="my-4 md:p-0"><a href="#">Pricing</a></li>
+          <li
+            class="border-t p-6 text-grayish-blue md:ml-14 md:border-none md:p-0"
+          >
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        id="hamburger-icon"
+        class="md:hidden"
+        src="./images/icon-hamburger.svg"
+        alt=""
+      />
+      <img
+        id="close-icon"
+        class="hidden"
+        src="./images/icon-close.svg"
+        alt=""
+      />
+    </header>
+    <main class="z-20 grid gap-14 overflow-x-hidden md:grid-cols-2 md:gap-4">
+      <div class="px-8 md:pl-[10vw]">
+        <div class="mb-4 flex items-center gap-4 font-heading">
+          <span
+            class="rounded-full bg-very-dark-blue px-3 py-0.5 font-bold uppercase text-white"
+            >New</span
+          >
+          <p class="uppercase tracking-[3px] text-grayish-blue">
+            Monograph Dashboard
+          </p>
+        </div>
+        <h1
+          class="mb-4 font-heading text-4xl font-bold uppercase md:mb-8 md:text-6xl"
+        >
+          Powerful insights <br />
+          into your team
+        </h1>
+        <p class="mb-8 text-dark-grayish-blue md:mb-14">
+          Project planning and time tracking<br />for agile teams
+        </p>
+        <div class="flex items-center gap-4 text-sm md:gap-6 md:text-[1rem]">
+          <button
+            class="text-nowrap rounded-md bg-light-red px-4 py-2 font-heading font-bold uppercase text-white hover:bg-light-red/70 md:px-8 md:py-3"
+          >
+            Schedule a demo
+          </button>
+          <p
+            class="text-nowrap font-heading uppercase tracking-[3px] text-grayish-blue"
+          >
+            to see a live preview
+          </p>
+        </div>
+      </div>
+      <img
+        class="-order-1 md:order-2 md:ml-[15%]"
+        src="./images/illustration-devices.svg"
+        alt=""
+      />
+    </main>
+    <div
+      class="absolute right-0 top-0 h-[60%] w-1/2 rounded-bl-[3rem] bg-light-grayish-blue"
+    ></div>
+
     <script src="./src/script.js"></script>
   </body>
 </html>
