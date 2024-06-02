@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="images/favicon-32x32.png"
+  />
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="./src/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+<main>
+  <form>
+    <div class="input__container">
+      <label for="day-input">Day</label>
+      <input class="peer" type="number" min="1" max="31" placeholder="DD" name="day" id="day-input" />
+      <p class="required-field-error">This field is required</p>
+    </div>
+    <div class="input__container">
+      <label for="month-input">Month</label>
+      <input class="peer" type="number" min="1" max="12" placeholder="MM" name="month" id="month-input" />
+      <p class="required-field-error">This field is required</p>
+    </div>
+    <div class="input__container">
+      <label for="year-input">Year</label>
+      <input class="peer" type="number" min="1900" max="2077" placeholder="YYYY" name="year" id="year-input" />
+      <p class="required-field-error">This field is required</p>
+    </div>
+  </form>
+  <div class="btn__container">
+    <hr>
+    <button id="submit-btn" type="submit">
+      <img src="./images/icon-arrow.svg" alt="calculate age" />
+    </button>
+  </div>
+  <div class="age__result">
+    <p><span id="years">--</span> years</p>
+    <p><span id="months">--</span> months</p>
+    <p><span id="days">--</span> days</p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

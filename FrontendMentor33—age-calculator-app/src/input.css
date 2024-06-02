@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+body {
+  @apply bg-off-white text-smokey-grey font-poppins grid min-h-[min(100svh,1080px)] place-items-center overflow-x-hidden px-4 font-normal;
+}
+
+/* Form styles */
+form {
+  @apply flex gap-2 md:gap-6;
+}
+
+.input__container {
+  @apply flex flex-col gap-2;
+}
+
+label {
+  @apply uppercase;
+}
+
+input {
+  @apply border-light-grey invalid:border-light-red focus:border-purple invalid:focus:border-light-red md:text-input text-off-black caret-purple rounded-md border p-4 outline-none;
+}
+
+.invalid-input label {
+  @apply text-light-red;
+}
+
+.invalid-input p {
+  @apply text-light-red visible;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.required-field-error {
+  @apply text-light-red invisible text-xs font-normal italic peer-focus:peer-invalid:visible;
+}
+
+/* Button styles */
+button {
+  @apply bg-purple active:bg-purple/60 hover:bg-off-black relative mx-auto select-none rounded-full p-4 focus-visible:outline-4 sm:ml-auto sm:mr-0;
+}
+
+/* Other styles */
+p {
+  @apply text-[1rem];
+}
+
+.age__result p {
+  @apply text-off-black text-[3rem] font-extrabold italic leading-[1] md:text-[5rem];
+}
+
+.age__result p span {
+  @apply text-purple;
+}
+
+.btn__container {
+  @apply relative grid;
+}
+
+hr {
+  @apply absolute top-1/2 w-full;
+}
+
+main {
+  @apply grid min-w-[min(50%,800px)] gap-4 overflow-x-hidden rounded-3xl rounded-br-[8rem] bg-white px-6 py-12 sm:gap-2;
+}
