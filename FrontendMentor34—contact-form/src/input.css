@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+textarea,
+.radio__container {
+  @apply rounded-md border border-neutral-500 px-6 py-3 accent-primary-600 focus:border-primary-600 focus:outline-primary-600;
+}
+
+.radio__container {
+  @apply flex items-center gap-3;
+}
+
+input[type="radio"]:checked + .radio__container {
+  @apply border-primary-600 bg-primary-600 outline-primary-600;
+}
+
+.checkbox__container {
+  @apply flex items-center gap-4;
+}
+
+.error {
+  @apply border-red;
+}
+
+.input-error {
+  @apply hidden;
+  @apply text-red;
+}
+
+.input__container {
+  @apply flex flex-col gap-2;
+}
+
+.input__row {
+  @apply grid gap-4 md:grid-cols-2;
+}
+
+.query__row {
+  @apply grid gap-4 md:grid-cols-2;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+  transform: scale(1.2);
+}
+
+.input__label::after {
+  @apply ml-2 text-primary-600 content-['*'];
+}
+
+.input-error {
+  @apply hidden;
+}
