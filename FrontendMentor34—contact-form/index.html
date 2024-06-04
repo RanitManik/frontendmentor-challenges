@@ -18,44 +18,26 @@
       rel="stylesheet"
     />
   </head>
-  <body
-    class="relative grid min-h-[min(100vh,_1080px)] place-items-center bg-primary-200 px-4 py-16 font-karla font-normal text-neutral-900"
-  >
-    <main class="min-w-full">
-      <form
-        class="m-auto grid min-w-[min(50%,800px)] gap-6 rounded-2xl bg-white p-10 lg:max-w-[min(50%,800px)]"
-      >
-        <h1 class="mb-2 text-3xl font-bold">Contact Us</h1>
+  <body>
+    <main>
+      <form>
+        <h1>Contact Us</h1>
         <div class="input__row">
           <div class="input__container">
             <label class="input__label" for="fName">First Name</label>
-            <input
-              class="peer invalid:border-red invalid:outline-none"
-              type="text"
-              id="fName"
-            />
-            <p class="input-error peer-invalid:block">This field is required</p>
+            <input type="text" id="fName" />
+            <p class="input-error">This field is required</p>
           </div>
           <div class="input__container">
             <label class="input__label" for="lName">Last Name</label>
-            <input
-              class="peer invalid:border-red invalid:outline-none"
-              type="text"
-              id="lName"
-            />
+            <input type="text" id="lName" />
             <p class="input-error peer-invalid:block">This field is required</p>
           </div>
         </div>
         <div class="input__container">
           <label class="input__label" for="email">Email Address</label>
-          <input
-            class="peer invalid:border-red invalid:outline-none"
-            type="email"
-            id="email"
-          />
-          <p class="input-error peer-invalid:block">
-            Please enter a valid email address
-          </p>
+          <input type="email" id="email" />
+          <p class="input-error">Please enter a valid email address</p>
         </div>
 
         <div class="input__container">
@@ -75,12 +57,8 @@
 
         <div class="input__container">
           <label class="input__label" for="message">Your Message</label>
-          <textarea
-            class="peer invalid:border-red invalid:outline-none"
-            rows="4"
-            id="message"
-          ></textarea>
-          <p class="input-error peer-invalid:block">This field is required</p>
+          <textarea rows="4" id="message"></textarea>
+          <p class="input-error">This field is required</p>
         </div>
 
         <div class="input__container my-3">
@@ -95,23 +73,11 @@
           </p>
         </div>
 
-        <button
-          class="w-full rounded-md bg-primary-600 p-3 font-bold text-white transition-colors duration-150 ease-in-out hover:bg-primary-600/80 active:bg-primary-600/60"
-          id="submitBtn"
-          type="submit"
-        >
-          Submit
-        </button>
+        <button id="submitBtn" type="submit">Submit</button>
 
-        <div
-          class="success__message fixed left-1/2 top-10 hidden -translate-x-1/2 rounded-xl bg-neutral-900 p-6 text-white"
-        >
-          <span class="text-lg font-bold">
-            <img
-              class="mr-4 inline-block"
-              src="./images/icon-success-check.svg"
-              alt=""
-            />Message Sent!
+        <div class="success__message">
+          <span>
+            <img src="./images/icon-success-check.svg" alt="" />Message Sent!
           </span>
           <p class="mt-2">
             Thanks for completing the form. We'll be in touch soon!
