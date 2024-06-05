@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neutral-cream text-body grid min-h-[100svh] place-items-center font-sans text-white;
+}

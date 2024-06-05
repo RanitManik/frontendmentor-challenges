@@ -44,6 +44,7 @@ files for easy navigation and exploration. Feel free to browse through and check
 | 32 | [project tracking intro component](FrontendMentor32—project-tracking-intro-component)                                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor32—project-tracking-intro-component/index.html)                             |
 | 33 | [age calculator app](FrontendMentor33—age-calculator-app)                                                                     | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor33—age-calculator-app/index.html)                                           |
 | 34 | [contact form](FrontendMentor34—contact-form)                                                                                 | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor34—contact-form/index.html)                                                 |
+| 35 | [expenses chart component](FrontendMentor35—expenses-chart-component)                                                         | [Live Demo](https://ranitmanik.github.io/frontendmentor-challenges/FrontendMentor35—expenses-chart-component/index.html)                                     |
 
 ## How to Use
 
