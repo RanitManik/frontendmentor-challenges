@@ -6,6 +6,8 @@ Welcome to my Frontend Mentor Challenges repository! This is where I showcase my
 projects. Each project is neatly organized within its own directory, which includes separate HTML, CSS, and JavaScript
 files for easy navigation and exploration. Feel free to browse through and check out my work!
 
+*[**visit my Frontendmentor Profile Page**](https://www.frontendmentor.io/profile/RanitManik)*
+
 ## Challenges
 
 | #  | Challenges                                                                                                                    | Live Demo                                                                                                                                                    |
