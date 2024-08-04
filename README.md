@@ -8,8 +8,8 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/RanitManik/frontendmentor-challenges)
 ![GitHub Discussions](https://img.shields.io/github/discussions/RanitManik/frontendmentor-challenges)
 ![GitHub License](https://img.shields.io/github/license/RanitManik/frontendmentor-challenges)
-![GitHub forks](https://img.shields.io/github/forks/RanitManik/Gemini-Clone?style=default)
-![GitHub stars](https://img.shields.io/github/stars/RanitManik/Gemini-Clone?style=default)
+![GitHub forks](https://img.shields.io/github/forks/RanitManik/frontendmentor-challenges?style=default)
+![GitHub stars](https://img.shields.io/github/stars/RanitManik/frontendmentor-challenges?style=default)
 <br/>
 ![Netlify Status](https://api.netlify.com/api/v1/badges/d0ce3dc4-4e21-43c4-9054-b4ec5b705890/deploy-status)
 ![wakatime](https://wakatime.com/badge/github/RanitManik/frontendmentor.io.svg)
