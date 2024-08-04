@@ -1,11 +1,20 @@
-<h1>Frontend Mentor Challenges Repository</h1>
+<div align="center">
+
+<img height="70px" src="https://github.com/user-attachments/assets/deefbc72-589d-4b21-b4f3-cdd7e0a8aaf9" alt="frontendmetor logo"/>
+
+<h1>Frontend Mentor Challenges</h1>
 
 ![GitHub Created At](https://img.shields.io/github/created-at/RanitManik/frontendmentor-challenges)
 ![GitHub repo size](https://img.shields.io/github/repo-size/RanitManik/frontendmentor-challenges)
 ![GitHub Discussions](https://img.shields.io/github/discussions/RanitManik/frontendmentor-challenges)
 ![GitHub License](https://img.shields.io/github/license/RanitManik/frontendmentor-challenges)
+![GitHub forks](https://img.shields.io/github/forks/RanitManik/Gemini-Clone?style=default)
+![GitHub stars](https://img.shields.io/github/stars/RanitManik/Gemini-Clone?style=default)
+<br/>
 ![Netlify Status](https://api.netlify.com/api/v1/badges/d0ce3dc4-4e21-43c4-9054-b4ec5b705890/deploy-status)
 ![wakatime](https://wakatime.com/badge/github/RanitManik/frontendmentor.io.svg)
+
+</div>
 
 Welcome to my Frontend Mentor Challenges repository! This is where I showcase my solutions to a range of Frontend Mentor
 projects. Each project is neatly organized within its own directory, which includes separate HTML, CSS, and JavaScript
